@@ -1,0 +1,25 @@
+body{
+    /*background-image: url("../img/background.jpg");*/
+    background-color: rgb(255, 255, 255);
+    background-size: 100%;
+}
+.top{
+    padding-left: 16px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#chart_div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.new{
+    background-color: rgb(55, 255, 0);
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 3px 3px 3px 3px;
+    font-size: small;
+}
