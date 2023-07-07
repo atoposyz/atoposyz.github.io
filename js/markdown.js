@@ -166,6 +166,33 @@ function LoadMarkdown(filepath) {
     })
 }
 
+function LoadMarkdownOnly(filepath) {
+    readTextFile(filepath, (textDetail) => {
+		var prefilepaths = filepath.split("/")
+		var prefilepath = ""
+		for(var i = 0; i < prefilepaths.length - 1; i++) {
+			prefilepath = prefilepath + prefilepaths[i] + '/'
+		}
+        //console.log(prefilepath)
+		var doctype = filepath.split('.')[filepath.split('.').length - 1]
+		var result = ''
+		//console.log(filepath.split('.')[filepath.split('.').length - 1])
+		if(doctype == 'md') {
+			result = md.render(textDetail)
+		} else {
+			result = textDetail
+		}
+		result = result.replace(/\.\//g, prefilepath)
+		result = result.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"')
+		result = result.replace('[toc]', '').replace('[TOC]', '')
+		result = result.replace(/class="language-mermaid"/g, 'class="language-mermaid mermaid"')
+		result = result.replace(/\\\n/g, '\\\\\n')
+		//console.log(result)
+        document.getElementById("markdown").innerHTML = result
+        hljs.highlightAll()
+    })
+}
+
 function getArticleSrc(type, pos) {
 	readTextFile("../js/information.json", (textDetail) => {
         var TmpList = JSON.parse(textDetail)

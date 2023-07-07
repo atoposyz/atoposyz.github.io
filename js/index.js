@@ -1,7 +1,7 @@
 var menulist = [
-    [{ name: "Home", src: "index.html" }],
+    [{ name: "主页", src: "index.html" }],
     [],
-    [{ name: "AboutMe", src: "docs/aboutme.html" }]
+    [{ name: "关于", src: "docs/aboutme.html" }]
 ]
 
 var caret = '<span class="caret"></span>'
@@ -32,13 +32,13 @@ function readMenuList(textDetail) {
     var TmpList = JSON.parse(textDetail)
     var _list = []
     var _num = 0
-    _list.push({ name: "Docs", src: "" })
+    _list.push({ name: "文章", src: "" })
     for (var i = TmpList.length - 1; i >= 0 && _num < 5; i--) {
         var title = TmpList[i].title
         _list.push({ name: title, src: "docs/article.html?type=" + 1 + "&&pos=" + i })
         _num++
     }
-    _list.push({ name: "More", src: "docs/documents.html" })
+    _list.push({ name: "更多", src: "docs/documents.html" })
     menulist[1] = _list
 }
 

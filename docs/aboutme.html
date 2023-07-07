@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Members</title>
-  <link rel="shortcut icon" href="../img/raspberrypi.ico">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../css/index.css">
-  <link rel="stylesheet" type="text/css" href="../css/members.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="shortcut icon" href="../img/raspberrypi.ico">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" >
+    <link rel="stylesheet" type="text/css" href="../css/blog.css" >
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top top" id="top"></nav>  
-  <div class="container">
-    <div class="box" style="--clr:#00a6bc;">
-      <div class="content">
-        <img class="icon" src="../img/Bob.jpg"><i class="fa fa-paint-brush"></i></img>
-        <div class="text">
-          <h3>Guo Guannan (Bob)</h3>
-          <p>Roles: P.M./Programmer/R.A.</p>
-          <p>Email: premierbob@qq.com</p>
-          <p>JiLin University</p>
-          <a>Group Leader</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top top" id="top"></nav>
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-10 blog" role="main">
+                <div id="markdown" style="margin-top: 50px;"></div>
+            </div>
+            <div class="col-md-2" role="main">
+                <div style="margin-top: 100px;">
+                  <img src="../img/Mark.jpg" alt="" style="width: 70%;">
+                </div>
+                <p>这是我目前的QQ头像↑</p>
+                <p>这是我用过的网名↓</p>
+                <p>ATOPOSYZ</p>
+                <p>XUANFLY</p>
+                <p>这是我忝列的大学</p>
+                <p>吉林大学</p>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="box" style="--clr:#f75bea;">
-      <div class="content">
-        <img class="icon" src="../img/Mark.gif"><i class="fa fa-paint-brush"></i></img>
-        <div class="text">
-          <h3>Ma Yongzhe (Mark)</h3>
-          <p>Roles: Archive Manager</p>
-          <p>Email: 2335483715@qq.com</p>
-          <p>JiLin University</p>
-          <a>Member</a>
-        </div>
-      </div>
-    </div>
-    <div class="box" style="--clr:#e9ca18;">
-      <div class="content">
-        <img class="icon" src="../img/Aidan.jpg"><i class="fa fa-paint-brush"></i></img>
-        <div class="text">
-          <h3>Wang Xi (Aidan)</h3>
-          <p>Roles: Programmer/R.A.</p>
-          <p>Email: wx.aidan@qq.com</p>
-          <p>JiLin University</p>
-          <a>Member</a>
-        </div>
-      </div>
-    </div>
-    <div class="box" style="--clr:#4ea7f0;">
-      <div class="content">
-        <img class="icon" src="../img/Zin.jpg"><i class="fa fa-paint-brush"></i></img>
-        <div class="text">
-          <h3>Zhou Zhiqin (Zin)</h3>
-          <p>Roles: Architect</p>
-          <p>Email: zin_chou@qq.com</p>
-          <p>JiLin University</p>
-          <a>Member</a>
-        </div>
-      </div>
-    </div>
-    <div class="box" style="--clr:#4cd489;">
-      <div class="content">
-        <img class="icon" src="../img/Alex.webp"><i class="fa fa-file-code-o"></i></img>
-        <div class="text">
-          <h3>Alex</h3>
-          <p>Roles: Liaison</p>
-          <p>Email: alexsmsimoes01@gmail.com</p>
-          <p>Universidade de Trás-os-Montes e Alto Douro</p>
-          <a>Member</a>
-        </div>
-      </div>
-    </div>
-    <div class="box" style="--clr:#ea5e3f;">
-      <div class="content">
-        <img class="icon" src="../img/Macro.webp"><i class="fa fa-random"></i></img>
-        <div class="text">
-          <h3>Marco</h3>
-          <p>Roles: Tester</p>
-          <p>Email: marcoadcorreia@gmail.com</p>
-          <p>Universidade de Trás-os-Montes e Alto Douro</p>
-          <a>Member</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
-  <script src="../js/index.js"></script>
-  <script>topbar(1)</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            showProcessingMessages: false,
+            messageStyle: "none",
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath:  [ ["$", "$"] ],
+                displayMath: [ ["$$","$$"] ],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+                ignoreClass:"comment-content"
+            },
+            "HTML-CSS": {
+                availableFonts: ["STIX","TeX"],
+                showMathMenu: false
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        </script>
+    <script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script src="../js/index.js"></script>
+    <script src="../js/markdown.js"></script>
+    <script>topbar(1)</script>
+    <script>
+        LoadMarkdownOnly("../md/aboutme.md")
+    </script>
 </body>
-
 </html>
