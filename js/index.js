@@ -1,9 +1,7 @@
 var menulist = [
     [{ name: "Home", src: "index.html" }],
-    [], [],
-    [{ name: "Members", src: "docs/member.html" }],
-    [{ name: "Borrowing", src: "docs/borrow.html" }],
-    [{ name: "Online", src: "docs/realtimedata.html" }]
+    [],
+    [{ name: "AboutMe", src: "docs/aboutme.html" }]
 ]
 
 var caret = '<span class="caret"></span>'
@@ -13,7 +11,7 @@ var dropdown_toggle_1 = '<a class="nav-link dropdown-toggle" data-bs-toggle="dro
 var dropdown_toggle_2 = '" role="button" aria-expanded="false">'
 var dropdown_menu = '<ul class="dropdown-menu" aria-labelledby="navbarDropdown">'
 var toptext = `
-<div class="navbar-brand">PIrates-Raspberry Pi</div>
+<div class="navbar-brand">Atoposyz's</div>
 <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
     data-bs-target="#collapsed-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -30,29 +28,18 @@ function readTextFile(filePath, callback) {
     xhrFile.send();
 }
 
-
 function readMenuList(textDetail) {
     var TmpList = JSON.parse(textDetail)
-    for (var j = 0; j < 2; j++) {
-        var _list = []
-        var _num = 0
-        if (j == 0) {
-            _list.push({ name: "News", src: "" })
-        } else {
-            _list.push({ name: "Docs", src: "" })
-        }
-        for (var i = TmpList[j].length - 1; i >= 0 && _num < 5; i--) {
-            var title = TmpList[j][i].title
-            _list.push({ name: title, src: "docs/article.html?type=" + j + "&&pos=" + i })
-            _num++
-        }
-        if (j == 0) {
-            _list.push({ name: "More", src: "docs/news.html" })
-        } else {
-            _list.push({ name: "More", src: "docs/documents.html" })
-        }
-        menulist[1 + j] = _list
+    var _list = []
+    var _num = 0
+    _list.push({ name: "Docs", src: "" })
+    for (var i = TmpList.length - 1; i >= 0 && _num < 5; i--) {
+        var title = TmpList[i].title
+        _list.push({ name: title, src: "docs/article.html?type=" + 1 + "&&pos=" + i })
+        _num++
     }
+    _list.push({ name: "More", src: "docs/documents.html" })
+    menulist[1] = _list
 }
 
 function isNormalPage(flag) {
