@@ -259,8 +259,7 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
-  pre: ""
-  # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
+  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
     yun-markdown-css: "yun_markdown_css"
     prism-theme-vars: "prism_theme_vars"
@@ -398,7 +397,7 @@ post_edit:
 # Footer Settings
 # ---------------
 footer:
-  since: 2019
+  since: 2023
 
   # Icon between year and copyright info.
   icon:
@@ -426,10 +425,10 @@ footer:
       id: XXXXXXXX
 
   live_time:
-    enable: false
-    prefix: 本博客已萌萌哒地运行
+    enable: true
+    prefix: 本博客已运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: "2023-07-08T00:00:00"
 
   # Display support
   # support:
@@ -452,7 +451,7 @@ post_meta:
 
 # notice pin board
 notice:
-  enable: true
+  enable: false
   content: 广告位招商
 
 # third party
