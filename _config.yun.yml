@@ -41,61 +41,10 @@ toc:
 
 # Social Links.
 social:
-# - name: RSS
-#   # set rss in your root config
-#   # https://github.com/hexojs/hexo-generator-feed
-#   link: /atom.xml # config.feed.path
-#   icon: ri:rss-line
-#   color: orange
-# - name: GitHub
-#   link: https://github.com/YunYouJun
-#   icon: ri:github-line
-#   color: "#6e5494"
-# - name: 微博
-#   link: https://weibo.com/jizhideyunyoujun
-#   icon: ri:weibo-line
-#   color: "#E6162D"
-# - name: 豆瓣
-#   link: https://www.douban.com/people/yunyoujun/
-#   icon: ri:douban-line
-#   color: "#007722"
-# - name: 网易云音乐
-#   link: https://music.163.com/#/user/home?id=247102977
-#   icon: ri:netease-cloud-music-line
-#   color: "#C20C0C"
-# - name: 知乎
-#   link: https://www.zhihu.com/people/yunyoujun/
-#   icon: ri:zhihu-line
-#   color: "#0084FF"
-# - name: 哔哩哔哩
-#   link: https://space.bilibili.com/1579790
-#   icon: ri:bilibili-line
-#   color: "#FF8EB3"
-# - name: 微信公众号
-#   link: https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg
-#   icon: ri:wechat-2-line
-#   color: "#1AAD19"
-# - name: Twitter
-#   link: https://twitter.com/YunYouJun
-#   icon: ri:twitter-line
-#   color: "#1da1f2"
-# # - name: Telegram
-# #   link: https://t.me/yunyoujun_group
-# #   icon: ri:telegram-line
-# #   color: "#0088CC"
-# - name: Telegram Channel
-#   link: https://t.me/elpsycn
-#   # icon: ri:telegram-fill
-#   icon: ri:telegram-line
-#   color: "#0088CC"
-# - name: E-Mail
-#   link: mailto:me@yunyoujun.cn
-#   icon: ri:mail-line
-#   color: "#8E71C1"
-# - name: Travelling
-#   link: https://travellings.link
-#   icon: ri:train-line
-#   color: black
+- name: GitHub
+  link: https://github.com/atoposyz
+  icon: ri:github-line
+  color: "#6e5494"
 
 codeblock:
   copy_btn: true
@@ -259,7 +208,8 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
-  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
+  pre: ""
+  # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
     yun-markdown-css: "yun_markdown_css"
     prism-theme-vars: "prism_theme_vars"
@@ -350,7 +300,7 @@ bg_image:
 reward:
   enable: true
   icon: ri:hand-coin-line
-  comment: I'm so cute. Please give me money.
+  comment: EOF
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
   # - name: 支付宝
@@ -408,7 +358,7 @@ footer:
     # Change the color of icon, using Hex Code.
     color: "#0078E7"
     # url: https://sponsors.yunyoujun.cn
-    # title: 云游君的赞助者们
+    title: Special Thanks
 
   powered:
     # Hexo link (Powered by Hexo).
@@ -429,17 +379,6 @@ footer:
     prefix: 本博客已运行
     suffix: (●'◡'●)
     start_time: "2023-07-08T00:00:00"
-
-  # Display support
-  # support:
-  #   enable: true
-  #   title: 又拍云
-  #   link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
-  #   logo: https://cdn.yunyoujun.cn/img/logo/upyun-logo.png
-  #   prefix: 本网站由
-  #   suffix: 提供 CDN 加速
-  # Any custom text can be defined here.
-  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
 
 # Post meta display settings
 post_meta:
