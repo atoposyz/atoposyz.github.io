@@ -146,9 +146,9 @@ menu:
       path: /tags/
       icon: ri:price-tag-3-line
   custom:
-    title: 文档
-    path: https://yun.yunyoujun.cn
-    icon: ri:settings-line
+    title: 关于
+    path: /about/
+    icon: ri:clipboard-line
 
 # archive
 archive:
