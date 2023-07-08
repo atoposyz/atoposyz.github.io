@@ -104,5 +104,5 @@ theme: yun
 deploy:
   type: git
   repo: https://github.com/atoposyz/atoposyz.github.io
-  branch: dev # 默认使用 master 分支
-  message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+  branch: hexo # 默认使用 master 分支
+  message: 继续加东西 # 你可以自定义此次部署更新的说明

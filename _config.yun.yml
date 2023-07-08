@@ -214,7 +214,7 @@ types:
 
 # post_card
 post_card:
-  opacity: 0.9
+  opacity: 0.8
 
 # link
 # -------
