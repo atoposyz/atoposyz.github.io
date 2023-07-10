@@ -24,6 +24,7 @@ categories:
 一般地，一元n次[多项式](https://baike.baidu.com/item/多项式)的求值需要经过 $(n+1)\times n \div 2$次[乘法](https://baike.baidu.com/item/乘法)和 $n$ 次[加法](https://baike.baidu.com/item/加法)，而秦九韶算法只需要 $n$次乘法和 $n$ 次加法。在人工计算时，一次大大简化了运算过程。 ——百度百科
 
 把一个 $n$ 次多项式
+
 $$
 f(x) = a_0 + a_1x^1+…+a_{n-1}x^{n-1}+a_nx^n
 $$
