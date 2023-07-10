@@ -25,9 +25,11 @@ categories:
 
 把一个 $n$ 次多项式
 
+<div>
 $$
 f(x) = a_0 + a_1x^1+…+a_{n-1}x^{n-1}+a_nx^n
 $$
+</div>
 
 改写成下列形式
 <div>
