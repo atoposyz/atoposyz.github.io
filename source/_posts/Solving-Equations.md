@@ -6,7 +6,7 @@ katex: true
 tags:
   - 数学
 categories:
-  - 笔记
+  - 题解
 ---
 
 > [P2312 解方程]( https://www.luogu.org/problem/P2312 )
