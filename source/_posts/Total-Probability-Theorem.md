@@ -1,6 +1,7 @@
 ---
 title: 全概率公式
 date: 2019-11-07 17:24:01
+updated: 2019-11-03 06:25:45
 readmore: true
 katex: true
 tags:

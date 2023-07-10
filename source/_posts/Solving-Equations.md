@@ -1,6 +1,7 @@
 ---
 title: 解方程
 date: 2019-11-03 06:25:45
+updated: 2019-11-03 06:25:45
 readmore: true
 katex: true
 tags:
