@@ -126,4 +126,4 @@ deploy:
   type: git
   repo: https://github.com/atoposyz/atoposyz.github.io
   branch: hexo # 默认使用 master 分支
-  message: update # 你可以自定义此次部署更新的说明
+  message: upload new post # 你可以自定义此次部署更新的说明
