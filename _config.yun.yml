@@ -51,9 +51,9 @@ codeblock:
 
 # Extra links
 pages:
-    - name: 动画高手
+  - name: 动画高手
     url: /anime-grid/index.html
-    icon: ri:genderless-line
+    icon: ri:tv-line
     color: dodgerblue
 
 # pages
