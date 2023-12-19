@@ -41,7 +41,7 @@ const getCoverURLById = id => `${ImageURL}anime/${id}/cover.jpg`;
 
 
 class AnimeGrid {
-    constructor({el,title,key,typeTexts,col,row,urlExt = ''}){
+    constructor({el,title,key,typeTexts,col,row,aninum,urlExt = ''}){
         this.el = el;
 
         this.key = key;
@@ -55,8 +55,11 @@ class AnimeGrid {
         this.row = row;
         this.col = col;
 
-        this.getBangumisFormLocalStorage();
+        this.aninum = aninum;
+        
 
+        this.getBangumisFormLocalStorage();
+        this.deleteExBangumis()
 
         el.innerHTML = this.generatorHTML({
             title,
@@ -118,9 +121,9 @@ class AnimeGrid {
         );
 
         const copyRightText = [
-            'lab.magiconch.com/anime-grid' + urlExt,
-            '@卜卜口',
-            '神奇海螺试验场',
+            //'lab.magiconch.com/anime-grid' + urlExt,
+            '修改自@卜卜口',
+            //'神奇海螺试验场',
             '动画信息来自番组计划',
             '禁止商业、盈利用途'
         ].join(' · ');
@@ -475,7 +478,7 @@ class AnimeGrid {
     }
     
     downloadImage(){
-        const fileName = `[神奇海螺][${this.title}].jpg`;
+        const fileName = `[动画盘点][${this.title}].jpg`;
         const mime = 'image/jpeg';
         const imgURL = this.canvas.toDataURL(mime,0.8);
         const linkEl = document.createElement('a');
@@ -489,7 +492,12 @@ class AnimeGrid {
     
        this.showOutput(imgURL);
     }
-
+    deleteExBangumis() {
+        console.log(this.bangumis.length)
+        while(this.bangumis.length > this.aninum) {
+            this.bangumis.pop()
+        }
+    }
 }
 
 
@@ -528,22 +536,6 @@ Caches[`${APIURL}animes`] = [
 	{
 		"id": 55770,
 		"title": "进击的巨人"
-	},
-	{
-		"id": 51,
-		"title": "CLANNAD"
-	},
-	{
-		"id": 1428,
-		"title": "钢之炼金术师 FULLMETAL ALCHEMIST"
-	},
-	{
-		"id": 160209,
-		"title": "你的名字。"
-	},
-	{
-		"id": 909,
-		"title": "龙与虎"
 	}
 ]
 

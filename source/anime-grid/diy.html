@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画生涯个人喜好表生成器</title>
+    <meta name=keywords content="动画生涯,个人喜好表生成器,神奇海螺试验场,magiconch,卜卜口">
+    <link rel="stylesheet" href="anime-grid.css">
+</head>
+<body>
+
+    <div class = "diy-title" onclick="opendiybox()">点击展开/折叠标签列表</div>
+    <div class = "diy-grid-box" id = "diy-grid-box" style = "overflow: hidden; transition: height 0.2s;">
+        <form class = diy-form>
+            <input type="text" placeholder="回车添加标签，点击取消对应标签">
+        </form>
+        <div class = "tag-list"></div>
+        <div class = "tag-done" onclick="opendiybox(); generatebox()">选好啦</div>
+    </div>
+
+    <div class="anime-grid-box"></div>
+    <div class="more-link-box">
+        <a href="index.html">切换到动画个人喜好表</a>
+        <a href="ex.html">切换到本年度最喜欢的动画排序</a>
+    </div><!--
+    <footer>
+        <a href="https://lab.magiconch.com/" target="_blank">fork自神奇海螺试验场</a>
+        <a href="https://weibo.com/reiove" target="_blank">@卜卜口</a>
+        <a href="https://github.com/itorr/anime-grid" target="_blank">GitHub</a>
+        <span>动画信息来自 <a href="https://bgm.tv/" target="_blank">番组计划</a></span>
+    </footer>-->
+    <script src="anime-grid.js"></script>
+<script>
+var diybox = document.getElementById("diy-grid-box");
+var diyboxheight = 300
+function opendiybox() { diybox.style.height = diybox.offsetHeight===0 ? 'auto' : 0+'px';}
+function flashdiy() {
+    diydocumenttext = ""
+    for(var i = 0; i < tags.length; i++) {
+        diydocumenttext = diydocumenttext + 
+        '<div class = "diy-block" data-id = "' + tags[i] + `"onclick="deletetag(this.getAttribute('data-id'))"">` + tags[i] + '</div>'
+    }
+    document.querySelector('.tag-list').innerHTML = diydocumenttext
+}
+function deletetag(tagname) {
+    tags = tags.filter(function(item) {
+        return item != tagname
+    });
+    flashdiy()
+}
+tags=["入坑作",
+"最喜欢",
+"看最多次",
+"最想安利",
+
+"最佳剧情",
+"最佳画面",
+"最佳配乐",
+"最佳配音",
+
+"最治愈",
+"最感动",
+"最虐心",
+"最被低估",
+
+"最过誉",
+"最离谱",
+"最讨厌"];
+flashdiy()
+diyel = document.querySelector('.diy-grid-box')
+diyformel = diyel.querySelector('.diy-form');
+diyinputel = diyformel[0];
+diydocumenttext = ""
+diyformel.onsubmit = async e=>{
+    if(e) e.preventDefault();
+    const keyword = this.diyinputel.value.trim();
+    tags.push(keyword.toString())
+    flashdiy()
+    diyformel.reset()
+}
+
+function generatebox() {
+    
+    var num = tags.length - 1
+    typeTexts = ""
+    for(var i = 0; i < tags.length; i++) {
+        typeTexts = typeTexts + tags[i] + '\n'    
+    }
+    var col = 0
+    var row = 0
+    if(num < 4) {
+        col = 2
+        row = num / 2 + 1
+    } else if(num < 9) {
+        col = 3
+        row = num / 3 + 1
+    } else if(num < 16 && num != 9 && num != 14) {
+        col = 4
+        row = num / 4 + 1
+    } else {
+        col = 5
+        row = num / 5 + 1
+    }
+    row = parseInt(row)
+    new AnimeGrid({
+        el: document.querySelector('.anime-grid-box'),
+        title: '动画生涯个人喜好表',
+        key: 'margiconch-animes-grid',
+        typeTexts: typeTexts,
+        col: col,
+        row: row,
+        aninum: tags.length
+    })
+}
+
+var typeTexts = `入坑作
+最喜欢
+看最多次
+最想安利
+
+最佳剧情
+最佳画面
+最佳配乐
+最佳配音
+
+最治愈
+最感动
+最虐心
+最被低估
+
+最过誉
+最离谱
+最讨厌
+`;
+/*
+new AnimeGrid({
+    el: document.querySelector('.anime-grid-box'),
+    title: '动画生涯个人喜好表',
+    key: 'margiconch-animes-grid',
+    typeTexts,
+    col: 5,
+    row: 3,
+})*/
+</script>
+</body>
+</html>
