@@ -213,11 +213,22 @@ footer>* {
 }
 
 .diy-title{
+    margin: auto;
     margin-bottom: 20px;
+    padding: 18px 10px;
+    border: 2px solid #222;
+    background: #FFF;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 25%;
 }
 
 .diy-form{
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: auto;
     
 }
@@ -236,7 +247,8 @@ footer>* {
 }
 
 .tag-list{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .diy-block{
@@ -254,5 +266,16 @@ footer>* {
 }
 
 .tag-done{
-    margin-bottom: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 18px 10px;
+    border: 2px solid #222;
+    background: #FFF;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 25%;
 }
