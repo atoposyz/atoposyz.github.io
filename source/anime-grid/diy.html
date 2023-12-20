@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>动画生涯个人喜好表生成器</title>
+    <title>动画自定义个人喜好表生成器</title>
     <meta name=keywords content="动画生涯,个人喜好表生成器,神奇海螺试验场,magiconch,卜卜口">
     <link rel="stylesheet" href="anime-grid.css">
 </head>
@@ -115,12 +115,14 @@ function generatebox() {
     row = parseInt(row)
     new AnimeGrid({
         el: document.querySelector('.anime-grid-box'),
-        title: '动画生涯个人喜好表',
+        title: '动画自定义个人喜好表',
+        urlExt: '/diy.html',
         key: 'diy-animes-grid',
         typeTexts: typeTexts,
         col: col,
         row: row,
-        aninum: tags.length
+        aninum: tags.length,
+        copyRight: "我的自定义动画表"
     })
 }
 

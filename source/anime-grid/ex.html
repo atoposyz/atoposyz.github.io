@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>本年度最喜欢的20款动画</title>
+    <title>本年度最喜欢的20部动画</title>
     <meta name=keywords content="动画生涯,个人喜好表生成器,神奇海螺试验场,magiconch,卜卜口">
     <link rel="stylesheet" href="anime-grid.css">
 </head>
@@ -28,13 +28,14 @@ const typeTexts = `1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18
 
 new AnimeGrid({
     el: document.querySelector('.anime-grid-box'),
-    title: '本年度最喜欢的20款动画',
+    title: '本年度最喜欢的20部动画',
     urlExt: '/ex.html',
     key: 'margiconch-animes-grid-ex',
     typeTexts,
     col: 5,
     row: 4,
-    aninum: 20
+    aninum: 20,
+    copyRight: '我的年度动画榜单'
 })
 </script>
 </body>

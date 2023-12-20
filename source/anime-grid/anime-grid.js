@@ -41,7 +41,7 @@ const getCoverURLById = id => `${ImageURL}anime/${id}/cover.jpg`;
 
 
 class AnimeGrid {
-    constructor({el,title,key,typeTexts,col,row,aninum,urlExt = ''}){
+    constructor({el,title,key,typeTexts,col,row,aninum,urlExt = '',copyRight = '我的动画喜好表'}){
         this.el = el;
 
         this.key = key;
@@ -121,9 +121,8 @@ class AnimeGrid {
         );
 
         const copyRightText = [
-            //'lab.magiconch.com/anime-grid' + urlExt,
-            '修改自@卜卜口',
-            //'神奇海螺试验场',
+            //'@atoposyz',
+            copyRight,
             '动画信息来自番组计划',
             '禁止商业、盈利用途'
         ].join(' · ');
