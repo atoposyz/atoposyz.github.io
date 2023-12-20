@@ -354,6 +354,7 @@ class AnimeGrid {
         if(keyword) url = url + `?keyword=${encodeURIComponent(keyword)}`;
 
         const animes = await get(url);
+        console.log(animes)
         this.resetAnimeList(animes);
     }
 
@@ -374,8 +375,10 @@ class AnimeGrid {
     }
 
     resetAnimeList(animes){
+        console.log(animes)
         this.animeListEl.innerHTML = animes.map(anime=>{
-            return `<div class="anime-item" data-id="${anime.id}"><img src="${getCoverURLById(anime.id)}" crossOrigin="Anonymous"><h3>${anime.title}</h3></div>`;
+            console.log(anime.cover)
+            return `<div class="anime-item" data-id="${anime.id}"><img src="${anime.cover}" crossOrigin="Anonymous"><h3>${anime.title}</h3></div>`;
         }).join('');
     }
 
