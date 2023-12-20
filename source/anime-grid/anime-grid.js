@@ -378,7 +378,7 @@ class AnimeGrid {
         console.log(animes)
         this.animeListEl.innerHTML = animes.map(anime=>{
             console.log(anime.cover)
-            return `<div class="anime-item" data-id="${anime.id}"><img src="${anime.cover}" crossOrigin="Anonymous"><h3>${anime.title}</h3></div>`;
+            return `<div class="anime-item" data-id="${anime.id}"><img src="${getCoverURLById(anime.id)}" crossOrigin="Anonymous"><h3>${anime.title}</h3></div>`;
         }).join('');
     }
 
