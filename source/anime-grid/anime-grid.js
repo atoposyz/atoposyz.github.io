@@ -31,9 +31,10 @@ const loadImage = (src,onOver)=>{
 
 const APIURL = `https://lab.magiconch.com/api/bangumi/`;
 const ImageURL = `https://api.anitabi.cn/bgm/`;
+const CORSurl = `https://cors-anywhere.herokuapp.com/`
 const NewImageURL = `https://api.bgm.tv/v0/subjects/`
 
-const getCoverURLById = id => `${NewImageURL}${id}/image?type=common`; //`${ImageURL}anime/${id}/cover.jpg`;
+const getCoverURLById = id => `${CORSurl}${NewImageURL}${id}/image?type=common`; //`${ImageURL}anime/${id}/cover.jpg`;
 
 
 
