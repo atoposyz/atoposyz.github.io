@@ -1,19 +1,19 @@
-(function() {
-    var cors_api_host = 'cors-anywhere.herokuapp.com';
-    var cors_api_url = 'https://' + cors_api_host + '/';
-    var slice = [].slice;
-    var origin = window.location.protocol + '//' + window.location.host;
-    var open = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function() {
-        var args = slice.call(arguments);
-        var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
-        if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
-            targetOrigin[1] !== cors_api_host) {
-            args[1] = cors_api_url + args[1];
-        }
-        return open.apply(this, args);
-    };
-})();
+// (function() {
+//     var cors_api_host = 'cors-anywhere.herokuapp.com';
+//     var cors_api_url = 'https://' + cors_api_host + '/';
+//     var slice = [].slice;
+//     var origin = window.location.protocol + '//' + window.location.host;
+//     var open = XMLHttpRequest.prototype.open;
+//     XMLHttpRequest.prototype.open = function() {
+//         var args = slice.call(arguments);
+//         var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+//         if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
+//             targetOrigin[1] !== cors_api_host) {
+//             args[1] = cors_api_url + args[1];
+//         }
+//         return open.apply(this, args);
+//     };
+// })();
 
 
 const htmlEl = document.documentElement;
@@ -49,9 +49,10 @@ const loadImage = (src,onOver)=>{
 
 const APIURL = `https://lab.magiconch.com/api/bangumi/`;
 const ImageURL = `https://api.anitabi.cn/bgm/`;
-const CORSurl = `https://cors-anywhere.herokuapp.com/`
+const CORSurl = `https://atoposyz.github.io/proxy/index.html/proxy?url=`
 const NewImageURL = `https://api.bgm.tv/v0/subjects/`
 
+// const getCoverURLById = id => `${NewImageURL}${id}/image?type=common`;
 const getCoverURLById = id => `${CORSurl}${NewImageURL}${id}/image?type=common`; //`${ImageURL}anime/${id}/cover.jpg`;
 
 
@@ -397,6 +398,7 @@ class AnimeGrid {
         this.animeListEl.innerHTML = animes.map(anime=>{
             console.log(anime.cover)
             return `<div class="anime-item" data-id="${anime.id}"><img src="${getCoverURLById(anime.id)}" crossOrigin="Anonymous"><h3>${anime.title}</h3></div>`;
+            // return `<div class="anime-item" data-id="${anime.id}"><img src="${getCoverURLById(anime.id)}"><h3>${anime.title}</h3></div>`;
         }).join('');
     }
 
