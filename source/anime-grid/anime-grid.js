@@ -49,7 +49,7 @@ const loadImage = (src,onOver)=>{
 
 const APIURL = `https://lab.magiconch.com/api/bangumi/`;
 const ImageURL = `https://api.anitabi.cn/bgm/`;
-const CORSurl = `https://atoposyz.github.io/proxy/index.html/proxy?url=`
+const CORSurl = `https://proxyz-tau.vercel.app/proxy-image?url=`
 const NewImageURL = `https://api.bgm.tv/v0/subjects/`
 
 // const getCoverURLById = id => `${NewImageURL}${id}/image?type=common`;
