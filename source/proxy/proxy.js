@@ -1,5 +1,5 @@
-const express = require('express');
-const request = require('request');
+import express from 'express';
+import request from 'request';
 const app = express();
  
 app.get('/proxy', function(req, res) {
