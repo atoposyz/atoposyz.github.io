@@ -368,10 +368,10 @@ footer:
     enable: true
 
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
-  # https://beian.miit.gov.cn/
+  # https://icp.gov.moe/?keyword=20240313
   beian:
     enable: true
-    icp: <a href="https://icp.gov.moe/?keyword=20240313" target="_blank">萌ICP备20240313号</a>
+    icp: 萌ICP备20240313号
     gongan:
       enable: false
       text: 京公网安备 XXXXXXXX 号
