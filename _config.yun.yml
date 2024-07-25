@@ -372,6 +372,7 @@ footer:
   beian:
     enable: true
     icp: 萌ICP备20240313号
+    url: https://icp.gov.moe/?keyword=20240313
     gongan:
       enable: false
       text: 京公网安备 XXXXXXXX 号
