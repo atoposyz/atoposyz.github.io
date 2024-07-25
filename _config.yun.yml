@@ -370,7 +370,7 @@ footer:
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # https://icp.gov.moe/?keyword=20240313
   beian:
-    enable: true
+    enable: false
     icp: 萌ICP备20240313号
     url: https://icp.gov.moe/?keyword=20240313
     gongan:
@@ -383,6 +383,8 @@ footer:
     prefix: 本博客已运行
     suffix: (●'◡'●)
     start_time: "2023-07-08T00:00:00"
+
+  custom_text: <a href="https://icp.gov.moe/?keyword=20240313" target="_blank">萌ICP备20240313号</a>
 
 # Post meta display settings
 post_meta:
