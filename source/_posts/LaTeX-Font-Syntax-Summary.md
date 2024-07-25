@@ -1,7 +1,7 @@
 ---
 title: LaTeX 字体语法总结
 date: 2019-10-31 06:27:53
-update: 2019-10-31 06:27:53
+updated: 2019-10-31 06:27:53
 katex: true
 tags:
   - LaTeX

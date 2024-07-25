@@ -1,7 +1,7 @@
 ---
 title: Pollar Rho算法
 date: 2019-11-03 18:41:10
-update: 2019-11-03 18:41:10
+updated: 2019-11-03 18:41:10
 katex: true
 tags:
   - 数论

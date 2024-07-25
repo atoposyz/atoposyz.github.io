@@ -1,7 +1,7 @@
 ---
 title: 树的遍历——DFS与BFS
 date: 2019-08-28 16:45:21
-update: 2019-08-28 16:45:21
+updated: 2019-08-28 16:45:21
 katex: true
 tags:
   - 树

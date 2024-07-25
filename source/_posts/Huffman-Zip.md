@@ -1,7 +1,7 @@
 ---
 title: Huffman-Zip
 date: 2021-07-25 22:37:41
-update: 2021-07-25 22:37:41
+updated: 2021-07-25 22:37:41
 katex: true
 tags:
   - 哈夫曼树

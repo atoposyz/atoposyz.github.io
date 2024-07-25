@@ -1,7 +1,7 @@
 ---
 title: 题解链接 使用 Ctrl + F 查找
 date: 2019-08-31 11:52:58
-update: 2019-08-31 11:52:58
+updated: 2019-08-31 11:52:58
 katex: true
 tags:
   - 树

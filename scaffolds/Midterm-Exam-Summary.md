@@ -1,7 +1,7 @@
 ---
 title: 期中考试总结
 date: 2019-11-07 23:56:00
-update: 2019-11-07 23:56:00
+updated: 2019-11-07 23:56:00
 katex: true
 categories:
   - 高中

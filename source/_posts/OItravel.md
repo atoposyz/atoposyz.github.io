@@ -1,7 +1,7 @@
 ---
 title: OI旅程
 date: 2019-08-22 21:32:22
-update: 2019-08-22 21:32:22
+updated: 2019-08-22 21:32:22
 katex: true
 tags:
   - OI

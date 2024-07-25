@@ -1,7 +1,7 @@
 ---
 title: 关于我
 date: 2019-11-08 06:16:00
-update: 2019-11-08 06:16:00
+updated: 2019-11-08 06:16:00
 katex: true
 categories:
   - 记录

@@ -1,7 +1,7 @@
 ---
 title: 模拟赛总结
 date: 2019-10-30 17:34:52
-update: 2019-10-30 17:34:52
+updated: 2019-10-30 17:34:52
 katex: true
 categories:
   - 笔记

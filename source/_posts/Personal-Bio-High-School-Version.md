@@ -1,7 +1,7 @@
 ---
 title: 个人简介 高中版
 date: 2018-10-31 18:00:11
-update: 2020-10-31 18:00:11
+updated: 2020-10-31 18:00:11
 katex: true
 tags:
   - OI

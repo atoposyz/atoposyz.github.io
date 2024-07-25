@@ -1,7 +1,7 @@
 ---
 title: ST表
 date: 2019-10-03 10:14:22
-update: 2019-10-03 10:14:22
+updated: 2019-10-03 10:14:22
 katex: true
 tags:
   - ST表

@@ -1,7 +1,7 @@
 ---
 title: _rqy's Code Style for OI
 date: 2019-08-26 21:09:05
-update: 2019-08-26 21:09:05
+updated: 2019-08-26 21:09:05
 readmore: true
 katex: true
 tags:

@@ -1,7 +1,7 @@
 ---
 title: 模板练习
 date: 2019-10-30 19:38:34
-update: 2019-10-30 19:38:34
+updated: 2019-10-30 19:38:34
 katex: true
 categories:
   - 笔记

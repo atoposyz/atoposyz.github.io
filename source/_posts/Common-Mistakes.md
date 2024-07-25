@@ -1,7 +1,7 @@
 ---
 title: 错误集锦
 date: 2019-09-12 21:24:26
-update: 2019-09-12 21:24:26
+updated: 2019-09-12 21:24:26
 katex: true
 categories:
   - 题解

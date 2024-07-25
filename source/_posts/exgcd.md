@@ -1,7 +1,7 @@
 ---
 title: 扩展欧几里得（exgcd模板）
 date: 2019-11-08 21:54:00
-update: 2019-11-08 21:54:00
+updated: 2019-11-08 21:54:00
 katex: true
 tags:
   - 数学
