@@ -9,7 +9,7 @@ categories:
   - 记录
 ---
 
-$\large\textit{AFO}\;$了
+$\large\textit{AFO}$ 了
 
 弱小，可怜，又无助，还退役了的蒟蒻
 

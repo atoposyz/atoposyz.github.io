@@ -2,7 +2,6 @@
 title: 秦九韶算法
 date: 2019-11-01 21:54:15
 updated: 2019-11-01 21:54:15
-readmore: true
 katex: true
 tags:
   - 数学
