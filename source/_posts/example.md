@@ -2,6 +2,8 @@
 title: 新博客示例
 katex: true
 hidden: true
+date: 2023-12-23 22:55:00
+updated: 2023-12-23 22:55:00
 tags:
   - Hexo
 categories:
