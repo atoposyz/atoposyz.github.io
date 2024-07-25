@@ -7,7 +7,7 @@ export default defineSiteConfig({
   subtitle: 'Nice to meet you.',
   author: {
     name: 'atoposyz',
-    avatar: '/public/atoposyz.jpg'
+    avatar: 'https://github.com/atoposyz/atoposyz.github.io/blob/Valaxy-dev/public/atoposyz.jpg'
   },
   description: '吉林大学JLU',
   social: [

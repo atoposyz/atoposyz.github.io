@@ -26,21 +26,21 @@ description: 本网站的前生今世。
 
 1. 进入网站后首先是封面，可以在这一部分做网站信息的展示。
 
-<img src="/img/profile.png" alt="profile" style="zoom:50%;" />
+<img src="../about/profile.png" alt="profile" style="zoom:50%;" />
 
 2. 下滑，即可见到文章列表。每一篇文章有标签、分类和简介。
 
-<img src="/img/card.png" alt="card" style="zoom:50%;" />
+<img src="../about/card.png" alt="card" style="zoom:50%;" />
 
 3. 在文章详情页有文章的具体展示。支持 $markdown$ 和 $mathjax$ ，代码支持高亮和复制，左侧显示目录，可以进行便捷的浏览和跳转。
 
-<img src="/img/article1.png" alt="article1" style="zoom:50%;" />
+<img src="../about/article1.png" alt="article1" style="zoom:50%;" />
 
-<img src="/img/article2.png" alt="article2" style="zoom:50%;" />
+<img src="../about/article2.png" alt="article2" style="zoom:50%;" />
 
 4. 页面侧边栏为个人信息，点击头像可以跳转到博客的“关于”页面，头像下边从左至右依次为“首页”，“归档”，“分类”，“标签”，“关于”。
 
-<img src="/img/personal.png" alt="personal" style="zoom:50%;" />
+<img src="../about/personal.png" alt="personal" style="zoom:50%;" />
 
 ## 搭建
 
