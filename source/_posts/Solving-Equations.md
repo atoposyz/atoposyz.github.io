@@ -2,7 +2,6 @@
 title: 解方程
 date: 2019-11-03 06:25:45
 updated: 2019-11-03 06:25:45
-readmore: true
 katex: true
 tags:
   - 数学
@@ -10,9 +9,7 @@ categories:
   - 题解
 ---
 
-> [P2312 解方程]( https://www.luogu.org/problem/P2312 )
-
-<!-- more -->
+# [P2312 解方程]( https://www.luogu.org/problem/P2312 )
 
 - ## 前置知识
 
