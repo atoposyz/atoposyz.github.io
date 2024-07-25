@@ -7,7 +7,7 @@ export default defineSiteConfig({
   subtitle: 'Nice to meet you.',
   author: {
     name: 'atoposyz',
-    avatar: 'public/atoposyz.jpg'
+    avatar: '/public/atoposyz.jpg'
   },
   description: '吉林大学JLU',
   social: [
