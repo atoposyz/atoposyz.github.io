@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="Atoposyz"><meta name="copyright" content="Atoposyz"><meta name="generator" content="Hexo 6.3.0"><meta name="theme" content="hexo-theme-yun"><title>模拟赛总结 | Atoposyz's</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script type="module">import { renderKatex } from '/js/utils.js'
+document.addEventListener("DOMContentLoaded", () => {
+  renderKatex({
+    ...{},
+    ...true?.options,
+  });
+});</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"atoposyz.github.io","root":"/","title":"ATOPOSYZ","version":"1.10.9","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://el-bot-api.vercel.app/api/words/young"},"fireworks":{"colors":null},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="$\mathcal{XuanFly’s}$ 模拟赛总结$\color{navy}{written}$ $\color{navy}{with}$ $\LaTeX $ $&amp;$ $ \mathcal{Markdown}$ $\mathcal{NOIP2014}$ $\mathcal{D1T1}$ 生活大爆炸版石头剪刀布 一看就知道是个模拟题，直接按照题意模拟，而且数据范围不大，模拟可行，$\co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模拟赛总结">
+<meta property="og:url" content="http://atoposyz.github.io/2019/10/30/Simulation-Contest-Summary/index.html">
+<meta property="og:site_name" content="Atoposyz&#39;s">
+<meta property="og:description" content="$\mathcal{XuanFly’s}$ 模拟赛总结$\color{navy}{written}$ $\color{navy}{with}$ $\LaTeX $ $&amp;$ $ \mathcal{Markdown}$ $\mathcal{NOIP2014}$ $\mathcal{D1T1}$ 生活大爆炸版石头剪刀布 一看就知道是个模拟题，直接按照题意模拟，而且数据范围不大，模拟可行，$\co">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-10-30T17:34:52.000Z">
+<meta property="article:modified_time" content="2019-10-30T17:34:52.000Z">
+<meta property="article:author" content="Atoposyz">
+<meta name="twitter:card" content="summary"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Atoposyz"><img width="96" loading="lazy" src="/img/atoposyz.jpg" alt="Atoposyz"></a><div class="site-author-name"><a href="/about/">Atoposyz</a></div><span class="site-name">Atoposyz's</span><sub class="site-subtitle"></sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">43</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">7</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">23</span></a></div><a class="site-state-item hty-icon-button" href="/about/" title="关于"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:clipboard-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/atoposyz" title="GitHub" target="_blank" style="color:#6e5494"><span class="icon iconify" data-icon="ri:github-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/anime-grid/index.html" title="动画高手" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:tv-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#mathcal-XuanFly%E2%80%99s-%E6%A8%A1%E6%8B%9F%E8%B5%9B%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">$\mathcal{XuanFly’s}$ 模拟赛总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mathcal-NOIP2014"><span class="toc-number">1.1.</span> <span class="toc-text">$\mathcal{NOIP2014}$</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T1-%E7%94%9F%E6%B4%BB%E5%A4%A7%E7%88%86%E7%82%B8%E7%89%88%E7%9F%B3%E5%A4%B4%E5%89%AA%E5%88%80%E5%B8%83"><span class="toc-number">1.1.1.</span> <span class="toc-text">$\mathcal{D1T1}$ 生活大爆炸版石头剪刀布</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T2-%E8%81%94%E5%90%88%E6%9D%83%E5%80%BC"><span class="toc-number">1.1.2.</span> <span class="toc-text">$\mathcal{D1T2}$ 联合权值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T3-%E9%A3%9E%E6%89%AC%E7%9A%84%E5%B0%8F%E9%B8%9F"><span class="toc-number">1.1.3.</span> <span class="toc-text">$\mathcal{D1T3}$ 飞扬的小鸟</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D2T1-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%8F%91%E5%B0%84%E5%99%A8%E9%80%89%E5%9D%80"><span class="toc-number">1.1.4.</span> <span class="toc-text">$\mathcal{D2T1}$ 无线网络发射器选址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D2T2-%E5%AF%BB%E6%89%BE%E9%81%93%E8%B7%AF"><span class="toc-number">1.1.5.</span> <span class="toc-text">$\mathcal{D2T2}$ 寻找道路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D2T3-%E8%A7%A3%E6%96%B9%E7%A8%8B"><span class="toc-number">1.1.6.</span> <span class="toc-text">$\mathcal{D2T3}$ 解方程</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mathcal-NOIP2018"><span class="toc-number">1.2.</span> <span class="toc-text">$\mathcal{NOIP2018}$</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T1-%E9%93%BA%E8%AE%BE%E9%81%93%E8%B7%AF"><span class="toc-number">1.2.1.</span> <span class="toc-text">$\mathcal{D1T1}$ 铺设道路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T2-%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text">$\mathcal{D1T2}$ 货币系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T3-%E8%B5%9B%E9%81%93%E4%BF%AE%E5%BB%BA"><span class="toc-number">1.2.3.</span> <span class="toc-text">$\mathcal{D1T3}$ 赛道修建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D2T1-%E6%97%85%E8%A1%8C"><span class="toc-number">1.2.4.</span> <span class="toc-text">$\mathcal{D2T1}$ 旅行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D2T2-%E5%A1%AB%E6%95%B0%E6%B8%B8%E6%88%8F"><span class="toc-number">1.2.5.</span> <span class="toc-text">$\mathcal{D2T2}$ 填数游戏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D2T3-%E4%BF%9D%E5%8D%AB%E7%8E%8B%E5%9B%BD"><span class="toc-number">1.2.6.</span> <span class="toc-text">$\mathcal{D2T3}$ 保卫王国</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mathcal-NOIP2017"><span class="toc-number">1.3.</span> <span class="toc-text">$\mathcal{NOIP2017}$</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T1-%E5%B0%8F%E5%87%AF%E7%9A%84%E7%96%91%E6%83%91"><span class="toc-number">1.3.1.</span> <span class="toc-text">$\mathcal{D1T1}$ 小凯的疑惑</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T2-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">1.3.2.</span> <span class="toc-text">$\mathcal{D1T2}$ 时间复杂度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D1T3-%E9%80%9B%E5%85%AC%E5%9B%AD"><span class="toc-number">1.3.3.</span> <span class="toc-text">$\mathcal{D1T3}$ 逛公园</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mathcal-D2T1-%E5%A5%B6%E9%85%AA"><span class="toc-number">1.3.4.</span> <span class="toc-text">$\mathcal{D2T1}$ 奶酪</span></a></li></ol></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="http://atoposyz.github.io/2019/10/30/Simulation-Contest-Summary/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Atoposyz"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Atoposyz's"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">模拟赛总结</h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2019-10-30 17:34:52" itemprop="dateCreated datePublished" datetime="2019-10-30T17:34:52+00:00">2019-10-30</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E7%AC%94%E8%AE%B0/" style="--text-color:dimgray" itemprop="url" rel="index"><span itemprop="text">笔记</span></a></span></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h2 id="mathcal-XuanFly’s-模拟赛总结"><a href="#mathcal-XuanFly’s-模拟赛总结" class="headerlink" title="$\mathcal{XuanFly’s}$ 模拟赛总结"></a>$\mathcal{XuanFly’s}$ 模拟赛总结</h2><p>$\color{navy}{written}$ $\color{navy}{with}$ $\LaTeX $ $&amp;$ $ \mathcal{Markdown}$</p>
+<h3 id="mathcal-NOIP2014"><a href="#mathcal-NOIP2014" class="headerlink" title="$\mathcal{NOIP2014}$"></a>$\mathcal{NOIP2014}$</h3><hr>
+<h4 id="mathcal-D1T1-生活大爆炸版石头剪刀布"><a href="#mathcal-D1T1-生活大爆炸版石头剪刀布" class="headerlink" title="$\mathcal{D1T1}$ 生活大爆炸版石头剪刀布"></a>$\mathcal{D1T1}$ 生活大爆炸版石头剪刀布</h4><ol>
+<li>一看就知道是个模拟题，直接按照题意模拟，而且数据范围不大，模拟可行，$\color{green}{A}$了</li>
+</ol>
+<h4 id="mathcal-D1T2-联合权值"><a href="#mathcal-D1T2-联合权值" class="headerlink" title="$\mathcal{D1T2}$ 联合权值"></a>$\mathcal{D1T2}$ 联合权值</h4><ol>
+<li>当时还没有背过图上的算法，就向先暴力，至少拿 $30$ 分再说</li>
+<li>使用 $DFS$ 遍历，每遍历到一个点，来两个 $\mathcal{for}$ 循环遍历该点连接的点，时间复杂度大概 $\mathcal{O(n^3)}$。但是因为没有考虑到各种各样的情况，最后 $\color{red}{0}$ 了……</li>
+</ol>
+<h4 id="mathcal-D1T3-飞扬的小鸟"><a href="#mathcal-D1T3-飞扬的小鸟" class="headerlink" title="$\mathcal{D1T3}$ 飞扬的小鸟"></a>$\mathcal{D1T3}$ 飞扬的小鸟</h4><ol>
+<li>$DFS$ 骗分</li>
+<li>大概是枚举点击的次数，不行就回溯，这样写是期望50分的，<del>但是被自己手写的样例TLE了</del>，最后$\color{orange}{35}$ 分</li>
+</ol>
+<h4 id="mathcal-D2T1-无线网络发射器选址"><a href="#mathcal-D2T1-无线网络发射器选址" class="headerlink" title="$\mathcal{D2T1}$ 无线网络发射器选址"></a>$\mathcal{D2T1}$ 无线网络发射器选址</h4><ol>
+<li>这道题以前当做例题讲来着，这道题有四种解法，我凭借记忆应该是选了最快的一种</li>
+<li>遍历每一个公共场所，处理以这个场所为中心，d为半径的坐标</li>
+<li>然后又打了个暴力程序(<del>结果暴力打错了</del>)，两个程序互相查错23333</li>
+<li>$\color{green}{\mathcal{A}}$ 了</li>
+</ol>
+<h4 id="mathcal-D2T2-寻找道路"><a href="#mathcal-D2T2-寻找道路" class="headerlink" title="$\mathcal{D2T2}$ 寻找道路"></a>$\mathcal{D2T2}$ 寻找道路</h4><ol>
+<li>正解不会，目标暴力 $60$ 分</li>
+<li>先 $DFS$ 遍历整个图，把所有不是终点的没有出边的路径去掉</li>
+<li>再 $BFS$ 只要能找到终点，就是最短的</li>
+<li>$\large\mathcal{But}$ $DFS$ <del>是有极限的</del>不应该把路径全删了，应该只删一条边，其他的还可能会用到(<del>读错题</del>)</li>
+<li>$\color{orange}{30}$</li>
+</ol>
+<h4 id="mathcal-D2T3-解方程"><a href="#mathcal-D2T3-解方程" class="headerlink" title="$\mathcal{D2T3}$ 解方程"></a>$\mathcal{D2T3}$ 解方程</h4><ol>
+<li>正解不会</li>
+<li>暴力打了二次方以下的，$\color{red}{20}$</li>
+</ol>
+<hr>
+<h3 id="mathcal-NOIP2018"><a href="#mathcal-NOIP2018" class="headerlink" title="$\mathcal{NOIP2018}$"></a>$\mathcal{NOIP2018}$</h3><h4 id="mathcal-D1T1-铺设道路"><a href="#mathcal-D1T1-铺设道路" class="headerlink" title="$\mathcal{D1T1}$ 铺设道路"></a>$\mathcal{D1T1}$ 铺设道路</h4><ol>
+<li>去年真的被虐出阴影了，做题只记得是一个贪心但不知道怎么贪</li>
+<li>尝试了：从大到小，从小到大，发现不可行 $\mathfrak{cannot}$ $\mathfrak{achieve}$ $\mathfrak{it}$ ，最后选择了较为合理的方法</li>
+<li>从左往右遍历，如果当前的比两边小，就不加，否则加上与两边差较小的，其实比较接近正确思路了，但还是 $\color{red}{20}$ </li>
+<li>正确思路：遍历到一个点，如果比左边相邻的大，就加上差值</li>
+</ol>
+<h4 id="mathcal-D1T2-货币系统"><a href="#mathcal-D1T2-货币系统" class="headerlink" title="$\mathcal{D1T2}$ 货币系统"></a>$\mathcal{D1T2}$ 货币系统</h4><ol>
+<li>爆 $\color{red}{0}$ 了</li>
+<li>不会打，想搜索来着，不知道怎么搜</li>
+<li>看过题解的人都说<del>自己智障</del>，竟然可以是个完全背包</li>
+<li>不过看起来和线性筛素数好像，若 $\mathcal{a}$ 可以被表示，则 $\mathcal{a+b_i (i\in Z)}$  也可以被表示</li>
+</ol>
+<h4 id="mathcal-D1T3-赛道修建"><a href="#mathcal-D1T3-赛道修建" class="headerlink" title="$\mathcal{D1T3}$ 赛道修建"></a>$\mathcal{D1T3}$ 赛道修建</h4><ol>
+<li>看了看子任务，觉得可以做 $\mathit{m &#x3D; 1}$ 的情况</li>
+<li>即找一条单源最长路</li>
+<li>$\mathcal{Dijkstra}$</li>
+</ol>
+<h4 id="mathcal-D2T1-旅行"><a href="#mathcal-D2T1-旅行" class="headerlink" title="$\mathcal{D2T1}$ 旅行"></a>$\mathcal{D2T1}$ 旅行</h4><ol>
+<li>前 $15$ 个点是树，可以一做</li>
+<li>每次到一个新的城市，用 **优先队列 ** 存点，优先遍历字典序小的城市 $\color{yellow}{60}$</li>
+</ol>
+<h4 id="mathcal-D2T2-填数游戏"><a href="#mathcal-D2T2-填数游戏" class="headerlink" title="$\mathcal{D2T2}$ 填数游戏"></a>$\mathcal{D2T2}$ 填数游戏</h4><ol>
+<li>不会，也没有搜索的思路</li>
+<li>观察子任务，发现可以输入样例骗分 $\color{red}{15}$</li>
+</ol>
+<h4 id="mathcal-D2T3-保卫王国"><a href="#mathcal-D2T3-保卫王国" class="headerlink" title="$\mathcal{D2T3}$ 保卫王国"></a>$\mathcal{D2T3}$ 保卫王国</h4><ol>
+<li>不会，没思路，没想法 $\color{red}{0}$</li>
+</ol>
+<hr>
+<h3 id="mathcal-NOIP2017"><a href="#mathcal-NOIP2017" class="headerlink" title="$\mathcal{NOIP2017}$"></a>$\mathcal{NOIP2017}$</h3><h4 id="mathcal-D1T1-小凯的疑惑"><a href="#mathcal-D1T1-小凯的疑惑" class="headerlink" title="$\mathcal{D1T1}$ 小凯的疑惑"></a>$\mathcal{D1T1}$ 小凯的疑惑</h4><ol>
+<li><p>观察程序文件发现是 $\large\mathfrak{math}$ ，明显这是个数学问题</p>
+</li>
+<li><p>通过打表，观察规律，尝试各种排列组合，发现其符合这样一个式子<br>$$<br>a + c &#x3D; b \times (a - 1)<br>$$<br>即<br>$$<br>c &#x3D; a \times b - a - b<br>$$</p>
+</li>
+<li><p>直接输出即可 $\color{green}{\mathfrak{A}}$ 了</p>
+</li>
+</ol>
+<h4 id="mathcal-D1T2-时间复杂度"><a href="#mathcal-D1T2-时间复杂度" class="headerlink" title="$\mathcal{D1T2}$ 时间复杂度"></a>$\mathcal{D1T2}$ 时间复杂度</h4><ol>
+<li>很不错的一道模拟题</li>
+<li>按行读入</li>
+<li>用栈判断 $\mathbb{F}$ 和 $\mathbb{E}$ 是否匹配</li>
+<li>用极大数代替 $\mathcal{n}$ 通过相减判断复杂度</li>
+</ol>
+<h4 id="mathcal-D1T3-逛公园"><a href="#mathcal-D1T3-逛公园" class="headerlink" title="$\mathcal{D1T3}$ 逛公园"></a>$\mathcal{D1T3}$ 逛公园</h4><ol>
+<li>目标是前两个 $\mathit{K &#x3D; 0}$ 的点，但是不知道为什么对了最后一个点2333</li>
+</ol>
+<h4 id="mathcal-D2T1-奶酪"><a href="#mathcal-D2T1-奶酪" class="headerlink" title="$\mathcal{D2T1}$ 奶酪"></a>$\mathcal{D2T1}$ 奶酪</h4><ol>
+<li>数据比较小，可以通过搜索剪枝实现</li>
+<li>若搜到尽头没处搜了，就删掉这个空洞即可（$\mathit{vis[i] &#x3D; -1}$）</li>
+</ol>
+</div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">EOF</div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>Atoposyz</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://atoposyz.github.io/2019/10/30/Simulation-Contest-Summary/" title="模拟赛总结">http://atoposyz.github.io/2019/10/30/Simulation-Contest-Summary/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2019/10/30/Template-Practice/" rel="prev" title="模板练习"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">模板练习</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2019/10/07/apple-tree-2/" rel="next" title="Apple Tree 2"><span class="post-nav-text">Apple Tree 2</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2023 – 2024 </span><span class="with-love" id="animate" title="Special Thanks"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> Atoposyz</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.9</span></div><div class="live-time"><span>本博客已运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2023-07-08T00:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = ` ${passDay} 天 ${passHour} 小时 ${passMinute} 分 ${passSecond} 秒`;
+}
+blog_live_time();
+</script></div><div class="footer-custom-text"><a href="https://icp.gov.moe/?keyword=20240313" target="_blank">萌ICP备20240313号</a></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></body></html>
