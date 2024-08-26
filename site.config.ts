@@ -51,4 +51,7 @@ export default defineSiteConfig({
       },
     ],
   },
+  frontmatter: {
+    time_warning: false,
+  }
 })
