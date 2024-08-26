@@ -1,19 +1,38 @@
-// (function() {
-//     var cors_api_host = 'cors-anywhere.herokuapp.com';
-//     var cors_api_url = 'https://' + cors_api_host + '/';
-//     var slice = [].slice;
-//     var origin = window.location.protocol + '//' + window.location.host;
-//     var open = XMLHttpRequest.prototype.open;
-//     XMLHttpRequest.prototype.open = function() {
-//         var args = slice.call(arguments);
-//         var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
-//         if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
-//             targetOrigin[1] !== cors_api_host) {
-//             args[1] = cors_api_url + args[1];
-//         }
-//         return open.apply(this, args);
-//     };
-// })();
+<template>
+    <div ref="animegridbox" class="anime-grid-box"></div>
+    <div class="more-link-box">
+        <a href="ex.html">切换到本年度最喜欢的动画排序</a><br>
+        <a href="diy.html">我想自己写关键词</a>
+    </div>
+    <footer>
+        <a href="https://github.com/atoposyz/atoposyz.github.io/tree/hexo/anime-grid" target="_blank">GitHub</a>
+        <span>修改自<a href="https://github.com/itorr/anime-grid" target="_blank">@卜卜口</a></span>
+        <span>原地址：<a href="https://lab.magiconch.com/anime-grid/" target="_blank">神奇海螺试验场magiconch</a></span>
+        <span>动画信息来自 <a href="https://bgm.tv/" target="_blank">番组计划</a></span>
+    </footer>
+</template>
+
+
+<script>
+const typeTexts = `入坑作
+最喜欢
+看最多次
+最想安利
+
+最佳剧情
+最佳画面
+最佳配乐
+最佳配音
+
+最治愈
+最感动
+最虐心
+最被低估
+
+最过誉
+最离谱
+最讨厌
+`;
 
 
 const htmlEl = document.documentElement;
@@ -562,4 +581,301 @@ Caches[`${APIURL}animes`] = [
 	}
 ]
 
+export default{
+    mounted() {
+        new AnimeGrid({
+            el: this.$refs.animegridbox,
+            title: '动画生涯个人喜好表',
+            key: 'margiconch-animes-grid',
+            typeTexts,
+            col: 5,
+            row: 3,
+            aninum: 15
+        })
+    }
+}
 
+
+</script>
+
+<style>
+html {
+    --main-width: 640px;
+}
+
+html[data-no-scroll="true"] {
+    overflow: hidden
+}
+
+html[data-no-touch="true"] {
+    cursor: wait
+}
+
+html[data-no-touch="true"] body {
+    pointer-events: none
+}
+
+html[data-no-touch="true"] body * {
+    pointer-events: none !important
+}
+
+body {
+    padding: 80px 0;
+    text-align: center;
+}
+
+canvas {
+    background: #FFF;
+    width: var(--main-width);
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05)
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+button {
+    cursor: pointer
+}
+
+.ctrl-box {
+    max-width: var(--main-width);
+    margin: 0 auto;
+    padding: 10px 0
+}
+
+footer {
+    padding: 80px 0;
+    color: #999;
+    font-size: 12px;
+    line-height: 20px
+}
+
+footer>* {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 4px
+}
+
+@media (min-width: 1100px) {
+    html {
+        --main-width:960px
+    }
+}
+
+.ui-btn {
+    display: block;
+    padding: 18px 10px;
+    border: 2px solid #222;
+    background: #FFF;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05)
+}
+
+.ui-btn.current {
+    background: #222;
+    color: #FFF
+}
+
+[data-show="false"] {
+    display: none
+}
+
+.ui-shadow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px 10px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(0,0,0,0.8)
+}
+
+.ui-shadow .content-box {
+    background: #FFF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    max-width: 520px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 542px) {
+    .ui-shadow .content-box {
+        max-width:392px
+    }
+}
+
+.output-box .content-box {
+    padding: 10px
+}
+
+.output-box img {
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2)
+}
+
+.search-bangumis-box form {
+    padding: 8px 8px 0
+}
+
+.search-bangumis-box form input {
+    font: inherit;
+    font-size: 18px;
+    outline: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin: 0;
+    border: 2px solid #444;
+    border-radius: 4px
+}
+
+.search-bangumis-box form input:focus {
+    border-color: #222
+}
+
+.search-bangumis-box .foot {
+    padding: 8px
+}
+
+.search-bangumis-box .foot .ui-btn {
+    margin-top: 8px
+}
+
+.anime-list {
+    pointer-events: none;
+    padding: 4px;
+    max-width: 512px;
+    overflow: hidden;
+}
+
+.anime-list .anime-item {
+    float: left;
+    width: 120px;
+    padding: 4px;
+    text-align: left;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.anime-list .anime-item>* {
+    pointer-events: none
+}
+
+.anime-list .anime-item img {
+    height: 160px;
+    width: 120px;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: #222
+}
+
+.anime-list .anime-item h3 {
+    margin: 4px 0;
+    font-size: 14px;
+    line-height: 16px;
+    height: 32px;
+    overflow: hidden;
+    word-break: break-all
+}
+
+@media (max-width: 412px) {
+    .anime-list .anime-item {
+        width:calc((100vw - 20px - 8px) / 3 - 8px)
+    }
+
+    .anime-list .anime-item img {
+        height: calc((100vw - 20px - 8px) / 3 / 3 * 4 - 8px);
+        width: calc((100vw - 20px - 8px) / 3 - 8px)
+    }
+}
+
+.more-link-box {
+    padding: 20px 0
+}
+
+.diy-title{
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 18px 10px;
+    border: 2px solid #222;
+    background: #FFF;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 25%;
+}
+
+.diy-form{
+    margin-top: 20px;
+    width: auto;
+    
+}
+
+.diy-form input{
+    font: inherit;
+    font-size: 18px;
+    outline: none;
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin: auto;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+.tag-list{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.diy-block{
+    display: inline-flex;
+    padding: 18px 10px;
+    border: 2px solid #222;
+    background: #FFF;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 5px;
+}
+
+.tag-done{
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 18px 10px;
+    border: 2px solid #222;
+    background: #FFF;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 25%;
+}
+</style>

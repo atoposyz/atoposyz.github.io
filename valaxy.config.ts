@@ -36,12 +36,18 @@ export default defineValaxyConfig<UserThemeConfig>({
         icon: 'i-ri-women-line',
         color: 'hotpink',
       },
+      {
+        name: '动画高手',
+        url: '/anime-grid/',
+        icon: 'i-ri-tv-line',
+        color: 'pink',
+      },
     ],
 
     footer: {
       since: 2023,
       beian: {
-        enable: true,
+        enable: false,
         icp: '萌ICP备20240313号',
       },
     },
