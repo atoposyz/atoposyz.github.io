@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "valaxy": "0.19.4",
+    "valaxy-addon-components": "^0.0.2",
     "valaxy-theme-yun": "0.19.4"
   },
   "devDependencies": {

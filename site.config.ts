@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://valaxy.site/',
+  url: 'https://atoposyz.github.io/',
   lang: 'zh-CN',
   title: 'atoposyz的博客',
   subtitle: '',

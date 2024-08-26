@@ -1,9 +1,9 @@
 ---
 title: 参与项目
 type: github
-url: https://github.com/atoposyz
 date: 2023-07-10 09:53:33
 updated: 2023-07-10 09:53:33
+excerpt_type: html
 tags:
   - 项目
 categories:
@@ -22,4 +22,4 @@ categories:
 
 [c#横版避障小游戏](https://github.com/atoposyz/BlockDodge)
 
-<!--more-->
+<!-- more -->
