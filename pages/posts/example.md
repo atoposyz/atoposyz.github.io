@@ -1,7 +1,7 @@
 ---
 title: 新博客示例
 katex: true
-hidden: true
+hide: true
 date: 2023-12-23 22:55:00
 updated: 2023-12-23 22:55:00
 tags:
@@ -20,7 +20,7 @@ date: 2023-10-25 22:55:00
 updated: 2023-10-25 22:55:00
 readmore: true
 katex: true
-hidden: true
+hide: true
 tags:
   - Hexo
   - 数据结构
