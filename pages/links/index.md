@@ -8,6 +8,6 @@ links: https://atoposyz.github.io/links.json
 random: true
 ---
 
-## 海内存知己，天涯若比邻。
+> 海内存知己，天涯若比邻。
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
