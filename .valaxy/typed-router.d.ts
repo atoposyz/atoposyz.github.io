@@ -34,6 +34,8 @@ declare module 'vue-router/auto-routes' {
     '/posts/11.13-Simulation-Contest-Summary': RouteRecordInfo<'/posts/11.13-Simulation-Contest-Summary', '/posts/11/13-Simulation-Contest-Summary', Record<never, never>, Record<never, never>>,
     '/posts/11.9-Simulation-Contest-Summary': RouteRecordInfo<'/posts/11.9-Simulation-Contest-Summary', '/posts/11/9-Simulation-Contest-Summary', Record<never, never>, Record<never, never>>,
     '/posts/科研日记240827': RouteRecordInfo<'/posts/科研日记240827', '/posts/科研日记240827', Record<never, never>, Record<never, never>>,
+    '/posts/四月是你的谎言': RouteRecordInfo<'/posts/四月是你的谎言', '/posts/四月是你的谎言', Record<never, never>, Record<never, never>>,
+    '/posts/无限共鸣演唱会': RouteRecordInfo<'/posts/无限共鸣演唱会', '/posts/无限共鸣演唱会', Record<never, never>, Record<never, never>>,
     '/posts/aboutme': RouteRecordInfo<'/posts/aboutme', '/posts/aboutme', Record<never, never>, Record<never, never>>,
     '/posts/anime2023': RouteRecordInfo<'/posts/anime2023', '/posts/anime2023', Record<never, never>, Record<never, never>>,
     '/posts/Another-Request': RouteRecordInfo<'/posts/Another-Request', '/posts/Another-Request', Record<never, never>, Record<never, never>>,
