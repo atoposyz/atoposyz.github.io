@@ -6,7 +6,7 @@ import YunFooter from 'valaxy-theme-yun/components/YunFooter.vue'
 <template>
   <YunFooter>
     <!-- 自定义页脚内容 -->
-    <div class="beian" m="y-2"><a href="https://icp.gov.moe/?keyword=20240313" target="_blank" rel="noopener">萌ICP备20240313号</a></div>
+    <div class="beian" m="y-2"><a href="https://icp.gov.moe/?keyword=20240313" target="_blank" rel="noopener"><img style="width:32px;height:32px;margin-bottom:-8px" src="/images/ico64.png">萌ICP备20240313号</a><a style="text-decoration:none;color:#55bb8a;" href="https://travel.moe/go.html" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img src="https://travel.moe/images/icon/icon64green.png" style="width:24px;height:24px">异次元之旅</a></div>
     <VCLiveTime start-time="2023-07-08">
       <template #live-time-before>
         <span>本站已运行</span>
