@@ -51,6 +51,10 @@ export default defineValaxyConfig<UserThemeConfig>({
         enable: false,
         icp: '萌ICP备20240313号',
       },
+      icon: {
+        url: 'https://github.com/atoposyz',
+        title: 'Github',
+      },
     },
   },
   addons: [
