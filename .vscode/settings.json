@@ -12,5 +12,8 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "svg.preview.background": "editor"
+  "svg.preview.background": "editor",
+  "conventionalCommits.scopes": [
+    "pnpm"
+  ]
 }
