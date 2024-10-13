@@ -1139,8 +1139,8 @@ packages:
   '@vueuse/metadata@11.1.0':
     resolution: {integrity: sha512-l9Q502TBTaPYGanl1G+hPgd3QX5s4CGnpXriVBR5fEZ/goI6fvDaVmIl3Td8oKFurOxTmbXvBPSsgrd6eu6HYg==, tarball: https://registry.npmmirror.com/@vueuse/metadata/-/metadata-11.1.0.tgz}
 
-  '@vueuse/motion@2.2.5':
-    resolution: {integrity: sha512-pcqMdpPbm/Pd/rbQQ/sHyykdOahj0rueZ8WpLhhk8i1tbEcga80EhNJLn99G9J9DSuOvkJNYuv1n2OntGUc1rQ==, tarball: https://registry.npmmirror.com/@vueuse/motion/-/motion-2.2.5.tgz}
+  '@vueuse/motion@2.2.6':
+    resolution: {integrity: sha512-gKFktPtrdypSv44SaW1oBJKLBiP6kE5NcoQ6RsAU3InemESdiAutgQncfPe/rhLSLCtL4jTAhMmFfxoR6gm5LQ==, tarball: https://registry.npmmirror.com/@vueuse/motion/-/motion-2.2.6.tgz}
     peerDependencies:
       vue: '>=3.0.0'
 
@@ -2551,8 +2551,8 @@ packages:
   param-case@2.1.1:
     resolution: {integrity: sha512-eQE845L6ot89sk2N8liD8HAuH4ca6Vvr7VWAWwt7+kvvG5aBcPmmphQ68JsEG2qa9n1TykS2DLeMt363AAH8/w==, tarball: https://registry.npmmirror.com/param-case/-/param-case-2.1.1.tgz}
 
-  parse5@7.1.2:
-    resolution: {integrity: sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==, tarball: https://registry.npmmirror.com/parse5/-/parse5-7.1.2.tgz}
+  parse5@7.2.0:
+    resolution: {integrity: sha512-ZkDsAOcxsUMZ4Lz5fVciOehNcJ+Gb8gTzcA4yl3wnc273BAybYWrQ+Ks/OjCjSEpjvQkDSeZbybK9qj2VHHdGA==, tarball: https://registry.npmmirror.com/parse5/-/parse5-7.2.0.tgz}
 
   parseley@0.12.1:
     resolution: {integrity: sha512-e6qHKe3a9HWr0oMRVDTRhKce+bRO8VGQR3NyVwcjwrbhMmFCX9KszEV35+rn4AdilFAq9VPxP/Fe1wC9Qjd2lw==, tarball: https://registry.npmmirror.com/parseley/-/parseley-0.12.1.tgz}
@@ -3340,8 +3340,8 @@ packages:
     resolution: {integrity: sha512-4wZWvE398hCP7O8n3nXKu/vdq1HcH01ixYlCREaJL5NUMwQ0g3MaGFUBNSlmBtKmhbtVG/Cm6lyYmSVTEVil8A==, tarball: https://registry.npmmirror.com/yaml-eslint-parser/-/yaml-eslint-parser-1.2.3.tgz}
     engines: {node: ^14.17.0 || >=16.0.0}
 
-  yaml@2.5.1:
-    resolution: {integrity: sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q==, tarball: https://registry.npmmirror.com/yaml/-/yaml-2.5.1.tgz}
+  yaml@2.6.0:
+    resolution: {integrity: sha512-a6ae//JvKDEra2kdi1qzCyrJW/WZCgFi8ydDV+eXExl95t+5R+ijnqHJbz9tmMh8FUjx3iv2fCQ4dclAQlO2UQ==, tarball: https://registry.npmmirror.com/yaml/-/yaml-2.6.0.tgz}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -4561,7 +4561,7 @@ snapshots:
 
   '@vueuse/metadata@11.1.0': {}
 
-  '@vueuse/motion@2.2.5(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3))':
+  '@vueuse/motion@2.2.6(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.5.12(typescript@5.6.3))
       '@vueuse/shared': 10.11.1(vue@3.5.12(typescript@5.6.3))
@@ -5722,7 +5722,7 @@ snapshots:
       https-proxy-agent: 7.0.5
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.13
-      parse5: 7.1.2
+      parse5: 7.2.0
       rrweb-cssom: 0.7.1
       saxes: 6.0.0
       symbol-tree: 3.2.4
@@ -6089,7 +6089,7 @@ snapshots:
     dependencies:
       no-case: 2.3.2
 
-  parse5@7.1.2:
+  parse5@7.2.0:
     dependencies:
       entities: 4.5.0
 
@@ -6687,7 +6687,7 @@ snapshots:
       pathe: 1.1.2
       scule: 1.3.0
       unplugin: 1.14.1
-      yaml: 2.5.1
+      yaml: 2.6.0
     optionalDependencies:
       vue-router: 4.4.5(vue@3.5.12(typescript@5.6.3))
     transitivePeerDependencies:
@@ -6736,7 +6736,7 @@ snapshots:
       '@explosions/fireworks': 0.1.0
       '@iconify-json/ant-design': 1.2.2
       '@iconify-json/simple-icons': 1.2.7
-      '@vueuse/motion': 2.2.5(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3))
+      '@vueuse/motion': 2.2.6(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3))
       animejs: 3.2.2
       gsap: 3.12.5
       primevue: 4.1.0(vue@3.5.12(typescript@5.6.3))
@@ -7075,9 +7075,9 @@ snapshots:
     dependencies:
       eslint-visitor-keys: 3.4.3
       lodash: 4.17.21
-      yaml: 2.5.1
+      yaml: 2.6.0
 
-  yaml@2.5.1: {}
+  yaml@2.6.0: {}
 
   yargs-parser@18.1.3:
     dependencies:

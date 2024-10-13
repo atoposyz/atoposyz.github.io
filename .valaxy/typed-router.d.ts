@@ -25,6 +25,7 @@ declare module 'vue-router/auto-routes' {
     '/about/site': RouteRecordInfo<'/about/site', '/about/site', Record<never, never>, Record<never, never>>,
     '/anime-grid/': RouteRecordInfo<'/anime-grid/', '/anime-grid', Record<never, never>, Record<never, never>>,
     '/anime-rank/': RouteRecordInfo<'/anime-rank/', '/anime-rank', Record<never, never>, Record<never, never>>,
+    '/anxiary/': RouteRecordInfo<'/anxiary/', '/anxiary', Record<never, never>, Record<never, never>>,
     '/archives/': RouteRecordInfo<'/archives/', '/archives', Record<never, never>, Record<never, never>>,
     '/categories/': RouteRecordInfo<'/categories/', '/categories', Record<never, never>, Record<never, never>>,
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,

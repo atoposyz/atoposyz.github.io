@@ -14,6 +14,7 @@
   },
   "svg.preview.background": "editor",
   "conventionalCommits.scopes": [
-    "pnpm"
+    "pnpm",
+    "page"
   ]
 }
