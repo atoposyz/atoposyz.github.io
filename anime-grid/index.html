@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画生涯个人喜好表生成器</title>
+    <meta name=keywords content="动画生涯,个人喜好表生成器,神奇海螺试验场,magiconch,卜卜口">
+    <link rel="stylesheet" href="anime-grid.css">
+</head>
+<body>
+    <div class="anime-grid-box"></div>
+    <div class="more-link-box">
+        <a href="ex.html">切换到本年度最喜欢的动画排序</a><br>
+        <a href="diy.html">我想自己写关键词</a><br>
+        <a href="https://atoposyz.github.io/">返回主网站</a>
+    </div>
+    <footer>
+        <div class="beian" m="y-2"><a href="https://icp.gov.moe/?keyword=20240313" target="_blank" rel="noopener">萌ICP备20240313号</a></div>
+        <a href="https://github.com/atoposyz/atoposyz.github.io/tree/hexo/anime-grid" target="_blank">GitHub</a>
+        <span>修改自<a href="https://github.com/itorr/anime-grid" target="_blank">@卜卜口</a></span>
+        <span>原地址：<a href="https://lab.magiconch.com/anime-grid/" target="_blank">神奇海螺试验场magiconch</a></span>
+        <span>动画信息来自 <a href="https://bgm.tv/" target="_blank">番组计划</a></span>
+    </footer>
+    <script src="anime-grid.js"></script>
+<script>
+const typeTexts = `入坑作
+最喜欢
+看最多次
+最想安利
+
+最佳剧情
+最佳画面
+最佳配乐
+最佳配音
+
+最治愈
+最感动
+最虐心
+最被低估
+
+最过誉
+最离谱
+最讨厌
+`;
+new AnimeGrid({
+    el: document.querySelector('.anime-grid-box'),
+    title: '动画生涯个人喜好表',
+    key: 'margiconch-animes-grid',
+    typeTexts,
+    col: 5,
+    row: 3,
+    aninum: 15
+})
+</script>
+</body>
+</html>

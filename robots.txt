@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://atoposyz.github.io/sitemap.xml

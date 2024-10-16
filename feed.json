@@ -1,0 +1,532 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "atoposyz的博客",
+    "home_page_url": "https://atoposyz.github.io/",
+    "feed_url": "https://atoposyz.github.io/feed.json",
+    "icon": "https://raw.githubusercontent.com/atoposyz/atoposyz.github.io/Valaxy-dev/public/atoposyz.jpg",
+    "author": {
+        "name": "atoposyz",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<p>![Image_1728313043275](<a href=\"https://github.com/atoposyz/picx-images-hosting/raw/master/Image_17283130432\">https://github.com/atoposyz/picx-images-hosting/raw/master/Image_17283130432</a></p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/LuoTianyi_Concert2024\" target=\"_blank\">https://atoposyz.github.io/posts/LuoTianyi_Concert2024</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/LuoTianyi_Concert2024",
+            "title": "观洛天依无限共鸣演唱会线下观演会有感",
+            "date_modified": "2024-10-07T23:54:12.000Z",
+            "date_published": "2024-10-07T23:54:12.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>观影记录（与HocRiser）</h2>\n<p>以下记录中<code>H</code>为Hocriser，<code>Y</code>为笔者，部分聊天记录有删改与整理。</p>\n<h3>1-5集</h3>\n<blockquote>\n<p>Y:看四谎不敢开弹幕<br>第一集还开弹幕来着<br></p>\n</blockquote>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/YourLifeInApril\" target=\"_blank\">https://atoposyz.github.io/posts/YourLifeInApril</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/YourLifeInApril",
+            "title": "《四月是你的谎言》补番记录与观后感",
+            "date_modified": "2024-09-03T22:26:00.000Z",
+            "date_published": "2024-09-03T22:26:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>本来是买了一个本子来写日记的，但上个学期写了那么几天日记，就再也没碰过那个本子了，现在想来，已经好几个月了。倘若再打开那个本子，中间空着的俩月的经历可补不完。</p>\n<p>暑假里虽然每天都往计算机楼跑，也不是</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/DiaryOfKeyan240827\" target=\"_blank\">https://atoposyz.github.io/posts/DiaryOfKeyan240827</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/DiaryOfKeyan240827",
+            "title": "科研日记 2024.08.27",
+            "date_modified": "2024-08-27T23:00:00.000Z",
+            "date_published": "2024-08-27T23:00:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h3>动画盘点表</h3>\n<p><img src=\"https://github.com/atoposyz/picx-images-hosting/raw/master/image.8kzzfjw54t.webp\" alt=\"\"></p>\n<p>`</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/anime2023\" target=\"_blank\">https://atoposyz.github.io/posts/anime2023</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/anime2023",
+            "title": "2023动画年度盘点",
+            "summary": "今年的动画盘点！",
+            "date_modified": "2023-12-23T22:33:00.000Z",
+            "date_published": "2023-12-23T22:33:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><a href=\"https://github.com/briocheKJ/BombPlane\">炸飞机</a></p>\n<p><a href=\"https://github.com/OldCaptainWZJ/MovieApp\">微信小程序-电影购票平台</a>(private)</p>\n<p><a href=\"https://github.com/michro/DSD/wiki\">DSD-human motione prediction system</a></p>\n<p><a href=\"https://github.com/DSD-PIrates/DSD-PIrates.github.io\">DSD-嵌入式组</a></p>\n<p><a href=\"https://github.com/GGN-2015/HocLog\">个人博客系统</a>(private)</p>\n<p><a href=\"https://github.com/atoposyz/BlockDodge\">c#横版避障小游戏</a></p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/github\" target=\"_blank\">https://atoposyz.github.io/posts/github</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/github",
+            "title": "参与项目",
+            "date_modified": "2023-07-10T09:53:33.000Z",
+            "date_published": "2023-07-10T09:53:33.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>前身</h2>\n<p>2023年在分布式软件开发（DSD）课中，我负责我组<strong>全部</strong>的小组网站建设，使用<code>Github Pages</code>几乎完全手写了一个静态博客网站，包括主页、文章列表页、文章详情页，以及m</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/website\" target=\"_blank\">https://atoposyz.github.io/posts/website</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/website",
+            "title": "本网站的建站故事",
+            "summary": "本网站的前生今世。",
+            "date_modified": "2023-07-08T22:21:00.000Z",
+            "date_published": "2023-07-08T22:21:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<pre><code class=\"language-cpp\">#include &lt;cstdio&gt;\n#include &lt;cstring&gt;\n#include &lt;string&gt;\n#include &lt;queue&gt;\n#include &lt;vector&gt;\n#i</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Huffman-Zip\" target=\"_blank\">https://atoposyz.github.io/posts/Huffman-Zip</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Huffman-Zip",
+            "title": "Huffman-Zip",
+            "date_modified": "2021-07-25T22:37:41.000Z",
+            "date_published": "2021-07-25T22:37:41.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>上机实验二解题报告</h1>\n<h2>T1数列查询</h2>\n<blockquote>\n<p>根据递推公式求 $f(n)$</p>\n</blockquote>\n<p>本题需要多次查询数列项的值，因此不能每次从头开始查询，这会大大浪费时间</p>\n<p>本题我在递归求解的过程中，将查询过的值存</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Lab-Report-2\" target=\"_blank\">https://atoposyz.github.io/posts/Lab-Report-2</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Lab-Report-2",
+            "title": "上机实验二解题报告",
+            "date_modified": "2021-04-23T13:49:25.000Z",
+            "date_published": "2021-04-23T13:49:25.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>刘永</h1>\n<h2>望海潮</h2>\n<blockquote>\n<p>东南形胜，三吴都会，钱塘自古繁华。烟柳画桥，风帘翠幕，参差十万人家。云树绕堤沙，怒涛卷霜雪，天堑无涯。市列珠玑，户盈罗绮，竞豪奢。<br>\n重湖叠巘清嘉，有三秋桂子，十里</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/College-Literature\" target=\"_blank\">https://atoposyz.github.io/posts/College-Literature</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/College-Literature",
+            "title": "第七讲 宋词：婉约之曲与豪放之声",
+            "date_modified": "2020-11-30T18:17:00.000Z",
+            "date_published": "2020-11-30T18:17:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>$\\large\\textit{AFO}$ 了</p>\n<p>弱小，可怜，又无助，还退役了的蒟蒻</p>\n<p>惨 xuanfly 惨</p>\n<p>十年OI一场空，两黑两紫见祖宗</p>\n<p>《西江月·证明》</p>\n<p>即得易见平凡，仿照上例显然。留作</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Personal-Bio-High-School-Version\" target=\"_blank\">https://atoposyz.github.io/posts/Personal-Bio-High-School-Version</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Personal-Bio-High-School-Version",
+            "title": "个人简介 高中版",
+            "date_modified": "2018-10-31T18:00:11.000Z",
+            "date_published": "2020-10-31T18:00:11.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;cstdio&gt;\n#include &lt;cstring&gt;\n#include &lt;cmath&gt;\n#include &lt;cstdlib&gt;</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Solution-P2024\" target=\"_blank\">https://atoposyz.github.io/posts/Solution-P2024</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Solution-P2024",
+            "title": "P2024 食物链",
+            "date_modified": "2019-11-13T18:27:00.000Z",
+            "date_published": "2019-11-13T18:27:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>论2016NOIP对我的打击</h1>\n<h2>时间分配</h2>\n<p>初读试题，第一题曾经做过，是一个小模拟，第二题的子任务十分有做头，第三题的问题描述很好看，部分分给得眼花缭乱，给人一种“云深不知处”的感觉，令人</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary\" target=\"_blank\">https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary",
+            "title": "11.13模拟赛总结",
+            "date_modified": "2019-11-13T10:56:17.000Z",
+            "date_published": "2019-11-13T10:56:17.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>时间分配</h2>\n<p>略读三道题目，T1是之前做过的题目，也基本忘得差不多了，T2是关于字符串的问题，大概好几个月没碰到这种题了，T3是树上的问题，难度较大</p>\n<p>因此决定前一个小时做T1和对拍，再一个小时</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary\" target=\"_blank\">https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary",
+            "title": "11.12模拟赛总结",
+            "date_modified": "2019-11-12T17:20:03.000Z",
+            "date_published": "2019-11-12T17:20:03.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>这里给大家介绍一种奇怪的做法，为什么奇怪呢，因为这玩意儿又不像并查集，又不像拓扑序</p>\n<p>（<s>其实是我模拟赛的时候先想的拓扑序，又想的并查集，然后一步步改成了现在这个样子</s>）</p>\n<h2>思路</h2>\n<p>首先，</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Solution-P2661\" target=\"_blank\">https://atoposyz.github.io/posts/Solution-P2661</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Solution-P2661",
+            "title": "题解 P2661 【信息传递】",
+            "date_modified": "2019-11-12T07:09:11.000Z",
+            "date_published": "2019-11-12T07:09:11.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>这篇文章又名斗地主战记</h1>\n<p><a href=\"https://www.cnblogs.com/xuanfly/p/11836858.html\">博客园</a></p>\n<h2>时间分配</h2>\n<p>初步读题，T1做过，T2一看是个图，但不</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary\" target=\"_blank\">https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary",
+            "title": "11.11模拟赛总结",
+            "date_modified": "2019-11-11T17:17:19.000Z",
+            "date_published": "2019-11-11T17:17:19.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>11.9模拟赛总结</h1>\n<h3><a href=\"https://www.cnblogs.com/xuanfly/p/11825767.html\">博客园</a></h3>\n<h2>做题思路</h2>\n<p>首先略读了三道题，发现二三题还有做</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary\" target=\"_blank\">https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary",
+            "title": "11.9模拟赛总结",
+            "date_modified": "2019-11-09T14:40:45.000Z",
+            "date_published": "2019-11-09T14:40:45.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2><a href=\"https://www.luogu.org/problem/P1082\">洛谷P1082</a></h2>\n<h1>Code</h1>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;cstdi</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/exgcd\" target=\"_blank\">https://atoposyz.github.io/posts/exgcd</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/exgcd",
+            "title": "扩展欧几里得（exgcd模板）",
+            "date_modified": "2019-11-08T21:54:00.000Z",
+            "date_published": "2019-11-08T21:54:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>#<a href=\"http://oj.ipoweru.cn/problem/23300\">发糖果</a></p>\n<h2>Code</h2>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;cstdio&gt;\n#</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Distributing-Candies\" target=\"_blank\">https://atoposyz.github.io/posts/Distributing-Candies</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Distributing-Candies",
+            "title": "发糖果（拓扑排序模板）",
+            "date_modified": "2019-11-08T21:51:00.000Z",
+            "date_published": "2019-11-08T21:51:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>消元法及高斯消元法思想</h1>\n<h2>消元法说明</h2>\n<p>消元法是将方程组中的一方程的未知数用含有另一未知数的代数式表示，并将其带入到另一方程中，这就消去了一未知数，得到一解；或将方程组中的一方程倍乘某个常</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Gaussian-Elimination\" target=\"_blank\">https://atoposyz.github.io/posts/Gaussian-Elimination</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Gaussian-Elimination",
+            "title": "高斯消元",
+            "date_modified": "2019-11-08T09:09:48.000Z",
+            "date_published": "2019-11-08T09:09:48.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>被两位大佬帮忙的感觉</h2>\n<p><img src=\"https://cdn.luogu.com.cn/upload/image_hosting/8h72b5cc.png\" alt=\"\"></p>\n<p>&amp;</p>\n<p>![](<a href=\"https://cdn\">https://cdn</a>.</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Another-Request\" target=\"_blank\">https://atoposyz.github.io/posts/Another-Request</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Another-Request",
+            "title": "又一次求助",
+            "date_modified": "2019-11-08T08:35:32.000Z",
+            "date_published": "2019-11-08T08:35:32.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>一枚濒临退役的身坚志残的高三自闭选手。</p>\n<p>喜欢二次元，喜欢中文VOCALOID.</p>\n<blockquote>\n<p>平常给他人带来的印象是傻（某班长评）和总是在笑</p>\n</blockquote>\n<p>千万不要问18级的学长学姐关于我的其它信息，别信。</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/aboutme\" target=\"_blank\">https://atoposyz.github.io/posts/aboutme</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/aboutme",
+            "title": "关于我",
+            "date_modified": "2019-11-08T06:16:00.000Z",
+            "date_published": "2019-11-08T06:16:00.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>引例</h2>\n<p>先举个例子，小张从家到公司上班总共有三条路可以直达（如下图），但是每条路每天拥堵的可能性不太一样，由于路的远近不同，选择每条路的概率如下：</p>\n<p>$P(L_1)=0.5,P(L_2)=0.3,P(L_3)=0.2$</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Total-Probability-Theorem\" target=\"_blank\">https://atoposyz.github.io/posts/Total-Probability-Theorem</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Total-Probability-Theorem",
+            "title": "全概率公式",
+            "date_modified": "2019-11-07T17:24:01.000Z",
+            "date_published": "2019-11-07T17:24:01.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>标程如下：</p>\n<pre><code class=\"language-cpp\">#include&lt;bits/stdc++.h&gt;\n#define ll long long\nusing namespace std;\nll a,b;\ndouble a1,b1</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math\" target=\"_blank\">https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math",
+            "title": "Xuan_Fly Loves Math",
+            "date_modified": "2019-11-05T18:47:11.000Z",
+            "date_published": "2019-11-05T18:47:11.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>Pollar Rho算法</h1>\n<ul>\n<li>\n<h2>算法简介</h2>\n</li>\n</ul>\n<p>![QQ截图20191103183659.png](<a href=\"https://i.loli.net/2019/11/03/d7QX3ihSUONyq4x\">https://i.loli.net/2019/11/03/d7QX3ihSUONyq4x</a>.</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Pollard-Rho-Algorithm\" target=\"_blank\">https://atoposyz.github.io/posts/Pollard-Rho-Algorithm</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Pollard-Rho-Algorithm",
+            "title": "Pollar Rho算法",
+            "date_modified": "2019-11-03T18:41:10.000Z",
+            "date_published": "2019-11-03T18:41:10.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1><a href=\"https://www.luogu.org/problem/P2312\">P2312 解方程</a></h1>\n<ul>\n<li>\n<h2>前置知识</h2>\n</li>\n</ul>\n<ol>\n<li>对于一个 $x$ 和模数 $p$，我们设 $x=kp+b$，</li>\n</ol>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Solving-Equations\" target=\"_blank\">https://atoposyz.github.io/posts/Solving-Equations</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Solving-Equations",
+            "title": "解方程",
+            "date_modified": "2019-11-03T06:25:45.000Z",
+            "date_published": "2019-11-03T06:25:45.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<pre><code class=\"language-cpp\">#include&lt;bits/stdc++.h&gt;\n#define N 1001\nusing namespace std;\nint n,x,a[N],mod;\nint main()\n{\n</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Horner-Algorithm\" target=\"_blank\">https://atoposyz.github.io/posts/Horner-Algorithm</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Horner-Algorithm",
+            "title": "秦九韶算法",
+            "date_modified": "2019-11-01T21:54:15.000Z",
+            "date_published": "2019-11-01T21:54:15.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>$\\mathcal{Using}$ $\\color{purple}\\LaTeX$</p>\n<p>\\mathfrak{}</p>\n<p>$\\mathfrak{mathfrak1234}$</p>\n<p>\\mathrm{}</p>\n<p>$\\math</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary\" target=\"_blank\">https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary",
+            "title": "LaTeX 字体语法总结",
+            "date_modified": "2019-10-31T06:27:53.000Z",
+            "date_published": "2019-10-31T06:27:53.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><img src=\"https://cdn.luogu.com.cn/upload/image_hosting/v8msk1oq.png\" alt=\"\"></p>\n<h2>拓扑排序</h2>\n<h3>[发糖果](<a href=\"http://oj.ipowe\">http://oj.ipowe</a></h3>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Template-Practice\" target=\"_blank\">https://atoposyz.github.io/posts/Template-Practice</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Template-Practice",
+            "title": "模板练习",
+            "date_modified": "2019-10-30T19:38:34.000Z",
+            "date_published": "2019-10-30T19:38:34.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>$\\mathcal{XuanFly's}$ 模拟赛总结</h2>\n<p>$\\color{navy}{written}$ $\\color{navy}{with}$ $\\LaTeX $ $&amp;$ $ \\math</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Simulation-Contest-Summary\" target=\"_blank\">https://atoposyz.github.io/posts/Simulation-Contest-Summary</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Simulation-Contest-Summary",
+            "title": "模拟赛总结",
+            "date_modified": "2019-10-30T17:34:52.000Z",
+            "date_published": "2019-10-30T17:34:52.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>题目描述</h2>\n<p>有一颗 $n$ 个节点的苹果树，最初每个节点上都有 $1$ 个苹果，并且每个节点在操作的过程中只会处在有 $1$ 个苹果和没有苹果两种状态之一。</p>\n<p>有 $m$ 个操作，操作分为三种：</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/apple-tree-2\" target=\"_blank\">https://atoposyz.github.io/posts/apple-tree-2</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/apple-tree-2",
+            "title": "Apple Tree 2",
+            "date_modified": "2019-10-07T20:21:57.000Z",
+            "date_published": "2019-10-07T20:21:57.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1><a href=\"https://www.luogu.org/problem/P3372\">【模板】线段树 1</a></h1>\n<h2>区间加法+求和</h2>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree\" target=\"_blank\">https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree",
+            "title": "线段树与树状数组",
+            "date_modified": "2019-10-06T22:08:50.000Z",
+            "date_published": "2019-10-06T22:08:50.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>对数组操作</h1>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;cstdio&gt;\n#include &lt;cstring&gt;\n#include &lt;cmath&gt;\n#include </code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/ST-Table\" target=\"_blank\">https://atoposyz.github.io/posts/ST-Table</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/ST-Table",
+            "title": "ST表",
+            "date_modified": "2019-10-03T10:14:22.000Z",
+            "date_published": "2019-10-03T10:14:22.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1><a href=\"http://oj.ipoweru.cn/problem/24112\">Disease Manangement 疾病管理</a></h1>\n<h2>题面如下</h2>\n<p>有 $N$ 头牛，它们可能患有 $D$ 种病，现</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Disease-Manangement\" target=\"_blank\">https://atoposyz.github.io/posts/Disease-Manangement</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Disease-Manangement",
+            "title": "疾病管理",
+            "date_modified": "2019-10-02T16:52:42.000Z",
+            "date_published": "2019-10-02T16:52:42.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1><a href=\"http://oj.ipoweru.cn/problem/23300\">发糖果</a></h1>\n<pre><code class=\"language-cpp\">\twhile(hd &lt; tail) {\n\t\tint u = q[hd++];\n\t\tfor(in</code></pre>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Common-Mistakes\" target=\"_blank\">https://atoposyz.github.io/posts/Common-Mistakes</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Common-Mistakes",
+            "title": "错误集锦",
+            "date_modified": "2019-09-12T21:24:26.000Z",
+            "date_published": "2019-09-12T21:24:26.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1><a href=\"https://www.luogu.org/blog/XTZORZ/solution-p2024\">P2024 [NOI2001]食物链</a></h1>\n<ul>\n<li>加权并查集</li>\n</ul>\n<h1>[P4198 楼房重建](h</h1>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Solution-Link\" target=\"_blank\">https://atoposyz.github.io/posts/Solution-Link</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Solution-Link",
+            "title": "题解链接 使用 Ctrl + F 查找",
+            "date_modified": "2019-08-31T11:52:58.000Z",
+            "date_published": "2019-08-31T11:52:58.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>被老师布置作业的我（蒟蒻）无助地翻开题解，只见大佬们又是<code>template</code>又是<code>namespace</code>的，看得我一脸懵，被迫学习了一篇<code>CSDN</code>的题解，现说一说些微的体会来加深<s>自己的</s>印象</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Solution-P4155\" target=\"_blank\">https://atoposyz.github.io/posts/Solution-P4155</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Solution-P4155",
+            "title": "题解 P4155 【[SCOI2015]国旗计划】",
+            "date_modified": "2019-08-30T11:38:08.000Z",
+            "date_published": "2019-08-30T11:38:08.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>A.树的遍历</h2>\n<h3>题目描述</h3>\n<p>给定一棵 $n$ 个节点的无根树（节点编号 $0$ 至 $n-1$）和一个节点$x$，请以 $x$ 号节点为根，做一次 <strong>DFS</strong> 与一次 *<em>BFS</em></p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS\" target=\"_blank\">https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS",
+            "title": "树的遍历——DFS与BFS",
+            "date_modified": "2019-08-28T16:45:21.000Z",
+            "date_published": "2019-08-28T16:45:21.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2><a href=\"http://codevs.cn/problem/5429/\">多重背包</a></h2>\n<p><strong>题目描述 Description</strong></p>\n<p>你有一个容量为 $M$ 的背包，和 $N$ 种物品。</p>\n<p>每种物品都有</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Knapsack-Problem\" target=\"_blank\">https://atoposyz.github.io/posts/Knapsack-Problem</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Knapsack-Problem",
+            "title": "背包问题",
+            "date_modified": "2019-08-27T19:16:24.000Z",
+            "date_published": "2019-08-27T19:16:24.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2><a href=\"http://oj.ipoweru.cn/problem/22606\">#22606. 我继续吃柠檬</a></h2>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Keep-Eating-Lemons\" target=\"_blank\">https://atoposyz.github.io/posts/Keep-Eating-Lemons</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Keep-Eating-Lemons",
+            "title": "我继续吃柠檬",
+            "date_modified": "2019-08-27T17:42:41.000Z",
+            "date_published": "2019-08-27T17:42:41.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><a href=\"https://rqy.moe/uncategorized/rqy-s-Code-Style-for-OI/\">原文 _rqy's Code Style for OI</a></p>\n<p>本文介绍<code>_rqy</code>的OI中的代码规范。其来源主要为<code>_rqy</code>的长期积累及参考<code>Google</code>代码规范、<code>Menci</code>的规范。</p>\n<p>Inspired by <a href=\"https://oi.men.ci/code-style-oi/\">Menci’s Code Sytle for OI</a></p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/RQYsCodeStyle4OI\" target=\"_blank\">https://atoposyz.github.io/posts/RQYsCodeStyle4OI</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/RQYsCodeStyle4OI",
+            "title": "_rqy's Code Style for OI",
+            "date_modified": "2019-08-26T21:09:05.000Z",
+            "date_published": "2019-08-26T21:09:05.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2><a href=\"http://oj.ipoweru.cn/problem/22510\">最大矩形面积</a></h2>\n<p>题目描述<br>\n给出一个柱形统计图，图中有n个项目，它的每个项目的宽度是1， 高度为$h_i$。 求这个柱</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Maximal-Rectangle-Area\" target=\"_blank\">https://atoposyz.github.io/posts/Maximal-Rectangle-Area</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Maximal-Rectangle-Area",
+            "title": "最大矩形面积",
+            "date_modified": "2019-08-26T14:44:50.000Z",
+            "date_published": "2019-08-26T14:44:50.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>2019.7.29 21:05</p>\n<h2>AC100祭</h2>\n<hr>\n<p>2019.8.19 21:09</p>\n<p>![艰难的一步](<a href=\"https://cdn.luogu.com.cn/upload/\">https://cdn.luogu.com.cn/upload/</a></p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/OItravel\" target=\"_blank\">https://atoposyz.github.io/posts/OItravel</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/OItravel",
+            "title": "OI旅程",
+            "summary": "我的OI之旅。",
+            "date_modified": "2019-08-22T21:32:22.000Z",
+            "date_published": "2019-08-22T21:32:22.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>蒟蒻的第一篇题解</p>\n<p><strong><s>教你怎样打表</s></strong></p>\n<p>这一道题目其实是个数学题，也不是很难，我们可以先在草稿纸上写一下</p>\n<p>用（x,y）代表a和b的系数</p>\n<p>|  | 1 | 2 | 3 | 4 | 5</p>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/Solution-P1011\" target=\"_blank\">https://atoposyz.github.io/posts/Solution-P1011</a> 阅读全文。</p>",
+            "url": "https://atoposyz.github.io/posts/Solution-P1011",
+            "title": "题解 P1011 【车站】",
+            "date_modified": "2019-08-20T22:07:29.000Z",
+            "date_published": "2019-08-20T22:07:29.000Z",
+            "author": {
+                "name": "atoposyz",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
