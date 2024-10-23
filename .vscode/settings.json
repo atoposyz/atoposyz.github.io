@@ -6,7 +6,7 @@
   "i18n-ally.sortKeys": true,
   "prettier.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": false,
   "files.associations": {
@@ -15,6 +15,7 @@
   "svg.preview.background": "editor",
   "conventionalCommits.scopes": [
     "pnpm",
-    "page"
+    "page",
+    "paper"
   ]
 }
