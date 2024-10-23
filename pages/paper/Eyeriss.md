@@ -196,7 +196,9 @@ To compare the performance of different dataflows, the constraints of a fixed to
 
 In our simulations, a baseline storage area for a given number of PEs is calculated as
 
-#PE×Area(512B RF) +Area((#PE×512B) global buffer). (2)
+$$
+PE×Area(512B\ RF) +Area((PE×512B)\ global\ buffer). (2)
+$$
 
 For instance, with 256 PEs, the baseline storage area for all dataflows is calculated from the setup with 512B RF/PE and an 128kB global buffer. This baseline storage area is then used to calculate the size of the global buffer and RF in bytes for each dataflow. The total on-chip storage size will then differ between dataflows because the area cost per byte depends on the size and type of memory used as shown in Fig. 7a. In general, the area cost per byte in the RF is higher than the global buffer due to its smaller size, and thus the dataflows requiring a larger RF will have a smaller overall on-chip storage size. Fig. 7b shows the on-chip storage sizes of all dataflows under a 256-PE SA. We fix the RF size in RS dataflow at 512B since it shows the lowest energy consumption using the analysis described in Section VI-C. The difference in total on-chip storage size can go up to 80kB. For the global buffer alone, the size difference is up to 2.6×. This difference in storage size will be considered when we discuss the results in Section VII.
 
@@ -219,13 +221,17 @@ Analysis Methodology: Given a dataflow, the analysis is formulated in two parts:
 
 1. Input Data Access Energy Cost: If an input data value is reused for many operations, ideally the value is moved from DRAM to RF once, and the ALU reads it from the RF many times. However, due to limited storage and operation scheduling, the data is often kicked out of the RF before exhausting reuse. The ALU then needs to fetch the same data again from a higher-cost level to the RF. Following this pattern, data reuse can be split across the four levels. Reuse at each level is defined as the number of times each data value is read from this level to its lower-cost levels during its lifetime. Suppose the total number of reuses for a data value is a × b × c × d, it can be split into reuses at DRAM, global buffer, array and RF for a, b, c, and d times, respectively. An example is shown in Fig. 8, in which case the total number of reuse, 24, is split into a = 1, b = 2, c = 3 and d = 4. The energy cost estimation for this reuse pattern is:
 
+$$
 a × EC(DRAM)+ab × EC(global buffer)+ abc × EC(array)+abcd × EC(RF), (3)
+$$
 
 where EC(·) is the energy cost from Table IV. 1
 
 2. Psum Accumulation Energy Cost: Psums travel between ALUs for accumulation through the 4-level hierarchy. In the ideal case, each generated psum is stored in a local RF for further accumulation. However, this is often not achievable due to the overall operation scheduling, in which case the psums have to be stored to a higher-cost level and read back again afterwards. Therefore, the total number of accumulations, a×b×c×d, can also be split across the four levels. The number of accumulation at each level is defined as the number of times each data goes in and out of its lower-cost levels during its lifetime. An example is shown in Fig. 9, in which case the total number of accumulations, 36, is split into a = 2, b = 3, c = 3 and d = 2. The energy cost can then be estimated as
 
+$$
 (2a −1)× EC(DRAM)+2a(b −1)× EC(global buffer)+ ab(c −1)× EC(array)+2abc(d −1)× EC(RF). (4)
+$$
 
 The factor of 2 accounts for both reads and writes. Note that in this calculation the accumulation of the bias term is ignored, as it has negligible impact on overall energy.
 
@@ -237,7 +243,7 @@ While we charge the same energy cost at each level of the storage hierarchy acro
 :::
 
 ::: zh-CN
-## I. 介绍
+## I. 介绍 {lang="zh-CN"}
 
 深度学习[1]，尤其是深度卷积神经网络（CNN）的近期流行，可以归因于其在对象识别[2-5]、检测[6, 7]和场景理解[8]等任务中实现前所未有的准确性。这些最先进的CNN[2-5]比1990年代使用的网络大几个数量级，滤波器权重存储需要达到数百兆字节，并且每个输入像素需要进行30k-600k次操作。
 
@@ -254,7 +260,7 @@ While we charge the same energy cost at each level of the storage hierarchy acro
 - 一个分析框架，可以在相同的硬件约束下量化不同CNN数据流的能效，并能够为每个数据流搜索最节能的映射。该分析模型使用来自商业65nm工艺的能耗/面积数据，所有的读/写数据均基于实际的CNN形状配置，如AlexNet，精确计算得出（第六部分C）。
 - 针对各种CNN数据流，我们对与数据移动相关的能耗以及不同类型数据重用的影响进行了比较分析（第七部分）。
 
-## II. 空间架构
+## II. 空间架构 {lang="zh-CN"}
 
 空间架构（SAs）是一类加速器，能够通过在一组相对简单的处理引擎（PEs）之间进行直接通信来利用高度的计算并行性。它们可以被设计或编程以支持不同的算法，并通过专门的数据流将算法映射到PEs上。与SIMD/SIMT架构相比，SAs特别适用于数据流表现出生产者-消费者关系或能够在PE区域内高效共享数据的应用。
 
@@ -266,9 +272,9 @@ SAs有两种类型：粗粒度SAs，由通过片上网络连接在一起的ALU�
 
 SA加速器主要由全局缓冲器和PE阵列组成。DRAM、全局缓冲器和PE阵列通过输入和输出FIFO（iFIFO/oFIFO）进行通信。全局缓冲器可以用于利用输入数据的重用并隐藏DRAM访问延迟，或者用于存储中间数据。目前，用于CNN加速的全局缓冲器的典型大小约为100–300kB。PE阵列中的PE通过片上网络（NoC）连接，NoC的设计取决于数据流的需求。每个PE包含一个ALU数据路径，能够进行乘加运算（MAC）和加法运算，另外还包括一个寄存器文件（RF）作为本地暂存器，以及一个PE FIFO（pFIFO）用于控制进出ALU的数据流量。不同的数据流需要不同大小的RF，范围从零到几百字节不等，典型的RF大小为每个PE小于1kB。整体而言，该系统为数据访问提供了四级存储层次，分别是DRAM、全局缓冲器、阵列（PE间通信）和RF。访问不同层次的数据意味着不同的能耗成本，其中DRAM的能耗最高，RF的能耗最低。
  
-## III. CNN的背景
+## III. CNN的背景 {lang="zh-CN"}
 
-### A. 基础
+### A. 基础 {lang="zh-CN"}
 
 卷积神经网络（CNN）是通过将多个计算层堆叠为一个有向无环图构建的[36]。通过每一层的计算，输入数据的高级抽象形式——称为特征图（feature map，fmap）——被提取出来，以保留重要但独特的信息。现代CNN通过使用非常深的层次结构来实现卓越的性能。
 
@@ -288,7 +294,7 @@ $$
 
 在卷积层和全连接层之间，还可以选择性地添加其他层，如池化层（POOL）和归一化层（NORM）。每个卷积层和全连接层之后，通常紧跟着一个激活层（ACT），例如整流线性单元（ReLU）。
 
-### B. CNN处理中的挑战
+### B. CNN处理中的挑战 {lang="zh-CN"}
 
 在大多数广泛使用的CNN中，例如AlexNet [2] 和VGG16 [3]，卷积层（CONV）占据了整体操作的90%以上，并产生了大量的数据移动。因此，它们对CNN的吞吐量和能效有显著影响。尽管全连接层（FC）使用了大部分的滤波器权重，但最近的研究表明，这些权重可以压缩至原始大小的1%至5% [38]，极大地减少了全连接层的影响。池化层（POOL）的处理可以与卷积层使用相同的计算方案，因为其计算是公式（1）的简化形式，其中乘加运算（MAC）被最大值操作（MAX）替代。激活层（ACT）的计算非常简单，而归一化层（NORM）的支持由于其在最近CNN中的减少使用[3, 5]，我们认为可以省略。
 
@@ -308,18 +314,18 @@ $$
 
 **自适应处理**：表I中展示的众多形状参数引发了卷积层（CONV）和全连接层（FC）可能出现的多种形状组合。即使在同一个CNN模型中，每层也可能具有不同的形状配置。表II展示了AlexNet的形状配置作为示例。因此，硬件架构不能被硬编码为只能处理特定的形状。相反，数据流必须对不同形状保持高效，并且硬件架构必须是可编程的，能够动态映射到高效的数据流上。
 
-### C. CNN vs. 图像处理
+### C. CNN vs. 图像处理 {lang="zh-CN"}
 
 在卷积神经网络（CNN）成为主流之前，已经有大量关于高效卷积的研究，这是因为卷积在图像信号处理（ISP）中有广泛的应用。为处理卷积，许多高吞吐量的ISP技术也被提出，包括在多处理器和SIMD指令中使用的分块策略。然而，这些技术无法直接应用于CNN处理，原因有两点：
 
 - CNN中的滤波器权重是通过训练获得的，而不是在处理系统中固定的。因此，它们可能消耗大量的I/O带宽和片上存储，有时与输入特征图（ifmaps）相比不相上下。
 - ISP技术主要是为2D卷积而开发的，它们没有优化数据重用的处理资源，也没有解决CNN中4D卷积的非平凡部分和（psum）累加问题。
 
-## IV. 现有CNN数据流
+## IV. 现有CNN数据流 {lang="zh-CN"}
 
 之前有许多人 [15-26] 提出了 CNN 加速解决方案，但由于实现和设计选择上的差异，很难直接比较它们的性能。在本节中，我们将根据现有 CNN 数据流的数据处理特性对其进行分类。以下是对这些数据流的描述，表 III 汇总了这些数据流。
 
-### A. 权重固定（WS）数据流
+### A. 权重固定（WS）数据流 {lang="zh-CN"}
 
 定义：每个滤波器权重保持静止在寄存器文件（RF）中，以最大化卷积重用和滤波器重用。一旦权重从DRAM获取到PE的RF中，该PE会执行所有使用相同滤波器权重的NE²操作。
 
@@ -329,7 +335,7 @@ $$
 
 示例：WS数据流的变种出现在文献[15–17, 19, 25, 26]中。
 
-### B. 输出固定 (OS) 数据流
+### B. 输出固定 (OS) 数据流 {lang="zh-CN"}
 
 定义：每个输出特征图（ofmap）像素的累加保持在PE中。部分和（psums）存储在同一寄存器文件（RF）中进行累加，以最小化psums累加的成本。
 
@@ -345,7 +351,7 @@ $$
 
 示例：MOC-MOP 数据流的变体出现在[20]中，而 SOC-MOP 和 MOC-SOP 数据流的变体分别出现在[23]和[18]中。需要注意的是，[20]中的 MOC-MOP 变体并没有利用卷积数据重用，因为它只是将卷积视为矩阵乘法。
 
-### C. 无局部重用（NLR）数据流
+### C. 无局部重用（NLR）数据流 {lang="zh-CN"}
 
 定义：NLR 数据流具有两个主要特点：
 
@@ -358,17 +364,17 @@ $$
 
 示例：NLR 数据流的变体出现在[21]、[22] 和 [24]中。在[22]中，每列 PE 阵列末端实现了专用寄存器来存储 psum，从而减少了 psum 的全局缓冲区读写次数。
 
-## V. 高能效数据流： 行静态
+## V. 高能效数据流： 行静态 {lang="zh-CN"}
 
 尽管现有的数据流尝试最大化某些类型的输入数据重用或最小化部分和（psum）累加成本，但它们未能同时考虑所有因素。这导致了当层形状或硬件资源变化时效率低下。因此，如果数据流能够适应不同条件并优化所有类型的数据移动能量成本，将是理想的。在本节中，我们将介绍一种新颖的数据流，称为行驻留（RS），它可以实现这一目标。RS 数据流是 Eyeriss 架构的关键特性之一，该架构已被实现于一块制造的芯片中（图 4），并通过 AlexNet 进行了功能验证。
 
-### A. 一维卷积基本操作
+### A. 一维卷积基本操作 {lang="zh-CN"}
 
 Eyeriss 中 RS 数据流的实现灵感来自于在空间架构中应用“条带挖掘”（strip mining）技术。它将高维卷积分解为可以并行运行的一维卷积基本操作；每个基本操作处理一行滤波器权重和一行输入特征图（ifmap）像素，生成一行部分和（psums）。来自不同基本操作的 psums 进一步累加在一起，生成输出特征图（ofmap）像素。1D 卷积的输入数据来自存储层次结构，例如全局缓冲区或 DRAM。
 
 每个基本操作都映射到一个 PE 进行处理；因此，每对行的计算在 PE 中保持驻留，这在 RF 级别上实现了滤波器权重和 ifmap 像素的卷积重用。图 5 显示了这一滑动窗口处理的示例。然而，由于整个卷积通常包含数十万个基本操作，所有基本操作的确切映射到 PE 阵列的方式并不简单，这将极大地影响能量效率。
 
-### B. 两步基本操作映射
+### B. 两步基本操作映射 {lang="zh-CN"}
 
 为了解决这一问题，基本操作的映射分为两步：逻辑映射和物理映射。逻辑映射首先将基本操作部署到一个逻辑 PE 阵列中，该阵列的大小与一维卷积基本操作的数量相同，通常远大于硬件中的物理 PE 阵列。物理映射则将逻辑 PE 阵列折叠，使其适应物理 PE 阵列。折叠意味着对计算进行序列化，并由片上存储量（包括全局缓冲区和本地 RF）决定。这两个映射步骤在运行前静态完成，因此无需在线计算。
 
@@ -384,7 +390,7 @@ Eyeriss 中 RS 数据流的实现灵感来自于在空间架构中应用“条�
 在  $N\times M\times C$ 个逻辑 PE 集之间存在更多的重用和部分和累加机会：相同的滤波器权重可以在  $N$ 个集之间共享（滤波器重用），相同的输入特征图像素可以在 $M$ 个集之间共享（输入特征图重用），并且每 $C$ 个集中的部分和可以一起累加。
 将多个逻辑 PE 集中的同一位置映射到单个物理 PE 上，可以在寄存器文件 (RF) 级别利用输入数据的重用和部分和的累加；相应的一维卷积基本操作以交错的方式在同一个物理 PE 上运行。在物理 PE 阵列中空间映射多个逻辑 PE 集，也可以在阵列级别上利用这些机会。在每个维度 $N$ 、 $M$ 和 $C$ 上进行的逻辑 PE 集的折叠和空间映射的数量由 RF 大小和物理 PE 阵列的大小决定。此时，问题转化为通过使用第 VI-C 节的框架进行评估来确定最佳折叠方式的优化问题。经过上述第一阶段的折叠后，物理 PE 阵列可以处理若干逻辑 PE 集，这称为处理通道。然而，处理通道仍然可能无法完成卷积层中所有集的处理，因此需要第二阶段的折叠，粒度为处理通道。不同的处理通道在整个物理 PE 阵列上顺序运行。全局缓冲区用于在各通道之间进一步利用输入数据重用并存储部分和。第二阶段折叠的最佳数量由全局缓冲区的大小决定，且需要使用分析框架进行优化。
 
-### C. 能源高效的数据处理
+### C. 能源高效的数据处理 {lang="zh-CN"}
 
 为了最大化能源效率，RS 数据流旨在优化所有类型的数据传输，充分利用存储层次结构，从低成本的寄存器文件 (RF) 开始，到更高成本的阵列和全局缓冲区。各级别处理数据的方式如下：
 
@@ -394,7 +400,7 @@ RF：在第一阶段折叠后，在一个 PE 中运行多个一维卷积基本�
 
 全局缓冲区：根据其大小，全局缓冲区用于利用在第二阶段折叠后，从 RF 和阵列级别剩余的滤波器重用、输入特征图重用和部分和累加。
 
-### D. 对不同层类型的支持
+### D. 对不同层类型的支持 {lang="zh-CN"}
 
 虽然 RS 数据流是为处理 CONV 层中的高维卷积而设计的，但它也能自然支持另外两种层类型：
 
@@ -402,13 +408,13 @@ RF：在第一阶段折叠后，在一个 PE 中运行多个一维卷积基本�
 
 池化层 (POOL)：通过将 ALU 中的 MAC 计算替换为 MAX 比较函数，RS 数据流也可以处理 POOL 层，假设 N = M = C = 1，并分别处理每个特征图平面。
 
-### E. 其他架构特性
+### E. 其他架构特性 {lang="zh-CN"}
 
 在 Eyeriss 架构中，如图 6 所示，数据流通过三种数据类型的独立网络互连 (NoCs) 处理：全局多播 NoC 用于输入特征图和滤波器，局部 PE 间 NoC 用于部分和。该架构还可以利用稀疏性，通过 (1) 仅对非零值执行数据读取和 MAC 运算，以及 (2) 压缩数据以减少数据移动。这些技术的详细信息在 [41] 中有所描述，为本文提出的高效数据流带来了额外的能量节省。
 
-## VI. 实验方法
+## VI. 实验方法 {lang="zh-CN"}
 
-### A. 数据流实现
+### A. 数据流实现 {lang="zh-CN"}
 
 使用我们提出的框架（第 VI-C 节）对每种数据流进行了能效分析的仿真模型实现。对于 RS 数据流，我们已根据第 V 节描述的内容实现了模型，并通过 Eyeriss 芯片的测量结果进行了验证。然而，现有数据流的不同变体在之前的设计中有所体现。因此，我们对现有数据流的实现试图找到其关键特征的共同点，具体描述如下：
 
@@ -418,21 +424,21 @@ RF：在第一阶段折叠后，在一个 PE 中运行多个一维卷积基本�
 
 无本地重用 (No Local Reuse)：PE 数组仅由 ALU 数据通路组成，没有本地存储。所有类型的数据，包括输入特征图、滤波器和部分和，都存储在全局缓冲区中。
 
-### B. 数据流比较设置
+### B. 数据流比较设置 {lang="zh-CN"}
 
 在比较不同数据流的性能时，我们施加了固定总硬件面积和相同处理并行度的约束，即所有数据流都拥有相同数量的处理单元（PE）和相同的存储区域，这包括全局缓冲区和寄存器文件（RF）。根据每种数据流的存储需求，可以在不同的数据流之间以不同方式划分存储区域。例如，行静态（RS）数据流可以使用更大的寄存器文件以实现更好的数据重用，而无本地重用（NLR）数据流则根本不需要寄存器文件。
 
 在我们的仿真中，为给定数量的处理单元计算基准存储区域如下：
 
 $$
-PE×Area(512B RF) +Area((PE×512B) global buffer). (2)
+PE×Area(512B\ RF) +Area((PE×512B) global\ buffer). (2)
 $$
 
 例如，对于256个处理单元（PE），所有数据流的基准存储区域是根据每个PE 512B的寄存器文件（RF）和128kB的全局缓冲区设置计算得出的。然后，这个基准存储区域用于计算每种数据流的全局缓冲区和寄存器文件的字节大小。由于每种数据流的面积成本每字节取决于所使用的内存类型和大小，因此芯片上的总存储大小在不同数据流之间会有所不同。如图7a所示，通常情况下，寄存器文件每字节的面积成本高于全局缓冲区，这是因为寄存器文件的大小较小，因此需要更大寄存器文件的数据流整体芯片存储大小会较小。图7b显示了在256-PE体系结构下所有数据流的芯片存储大小。我们在RS数据流中将RF大小固定为512B，因为根据第VI-C节中的分析，它显示出最低的能耗。总芯片存储大小的差异可以高达80kB。仅对于全局缓冲区，大小差异高达2.6倍。在讨论第VII节的结果时，将考虑这一存储大小的差异。
 
 假设加速器的吞吐量与数据流的活动PE数量成正比。虽然吞吐量也是数据移动的函数，但当存储带宽有限时，这会增加延迟，因此通常使用许多现有技术来弥补影响，例如预取、双缓冲、缓存和流水线。这些技术在CNN加速中非常有效，可以隐藏延迟。因此，预计数据移动不会对整体吞吐量产生显著影响。
 
-### C. 能效分析框架
+### C. 能效分析框架 {lang="zh-CN"}
 
 每个MAC操作在Eq. (1)中获取输入（滤波器权重和ifmap像素）并累积部分和（psum）的方式引入了不同的能量成本，这主要受到两个因素的影响：
 
@@ -465,7 +471,7 @@ $$
 
 3. 每种数据流都有一组参数（a, b, c, d），用于描述在给定CNN层形状下的能量效率最优映射。这些参数通过优化过程获得，目标函数由公式（3）和（4）定义，优化过程受到硬件资源的约束，包括全局缓冲区、RF和PE阵列的大小。
 
-### D. 数据流建模附记
+### D. 数据流建模附记 {lang="zh-CN"}
 
 尽管我们对所有数据流在存储层次结构的每个级别收取相同的能量成本，但由于每个数据流所需的实际实现，真实成本会有所不同。例如，较大的全局缓冲区应收取更高的能量成本，这适用于所有数据流，除了RS。在阵列级别，短距离传输（例如与邻近PE的通信）应收取较低的能量成本，而长距离传输（如广播或从所有PE直接访问全局缓冲区）则成本较高，因为后者的布线电容更大，NoC设计更复杂。在这种情况下，WS、OSA、OSC和NLR可能会受到更大影响，因为它们都涉及长距离阵列传输。在RF级别，较小的RF应收取较低的能量成本。除了RS和OSA，其他数据流在RF访问能量上都会看到减少。然而，总体而言，我们发现与其他数据流相比，RS的数据能耗结果仍然比较保守。
 :::
