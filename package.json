@@ -12,8 +12,10 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "pnpm": "^9.12.3",
     "valaxy": "0.20.0",
     "valaxy-addon-components": "^0.0.4",
+    "valaxy-addon-meting": "^0.1.4",
     "valaxy-theme-yun": "0.20.0"
   },
   "devDependencies": {

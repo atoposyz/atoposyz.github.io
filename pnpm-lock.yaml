@@ -8,12 +8,18 @@ importers:
 
   .:
     dependencies:
+      pnpm:
+        specifier: ^9.12.3
+        version: 9.12.3
       valaxy:
         specifier: 0.20.0
         version: 0.20.0(@babel/parser@7.25.8)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.5)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.3)
       valaxy-addon-components:
         specifier: ^0.0.4
         version: 0.0.4
+      valaxy-addon-meting:
+        specifier: ^0.1.4
+        version: 0.1.4
       valaxy-theme-yun:
         specifier: 0.20.0
         version: 0.20.0(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3))
@@ -2619,6 +2625,11 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==, tarball: https://registry.npmmirror.com/pngjs/-/pngjs-5.0.0.tgz}
     engines: {node: '>=10.13.0'}
 
+  pnpm@9.12.3:
+    resolution: {integrity: sha512-zOD53pxafJW++UQWnMXf6HQav7FFB4wNUIuGgFaEiofIHmJiRstglny9f9KabAYu9z/4QNlrPIbECsks9KgT7g==, tarball: https://registry.npmmirror.com/pnpm/-/pnpm-9.12.3.tgz}
+    engines: {node: '>=18.12'}
+    hasBin: true
+
   points-on-curve@0.2.0:
     resolution: {integrity: sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A==, tarball: https://registry.npmmirror.com/points-on-curve/-/points-on-curve-0.2.0.tgz}
 
@@ -3106,6 +3117,9 @@ packages:
 
   valaxy-addon-components@0.0.4:
     resolution: {integrity: sha512-mpyDmQzBvzIR1PMEpDP6uVvx2YNVsApxAvLOMld4W+Rrygn+GzIc7h1HOQCOva6VYI3Lr9CheqI13gJlP2CHYg==, tarball: https://registry.npmmirror.com/valaxy-addon-components/-/valaxy-addon-components-0.0.4.tgz}
+
+  valaxy-addon-meting@0.1.4:
+    resolution: {integrity: sha512-aTOCswBIg1/MOIC1vZ7ctaZOOEueVN99tEurAxukq15kJtqyps2/XqZw7Bjvik5LNbHtZd+TzmH+vrvhA/HF5w==, tarball: https://registry.npmmirror.com/valaxy-addon-meting/-/valaxy-addon-meting-0.1.4.tgz}
 
   valaxy-theme-yun@0.20.0:
     resolution: {integrity: sha512-Wu3Ke3oiRgfzkrKCkfQpqy3nQgCV0gePKixvzyPPoI/vkDyjPr4noN1SJ4WsD9dnD02yi+DlHBS9311v8YMXiw==, tarball: https://registry.npmmirror.com/valaxy-theme-yun/-/valaxy-theme-yun-0.20.0.tgz}
@@ -6141,6 +6155,8 @@ snapshots:
 
   pngjs@5.0.0: {}
 
+  pnpm@9.12.3: {}
+
   points-on-curve@0.2.0: {}
 
   points-on-path@0.2.1:
@@ -6729,6 +6745,8 @@ snapshots:
   uuid@9.0.1: {}
 
   valaxy-addon-components@0.0.4: {}
+
+  valaxy-addon-meting@0.1.4: {}
 
   valaxy-theme-yun@0.20.0(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3)):
     dependencies:
