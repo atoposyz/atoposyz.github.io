@@ -16,6 +16,7 @@
   "conventionalCommits.scopes": [
     "pnpm",
     "page",
-    "paper"
+    "paper",
+    "animerank"
   ]
 }
