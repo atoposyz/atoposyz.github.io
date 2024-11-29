@@ -5,8 +5,9 @@ updated: 2024-11-26 20:10:30
 katex: true
 tags:
   - 分布计算系统
-categories:
   - 笔记
+categories:
+  - 分布计算系统
 ---
 
 ## 命名

@@ -5,8 +5,9 @@ updated: 2024-11-25 20:25:11
 katex: true
 tags:
   - 分布计算系统
-categories:
   - 笔记
+categories:
+  - 分布计算系统
 ---
 
 ## 同节点进程通信

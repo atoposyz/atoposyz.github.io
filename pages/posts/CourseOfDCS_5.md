@@ -5,8 +5,9 @@ updated: 2024-11-27 20:00:00
 katex: true
 tags:
   - 分布计算系统
-categories:
   - 笔记
+categories:
+  - 分布计算系统
 ---
 
 ## 死锁

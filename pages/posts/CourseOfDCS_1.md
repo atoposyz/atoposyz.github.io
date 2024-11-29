@@ -5,8 +5,9 @@ updated: 2024-11-25 20:22:26
 katex: true
 tags:
   - 分布计算系统
-categories:
   - 笔记
+categories:
+  - 分布计算系统
 ---
 
 ### 为什么分布计算系统的异构性不可避免？
