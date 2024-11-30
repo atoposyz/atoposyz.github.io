@@ -176,7 +176,7 @@ nfs://cs.jlu.edu.cn//home/xu， nfs是访问协议名字， cs.jlu.edu.cn是服�
 
 NSC发送：
 $$
-E(k_{最终用户}, E(k_{设备}, k_{密钥}))
+E(k_{\text{最终用户}}, E(k_{\text{设备}}, k_{\text{密钥}}))
 $$
 
 #### 信口(F盒)
