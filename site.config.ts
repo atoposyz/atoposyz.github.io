@@ -9,7 +9,7 @@ export default defineSiteConfig({
     name: 'atoposyz',
     avatar: 'https://raw.githubusercontent.com/atoposyz/atoposyz.github.io/Valaxy-dev/public/atoposyz.jpg',
     status: {
-      emoji: '🤣',
+      emoji: '♪',
       message: '',
     }
   },
