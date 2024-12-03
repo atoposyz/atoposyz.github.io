@@ -95,11 +95,11 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 证书颁发机构（CA）是权威的，有了CA的签名，大家就会认可你的数据是真的。
 
-一本证书的构成：
+一份证书的构成：
 
 自己的name, pos, public key, hash value, 上层的签名，上层的证书
 
-证书颁发机构：受信任方，负责验证用户身份，然后将验证身份与公钥绑定。
+**证书颁发机构**：受信任方，负责验证用户身份，然后将验证身份与公钥绑定。
 
 **Certificate Authority** (CA): a trusted party, responsible for verifying the identity of users, and then bind the verified identity to a public keys.
 
