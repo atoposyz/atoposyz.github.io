@@ -199,6 +199,7 @@ availability 可用性
 
 
 **流加密和块加密的比较**（0927作业）
+
 流加密：
 1. 变换速度快。每个符号单独加密，无需等待其他符号
 2. 低错误传播。错误只影响字符本身
@@ -237,6 +238,8 @@ B → A &: \{N_B\}K_{AB}\\
 A → B &: \{N_B − 1\}K_{AB}\\
 \end{align}
 $$
+
+其对应场景如下所示
 
 ![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.4g4jdq8po1.webp)
 
