@@ -142,27 +142,29 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 用户向KDC发送TGT请求（实际上就是登录服务器），KDC返回一个会话密钥 $K_{c, tgs}$ 和票据 $T_{c,tgs}$，用于和TGS通信。
 
+KDC返回信息结构如下
+
 $$
 \{K_{c,tgs}||\{T_{c,tgs}\}K_{tgs}\}K_c
 $$
 
-用户得到票据后想要使用某服务时，向TGS发送请求，附带TGT和authenticator，TGS使用TGT解密出会话密钥，用这个密钥加密一个新的服务票据和会话密钥
+用户得到票据后想要使用某服务时，向TGS发送请求，附带TGT和authenticator，TGS使用TGT解密出会话密钥，用这个密钥加密一个新的服务票据和会话密钥。
 
-用户使用tgs发的票据使用对应服务。
-
-使用tgs的key加密的票据TGT(Ticket-Granting Ticket)
+使用tgs的key加密的票据TGT(Ticket-Granting Ticket)结构如下
 
 $$
 \{tgs||c||addr||timestamp||lifetime||K_{c,tgs}\}K_{tgs}
 $$
 
-访问服务时使用的authenticator
+用户使用tgs发的票据使用对应服务。
+
+访问服务时使用的authenticator结构如下
 
 $$
 \{c||addr||timestamp\}K_{c,s}
 $$
 
-保证1.client knows key 2.ticket is fresh
+auth能够保证1.client knows key 2.ticket is fresh
 
 ### 编程与程序安全 Programs & Programming
 
