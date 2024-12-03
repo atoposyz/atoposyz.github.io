@@ -187,7 +187,7 @@ auth能够保证1.client knows key 2.ticket is fresh
 
 ## 笔者认为的其他重点
 
-**CIA**（0913作业）
+### CIA（0913作业）
 
 confidentiality 保密性
 
@@ -195,12 +195,12 @@ integrity 完整性
 
 availability 可用性
 
-**信息传递的四种攻击手段**
+### 信息传递的四种攻击手段
 
 ![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.8vmyj1ui7h.webp)
 
 
-**流加密和块加密的比较**（0927作业）
+### 流加密和块加密的比较（0927作业）
 
 流加密：
 1. 变换速度快。每个符号单独加密，无需等待其他符号
@@ -211,7 +211,7 @@ availability 可用性
 2. 免疫符号插入。符号块长度固定，一旦插入可以立刻发现。
 3. 相同明文得到相同密文。容易看出明文特征。
 
-**错误检测码 Error Detecting Code**
+### 错误检测码 Error Detecting Code
 
 一般使用**hash**算法，由原文易得哈希值，反过来十分困难，且原文发生改变时，哈希值也发生改变
 
@@ -221,15 +221,15 @@ availability 可用性
 - MD series
 - SHA series
 
-**信息验证码 Message Authentication Code（MAC）**
+### 信息验证码 Message Authentication Code（MAC）
 
 使用key和hash可以达到信息验证的目的（1018作业）
 
-**重放攻击**
+### 重放攻击
 
 在交易等场景，将信息进行重放也会造成破坏，一般使用添加时间戳的方法解决
 
-**简单访问协议Needham-Schroeder Protocol**
+### 简单访问协议Needham-Schroeder Protocol
 
 $$
 \begin{align}
@@ -245,7 +245,7 @@ $$
 
 ![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.4g4jdq8po1.webp)
 
-**程序运行时的栈变化**
+### 程序运行时的栈变化
 
 %ebp
 
@@ -280,3 +280,7 @@ hash chain， Block chain
 Kerberos干的是认证Authentication的活，一般不干授权Authorization的活。也可以干，可以往ticket里放
 
 除了文字密码还有图形密码，五花八门，还有指纹等各种玩意
+
+## 免责声明
+
+仅为个人笔记，不提供备考建议和指南
