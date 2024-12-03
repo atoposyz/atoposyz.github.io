@@ -11,12 +11,12 @@ categories:
   - 信息安全原理
 ---
 
-# 老师强调的重点
-## 密码学 Cryptography
+## 老师强调的重点
+### 密码学 Cryptography
 
-### 加密模式（0929作业）
+#### 加密模式（0929作业）
 
-#### ECB 
+**ECB**
 
 简单的块加密
 
@@ -24,9 +24,9 @@ categories:
 
 因为相同明文通过相同密钥可得到相同密文，存在一定漏洞，所以通过添加参数的方法修改每一次加密的明文或密钥，从而得到无规律的密文。
 
-初始向量IV, Initialization Vector.
+> 初始向量IV, Initialization Vector.
 
-#### CBC
+**CBC**
 
 明文P与向量V异或后再加密得到密文C。
 
@@ -39,7 +39,7 @@ $$
 
 由于V需要由密文得到，因此加密不可并行，但解密可并行
 
-#### CFB
+**CFB**
 
 向量V加密后与明文P异或得到密文C。
 
@@ -54,7 +54,7 @@ $$
 
 同样的，由于V需要由密文得到，因此加密不可并行，但解密可并行
 
-#### OFB
+**OFB**
 
 向量V加密后与明文P异或得到密文C。
 
@@ -67,7 +67,7 @@ $$
 
 与CFB相同，但加密的向量实际只依赖上个向量，最终都依赖于IV，所以加密解密都是可并行的
 
-#### CTR
+**CTR**
 
 向量V加密后与明文P异或得到密文C。
 
@@ -79,11 +79,11 @@ nonce和其他模式的IV一样，计数器counter从000...000累加
 
 很明显，加密解密都可并行
 
-### 数字签名与数字证书
+#### 数字签名与数字证书
 
 在传输密钥时容易遭到中间人攻击，从而无法确定对方用户身份和密钥的安全性。因此在传输密钥时常常使用证书将密钥与用户身份绑定。
 
-#### 数字签名 Digital Signature
+##### 数字签名 Digital Signature
 
 数字签名是一种能产生与真实签名相同效果的协议： 它是一种只有发送者才能做的标记，但其他人可以很容易地识别出它属于发送者。
 
@@ -91,7 +91,7 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 一般情况下使用自己的私钥签名，别人使用公钥验证。
 
-#### 数字证书 digital certificate
+##### 数字证书 digital certificate
 
 证书颁发机构（CA）是权威的，有了CA的签名，大家就会认可你的数据是真的。
 
@@ -101,22 +101,24 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 证书颁发机构：受信任方，负责验证用户身份，然后将验证身份与公钥绑定。
 
-Certificate Authority (CA): a trusted party, responsible for verifying the identity of users, and then bind the verified identity to a public keys.
+**Certificate Authority** (CA): a trusted party, responsible for verifying the identity of users, and then bind the verified identity to a public keys.
 
 **数字证书**：证明内含的公开密钥确实属于该文件所述身份的文件。
 
-Digital Certificates: A document certifying that the public key included inside does belong to the identity described in the document.
+**Digital Certificates**: A document certifying that the public key included inside does belong to the identity described in the document.
 
 **当用户想访问A网站，攻击者用B网站攻击的三种攻击方式**（1025作业）
 1. 攻击者使用A网站的真实证书。由于证书中有CA机构的签名，攻击者的网站无法伪造完全一样的签名，从而被浏览器识破（网站和真证书对不上）
 2. 攻击者创建一个假证书。由于浏览器无法识别该证书，一般会询问用户是否进入网站（众所周知，用户一般都是坚持访问的）
 3. 攻击者使用自己网站的真实证书。由于证书是真的，和网站也对得上，浏览器会通过验证。这种情况一般是网址相似，用户通过对比网址可判断网站是假的
 
-## 身份验证与访问控制 Authentication & Access Control
+### 身份验证与访问控制 Authentication & Access Control
 
-身份识别Identification指声明一个人是谁，身份验证Authentication指通过某种手段证明某人是他声明的身份。
+身份识别 Identification 指声明一个人是谁
 
-### 身份验证
+身份验证 Authentication 指通过某种手段证明某人是他声明的身份。
+
+#### 身份验证
 
 通常使用密码口令进行身份验证，然而，总有用户使用弱口令，给attacker可乘之机。
 
@@ -126,15 +128,15 @@ Digital Certificates: A document certifying that the public key included inside 
 
 因此通过在密码上加salt来改变密码，类似加密模式中的IV。（1101作业）
 
-salt：时间戳、用户名，或任何随机数
+**salt**：时间戳、用户名，或任何随机数
 
 多次散列化也能有效增大口令破解难度
 
-### 访问控制
+#### 访问控制
 
 主要使用密钥分发中心KDC（Key Distribution Center）实现访问控制
 
-#### Kerberos协议（1108作业）
+##### Kerberos协议（1108作业）
 
 ![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.5q7gk25ye5.webp)
 
@@ -162,26 +164,26 @@ $$
 
 保证1.client knows key 2.ticket is fresh
 
-## 编程与程序安全 Programs & Programming
+### 编程与程序安全 Programs & Programming
 
 程序都有缺陷，由此可以被恶意利用，一个经典的缺陷是缓冲区溢出（Buffer Overflow）。
 
-### 缓冲区溢出（1115作业）
+#### 缓冲区溢出（1115作业）
 
 1. 程序在执行时会在栈空间分配一个固定大小的缓冲区用于存储数据。
 2. 当用户或程序向缓冲区写入数据时，如果没有检查数据的长度，可能会写入超出预定大小的数据。超出缓冲区的数据将覆盖相邻的内存空间，可能会修改其他数据结构、变量，甚至控制流相关的关键内容，如返回地址、函数指针等。
 3. 如果攻击者故意设计输入数据，使得缓冲区溢出的部分覆盖了程序的返回地址，从而使程序跳转到攻击者的恶意代码并执行。
 
-### 预防措施
-#### 地址随机化 ASLR (Address Space Layout Randomization)
+#### 预防措施
+##### 地址随机化 ASLR (Address Space Layout Randomization)
 
 随机化堆栈的起始位置，即每次在内存中加载代码时，堆栈地址都会发生变化，从而难以猜测内存中的堆栈地址，进而难以猜测 %ebp 地址和恶意代码地址
 
-#### 栈保护 Stack-Guard
+##### 栈保护 Stack-Guard
 
 使用一个保护值canary检测栈溢出是否发生，通常将canary放在缓冲区和返回地址之间，如果发生栈溢出，就会覆盖canary值，从而检测到栈溢出。
 
-# 笔者认为的其他重点
+## 笔者认为的其他重点
 
 **CIA**（0913作业）
 
@@ -208,7 +210,7 @@ availability 可用性
 
 **错误检测码 Error Detecting Code**
 
-一般使用hash算法，由原文易得哈希值，反过来十分困难，且原文发生改变时，哈希值也发生改变
+一般使用**hash**算法，由原文易得哈希值，反过来十分困难，且原文发生改变时，哈希值也发生改变
 
 散列函数的特点：单向性、抗碰撞性
 
@@ -244,7 +246,7 @@ $$
 
 （待补充）
 
-# 并非重点（？）
+## 并非重点（？）
 
 凯撒密码Caesar Cipher
 
