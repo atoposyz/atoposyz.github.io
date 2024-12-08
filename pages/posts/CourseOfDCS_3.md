@@ -4,9 +4,9 @@ date: 2024-11-26 20:10:30
 updated: 2024-11-26 20:10:30
 katex: true
 tags:
-  - 分布计算系统
+  - 课程笔记
 categories:
-  - 笔记
+  - 分布计算系统
 ---
 
 ## 命名
@@ -176,7 +176,7 @@ nfs://cs.jlu.edu.cn//home/xu， nfs是访问协议名字， cs.jlu.edu.cn是服�
 
 NSC发送：
 $$
-E(k_{最终用户}, E(k_{设备}, k_{密钥}))
+E(k_{\text{最终用户}}, E(k_{\text{设备}}, k_{\text{密钥}}))
 $$
 
 #### 信口(F盒)
