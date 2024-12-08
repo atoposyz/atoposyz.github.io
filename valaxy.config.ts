@@ -42,13 +42,13 @@ export default defineValaxyConfig<UserThemeConfig>({
         name: '动画格子',
         url: '/anime-grid/',
         icon: 'i-ri-layout-grid-line',
-        color: '#add8ac',
+        color: '#ffc468',
       },
       {
         name: '动画分组',
         url: '/anime-rank/',
         icon: 'i-ri-layout-row-fill',
-        color: '#45ff7c',
+        color: '#b8ff45',
       },
     ],
 
