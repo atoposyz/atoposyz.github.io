@@ -39,10 +39,16 @@ export default defineValaxyConfig<UserThemeConfig>({
         color: 'hotpink',
       },
       {
-        name: '动画高手',
+        name: '动画格子',
         url: '/anime-grid/',
-        icon: 'i-ri-tv-line',
-        color: 'pink',
+        icon: 'i-ri-layout-grid-line',
+        color: '#ffc468',
+      },
+      {
+        name: '动画分组',
+        url: '/anime-rank/',
+        icon: 'i-ri-layout-row-fill',
+        color: '#b8ff45',
       },
     ],
 
