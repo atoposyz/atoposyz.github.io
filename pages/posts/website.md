@@ -3,6 +3,7 @@ title: 本网站的建站故事
 date: 2023-07-08 22:21:00
 updated: 2023-07-08 22:21:00
 katex: true
+disallow: true
 hidden: true
 tags:
   - Hexo
