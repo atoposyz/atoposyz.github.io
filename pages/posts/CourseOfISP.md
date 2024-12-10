@@ -117,7 +117,7 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 一份证书的构成：
 
-自己的name, pos, public key, hash value, 上层的签名，上层的证书
+自己的name, addr, public key, hash value, 上层的签名，上层的证书
 
 **证书颁发机构**：受信任方，负责验证用户身份，然后将验证身份与公钥绑定。
 
