@@ -1,7 +1,7 @@
 import { defineValaxyConfig } from 'valaxy'
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { addonComponents } from 'valaxy-addon-components'
-import { addonMeting } from 'valaxy-addon-meting'
+// import { addonMeting } from 'valaxy-addon-meting'
 
 // add icons what you will need
 const safelist = [
@@ -66,15 +66,15 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
   addons: [
     addonComponents(),
-    addonMeting({
-      global: true,
-      /** @see https://github.com/metowolf/MetingJS */
-      props: {
-        id: '9095518079',
-        server: 'netease',
-        type: 'playlist',
-      },
-    })
+    // addonMeting({
+    //   global: true,
+    //   /** @see https://github.com/metowolf/MetingJS */
+    //   props: {
+    //     id: '9095518079',
+    //     server: 'netease',
+    //     type: 'playlist',
+    //   },
+    // })
   ],
   unocss: { safelist },
 })
