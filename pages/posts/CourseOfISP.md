@@ -138,25 +138,21 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 身份验证 Authentication 指通过某种手段证明某人是他声明的身份。
 
-#### 身份验证
+#### 身份验证：salt（1101作业）
 
 通常使用密码口令进行身份验证，然而，总有用户使用弱口令，给attacker可乘之机。
 
 因此通常使用散列函数对口令处理，但是困难的口令各式各样，简单的口令千篇一律
 
-攻击者将各种简单的口令和他们的散列值提前计算，保存得到彩虹表，从而进行攻击
+当用户设置的口令过于简单时，攻击者提前将各种简单的口令和他们的散列值提前计算，保存得到彩虹表，从而进行攻击。即使使用SHA等加密方法，也可以通过多个散列值的对比找到较弱的口令来攻击。
 
-因此通过在密码上加salt来改变密码，类似加密模式中的IV。（1101作业）
-
-**salt**：时间戳、用户名，或任何随机数
+因此可以通过在口令上加入各不相同的**salt**（类似加密模式中的IV），使加密后的散列值各不相同，从而加大攻击者攻击的难度。明文的salt比如用户名、时间戳，也可以用密文salt来增强口令。
 
 多次散列化也能有效增大口令破解难度
 
-#### 访问控制
+#### 访问控制：Kerberos协议（1108作业）
 
 主要使用密钥分发中心KDC（Key Distribution Center）实现访问控制
-
-##### Kerberos协议（1108作业）
 
 ![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.5q7gk25ye5.webp)
 
@@ -184,7 +180,9 @@ $$
 \{c||addr||timestamp\}K_{c,s}
 $$
 
-auth能够保证1.client knows key 2.ticket is fresh
+authenticator能够保证： 
+1. 客户端知道密钥 
+2. 票据是新的、有效的
 
 ### 编程与程序安全 Programs & Programming
 
