@@ -124,7 +124,7 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 因此通常使用散列函数对口令处理，但是困难的口令各式各样，简单的口令千篇一律
 
-将简单的口令和他们的散列值提前计算，保存得到彩虹表
+攻击者将各种简单的口令和他们的散列值提前计算，保存得到彩虹表，从而进行攻击
 
 因此通过在密码上加salt来改变密码，类似加密模式中的IV。（1101作业）
 
@@ -229,7 +229,7 @@ availability 可用性
 
 在交易等场景，将信息进行重放也会造成破坏，一般使用添加时间戳的方法解决
 
-### 简单访问协议Needham-Schroeder Protocol
+### Needham-Schroeder Protocol 双向鉴别协议
 
 $$
 \begin{align}
