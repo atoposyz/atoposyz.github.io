@@ -36,7 +36,7 @@ categories:
 
 简单的块加密
 
-![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.41y3mrclf0.webp)
+<img src="https://github.com/atoposyz/picx-images-hosting/raw/master/image.41y3mrclf0.webp" style="zoom:50%;" />
 
 因为相同明文通过相同密钥可得到相同密文，存在一定漏洞，所以通过添加参数（IV）的方法修改每一次加密的明文或密钥，从而得到无规律的密文。
 
@@ -128,6 +128,7 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 **Digital Certificates**: A document certifying that the public key included inside does belong to the identity described in the document.
 
 **当用户想访问A网站，攻击者用B网站攻击的三种攻击方式**（1025作业）
+
 1. 攻击者使用A网站的真实证书。由于证书中有CA机构的签名，攻击者的网站无法伪造完全一样的签名，从而被浏览器识破（网站和真证书对不上）
 2. 攻击者创建一个假证书。由于浏览器无法识别该证书，一般会询问用户是否进入网站（众所周知，用户一般都是坚持访问的）
 3. 攻击者使用自己网站的真实证书。由于证书是真的，和网站也对得上，浏览器会通过验证。这种情况一般是网址相似，用户通过对比网址可判断网站是假的
@@ -154,7 +155,7 @@ A **digital signature** is a **protocol** that produces the same effect as a rea
 
 主要使用密钥分发中心KDC（Key Distribution Center）实现访问控制
 
-![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.5q7gk25ye5.webp)
+<img src="https://github.com/atoposyz/picx-images-hosting/raw/master/image.5q7gk25ye5.webp" style="zoom:50%;" />
 
 用户向KDC发送TGT请求（实际上就是登录服务器），KDC返回一个会话密钥 $K_{c, tgs}$ 和票据 $T_{c,tgs}$，用于和TGS通信。
 
@@ -215,7 +216,7 @@ availability 可用性
 
 ### 信息传递的四种攻击手段
 
-![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.8vmyj1ui7h.webp)
+<img src="https://github.com/atoposyz/picx-images-hosting/raw/master/image.8vmyj1ui7h.webp" style="zoom: 67%;" />
 
 
 ### 流加密和块加密的比较（0927作业）
@@ -261,13 +262,39 @@ $$
 
 其对应场景如下所示
 
-![](https://github.com/atoposyz/picx-images-hosting/raw/master/image.4g4jdq8po1.webp)
+<img src="https://github.com/atoposyz/picx-images-hosting/raw/master/image.4g4jdq8po1.webp" style="zoom:50%;" />
 
 ### 程序运行时的栈变化
 
-%ebp
+```cpp
+#include <cstdio>
+void foo(){
+  return ;
+}
+int main() {
+  char buff[10];
+  scanf("%s", buff);
+  foo();
+  return 0;
+}
+```
 
-（待补充）
+```asm
+main:
+    push %ebp               ; 保存旧的基址指针
+    mov %esp, %ebp          ; 设置新的基址指针，%ebp指向栈帧
+    sub $0x10, %esp         ; 为局部变量buff[10]分配空间
+    ; 执行 scanf("%s", buff)
+    push $buff              ; 压入参数，buff数组的地址
+    call scanf              ; 调用scanf函数
+    add $0x4, %esp          ; 调用返回后恢复栈
+    ; 执行 foo()
+    call foo                ; 调用foo函数
+    ; 结束 main
+    mov $0, %eax            ; 函数返回值为0
+    leave                   ; 恢复栈帧
+    ret                     ; 返回
+```
 
 ## 并非重点（？）
 
