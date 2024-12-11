@@ -52,6 +52,8 @@ declare module 'vue-router/auto-routes' {
     '/posts/CourseOfDCS_7': RouteRecordInfo<'/posts/CourseOfDCS_7', '/posts/CourseOfDCS_7', Record<never, never>, Record<never, never>>,
     '/posts/CourseOfDCS_8': RouteRecordInfo<'/posts/CourseOfDCS_8', '/posts/CourseOfDCS_8', Record<never, never>, Record<never, never>>,
     '/posts/CourseOfDCS_9': RouteRecordInfo<'/posts/CourseOfDCS_9', '/posts/CourseOfDCS_9', Record<never, never>, Record<never, never>>,
+    '/posts/CourseOfDCS_highlight': RouteRecordInfo<'/posts/CourseOfDCS_highlight', '/posts/CourseOfDCS_highlight', Record<never, never>, Record<never, never>>,
+    '/posts/CourseOfISP': RouteRecordInfo<'/posts/CourseOfISP', '/posts/CourseOfISP', Record<never, never>, Record<never, never>>,
     '/posts/DiaryOfKeyan240827': RouteRecordInfo<'/posts/DiaryOfKeyan240827', '/posts/DiaryOfKeyan240827', Record<never, never>, Record<never, never>>,
     '/posts/Disease-Manangement': RouteRecordInfo<'/posts/Disease-Manangement', '/posts/Disease-Manangement', Record<never, never>, Record<never, never>>,
     '/posts/Distributing-Candies': RouteRecordInfo<'/posts/Distributing-Candies', '/posts/Distributing-Candies', Record<never, never>, Record<never, never>>,
