@@ -21,7 +21,7 @@ categories:
 
 主界面中选择add sources
 
-<img src="C:\Users\xuanf\AppData\Roaming\Typora\typora-user-images\image-20241217150543495.png" alt="image-20241217150543495" style="zoom:50%;" />
+<img src="https://github.com/atoposyz/picx-images-hosting/raw/master/image-20241217150543495.1ovhsa9ra7.webp" alt="image-20241217150543495" style="zoom:50%;" />
 
 选择设计文件，导入src即可
 

@@ -59,6 +59,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/Distributing-Candies': RouteRecordInfo<'/posts/Distributing-Candies', '/posts/Distributing-Candies', Record<never, never>, Record<never, never>>,
     '/posts/example': RouteRecordInfo<'/posts/example', '/posts/example', Record<never, never>, Record<never, never>>,
     '/posts/exgcd': RouteRecordInfo<'/posts/exgcd', '/posts/exgcd', Record<never, never>, Record<never, never>>,
+    '/posts/FPGA_start': RouteRecordInfo<'/posts/FPGA_start', '/posts/FPGA_start', Record<never, never>, Record<never, never>>,
     '/posts/Gaussian-Elimination': RouteRecordInfo<'/posts/Gaussian-Elimination', '/posts/Gaussian-Elimination', Record<never, never>, Record<never, never>>,
     '/posts/github': RouteRecordInfo<'/posts/github', '/posts/github', Record<never, never>, Record<never, never>>,
     '/posts/Horner-Algorithm': RouteRecordInfo<'/posts/Horner-Algorithm', '/posts/Horner-Algorithm', Record<never, never>, Record<never, never>>,
