@@ -1,5 +1,7 @@
 ---
 title: FPGA快速实践
+date: 2024-10-08 21:54:00
+updated: 2024-10-08 21:54:00
 katex: true
 tags:
   - FPGA

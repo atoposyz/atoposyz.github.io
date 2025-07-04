@@ -46,7 +46,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       },
       {
         name: '动画分组',
-        url: '/anime-rank/',
+        url: '/AnimeTierList/',
         icon: 'i-ri-layout-row-fill',
         color: '#b8ff45',
       },
