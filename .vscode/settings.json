@@ -6,19 +6,11 @@
   "i18n-ally.sortKeys": true,
   "prettier.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": true
   },
   "editor.formatOnSave": false,
   "files.associations": {
     "*.css": "postcss"
   },
-  "svg.preview.background": "editor",
-  "conventionalCommits.scopes": [
-    "pnpm",
-    "page",
-    "paper",
-    "animerank",
-    "links",
-    "post"
-  ]
+  "svg.preview.background": "editor"
 }

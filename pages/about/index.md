@@ -1,10 +1,15 @@
 ---
 title: 关于我
-disallow: true
 ---
 
-> 平凡地走完了小学、初中与高中，即将从吉林大学毕业。
+I am developing [Valaxy](https://github.com/YunYouJun/valaxy) - Next Generation Static Blog Framework.
 
-小时候的我，即使喜欢玩电脑游戏，也绝不会想到长大后的他选择了信息学竞赛，与计算机专业。
+If you like it, you can sponsor me in [GitHub](https://github.com/sponsors/YunYouJun) or [www.yunyoujun.cn/sponsors/](https://www.yunyoujun.cn/sponsors/).
 
-生活本就是奇迹与日常的结合体，暂且让我们继续走下去吧。
+---
+
+我正在开发 [Valaxy](https://github.com/YunYouJun/valaxy) - 下一代静态博客框架。
+
+如果你喜欢它，你可以在 [GitHub](https://github.com/sponsors/YunYouJun) 或 [www.yunyoujun.cn/sponsors/](https://www.yunyoujun.cn/sponsors/) 赞助我。
+
+Check out the [Valaxy | GitHub](https://github.com/YunYouJun/valaxy) for more details.
