@@ -1,9 +1,13 @@
 ---
-title: 我的小伙伴们
+title: 友情链接
 keywords: 链接
-description: 云游的小伙伴们
-links: https://www.yunyoujun.cn/friends/links.json
+nav: false
+toc: false
+description: 朋友们
+links: https://atoposyz.github.io/links.json
 random: true
 ---
+
+> 海内存知己，天涯若比邻。
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
