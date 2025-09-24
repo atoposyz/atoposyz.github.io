@@ -1,0 +1,1134 @@
+<!doctype html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="utf-8"> 
+  <link rel="canonical" href="https://blog.csdn.net/davei1988/article/details/141639252"> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+  <meta name="renderer" content="webkit"> 
+  <meta name="force-rendering" content="webkit"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <meta name="report" content="{&quot;pid&quot;: &quot;blog&quot;, &quot;spm&quot;:&quot;1001.2101&quot;}"> 
+  <meta name="referrer" content="always"> 
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="alternate" media="handheld" href="#"> 
+  <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848"> 
+  <meta name="applicable-device" content="pc"> 
+  <link href="https://g.csdnimg.cn/static/logo/favicon32.ico" rel="shortcut icon" type="image/x-icon"> 
+  <title>Ubuntu 22.04配置NIS服务_ubuntu nis-CSDN博客</title>  
+  <meta name="keywords" content="ubuntu nis"> 
+  <meta name="csdn-baidu-search" content="{&quot;autorun&quot;:true,&quot;install&quot;:true,&quot;keyword&quot;:&quot;ubuntu nis&quot;}"> 
+  <meta name="description" content="文章浏览阅读1k次，点赞3次，收藏2次。说明：ubuntu 22.04 nis服务搭建。_ubuntu nis"> 
+  <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/css/detail_enter-af0ead44cd.min.css">  
+  <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/themesSkin/skin-blackaction/skin-blackaction-2c8e97d098.min.css">    
+  <meta name="toolbar" content="{&quot;type&quot;:&quot;1&quot;,&quot;fixModel&quot;:&quot;1&quot;}">     
+  <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/public/sandalstrap/1.4/css/sandalstrap.min.css"> 
+  <style>
+        .MathJax, .MathJax_Message, .MathJax_Preview{
+            display: none
+        }
+    </style>      
+ 	<style>
+	main div.blog-content-box pre {
+		max-height: 100%;
+		overflow-y: hidden;
+	}
+	</style>
+ </head>  
+ <body class="nodata is_black_skin  " style=""> 
+  <div id="toolbarBox" style="min-height: 48px;"></div>    
+  <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/pc/css/blog_code-01256533b5.min.css"> 
+  <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/chart-3456820cac.css"> 
+  <link rel="stylesheet" href="https://g.csdnimg.cn/lib/swiper/6.0.4/css/swiper.css">   
+  <div class="main_father clearfix d-flex justify-content-center mainfather-concision" style="height:100%;"> 
+   <div class="container clearfix container-concision" id="mainBox">  
+    <main>  
+     <div class="blog-content-box"> 
+      <div class="article-header-box"> 
+       <div class="article-header"> 
+        <div class="article-title-box"> 
+         <h1 class="title-article" id="articleContentId">Ubuntu 22.04配置NIS服务</h1> 
+        </div> 
+        <div class="article-info-box"> 
+         <div class="article-bar-top"> 
+          <img class="article-type-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/original.png" alt=""> 
+          <div class="bar-content"> 
+           <a href="https://mall.csdn.net/vip" data-report-query="spm=3001.10404" data-report-click="{&quot;spm&quot;:&quot;3001.10404&quot;}" data-report-view="{&quot;spm&quot;:&quot;3001.10404&quot;}" class="article-vip-box" target="_blank"><img class="article-vip-img-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/identityVipNew.png" alt=""></a> 
+           <a class="follow-nickName vip-name" href="https://blog.csdn.net/davei1988" target="_blank" rel="noopener" title="dawei.wang">dawei.wang</a> 
+           <img class="article-time-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCurrentTime2.png" alt=""> 
+           <span class="time">于&nbsp;2024-08-28 16:02:11&nbsp;发布</span> 
+           <div class="read-count-box"> 
+            <img class="article-read-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes2.png" alt=""> 
+            <span class="read-count">阅读量1k</span> 
+            <a id="blog_detail_zk_collection" class="un-collection" data-report-click="{&quot;mod&quot;:&quot;popu_823&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4232&quot;,&quot;ab&quot;:&quot;new&quot;}"> <img class="article-collect-img article-heard-img un-collect-status isdefault" style="display:inline-block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect2.png" alt=""> <img class="article-collect-img article-heard-img collect-status isactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive2.png" alt=""> <span class="name">收藏</span> <span class="get-collection"> 2 </span> </a> 
+            <div class="read-count-box is-like" data-type="top"> 
+             <img class="article-read-img article-heard-img" style="display:none" id="is-like-imgactive-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2023Active.png" alt=""> 
+             <img class="article-read-img article-heard-img" style="display:block" id="is-like-img-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2023Black.png" alt=""> 
+             <span class="read-count" id="blog-digg-num">点赞数 3 </span> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="blog-tags-box"> 
+          <div class="tags-box artic-tag-box"> 
+           <span class="label">分类专栏：</span> 
+           <a class="tag-link" href="https://blog.csdn.net/davei1988/category_12768199.html" target="_blank" rel="noopener"># Ubuntu</a> 
+           <span class="label">文章标签：</span> 
+           <a rel="noopener" data-report-query="spm=1001.2101.3001.4223" data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;ubuntu&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;ubuntu\&quot;}&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;ubuntu&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;ubuntu\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=ubuntu&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=&amp;from_tracking_code=tag_word&amp;from_code=app_blog_art" target="_blank">ubuntu</a> 
+           <a rel="noopener" data-report-query="spm=1001.2101.3001.4223" data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;linux&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;linux\&quot;}&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;linux&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;linux\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=linux&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=&amp;from_tracking_code=tag_word&amp;from_code=app_blog_art" target="_blank">linux</a> 
+           <a rel="noopener" data-report-query="spm=1001.2101.3001.4223" data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;运维&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;运维\&quot;}&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;运维&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;运维\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E8%BF%90%E7%BB%B4&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=&amp;from_tracking_code=tag_word&amp;from_code=app_blog_art" target="_blank">运维</a> 
+          </div> 
+         </div> 
+         <div class="slide-content-box"> 
+          <div class="article-copyright"> 
+           <div class="creativecommons">
+             版权声明：本文为博主原创文章，遵循
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。 
+           </div> 
+           <div class="article-source-link">
+             本文链接：
+            <a href="https://blog.csdn.net/davei1988/article/details/141639252" target="_blank">https://blog.csdn.net/davei1988/article/details/141639252</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="operating"> 
+          <a class="href-article-edit slide-toggle">版权</a> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div id="blogHuaweiyunAdvert"></div> 
+      <article class="baidu_pl"> 
+       <div id="article_content" class="article_content clearfix"> 
+        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/kdoc_html_views-1a98987dfd.css"> 
+        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-704d5b9767.css"> 
+        <div id="content_views" class="markdown_views prism-tomorrow-night"> 
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"> 
+          <path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path> 
+         </svg> 
+         <p>说明：<br>   ubuntu 22.04 nis服务搭建。</p> 
+         <h2><a id="_2"></a>服务端配置</h2> 
+         <p>查看系统版本</p> 
+         <pre><code class="prism language-bash">$ <span class="token function">cat</span> /etc/os-release 
+<span class="token assign-left variable">PRETTY_NAME</span><span class="token operator">=</span><span class="token string">"Ubuntu 22.04.4 LTS"</span>
+<span class="token assign-left variable">NAME</span><span class="token operator">=</span><span class="token string">"Ubuntu"</span>
+<span class="token assign-left variable">VERSION_ID</span><span class="token operator">=</span><span class="token string">"22.04"</span>
+<span class="token assign-left variable">VERSION</span><span class="token operator">=</span><span class="token string">"22.04.4 LTS (Jammy Jellyfish)"</span>
+<span class="token assign-left variable">VERSION_CODENAME</span><span class="token operator">=</span>jammy
+<span class="token assign-left variable">ID</span><span class="token operator">=</span>ubuntu
+<span class="token assign-left variable">ID_LIKE</span><span class="token operator">=</span>debian
+<span class="token assign-left variable">HOME_URL</span><span class="token operator">=</span><span class="token string">"https://www.ubuntu.com/"</span>
+<span class="token assign-left variable">SUPPORT_URL</span><span class="token operator">=</span><span class="token string">"https://help.ubuntu.com/"</span>
+<span class="token assign-left variable">BUG_REPORT_URL</span><span class="token operator">=</span><span class="token string">"https://bugs.launchpad.net/ubuntu/"</span>
+<span class="token assign-left variable">PRIVACY_POLICY_URL</span><span class="token operator">=</span><span class="token string">"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"</span>
+<span class="token assign-left variable">UBUNTU_CODENAME</span><span class="token operator">=</span>jammy
+</code ></pre> 
+         <p>安装NIS服务端</p> 
+         <pre><code  style="height: 50vh;" class="prism language-bash">$ <span class="token function">sudo</span> <span class="token function">apt</span> update
+$ <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> ypserv
+Reading package lists<span class="token punctuation">..</span>. Done
+Building dependency tree<span class="token punctuation">..</span>. Done
+Reading state information<span class="token punctuation">..</span>. Done
+The following packages were automatically installed and are no longer required:
+  libwpe-1.0-1 libwpebackend-fdo-1.0-1
+Use <span class="token string">'sudo apt autoremove'</span> to remove them.
+The following additional packages will be installed:
+  libnss-nis <span class="token function">make</span> nscd rpcbind yp-tools ypbind-mt
+Suggested packages:
+  make-doc krb5-kdc
+The following NEW packages will be installed:
+  libnss-nis <span class="token function">make</span> nscd rpcbind yp-tools ypbind-mt ypserv
+<span class="token number">0</span> upgraded, <span class="token number">7</span> newly installed, <span class="token number">0</span> to remove and <span class="token number">28</span> not upgraded.
+Need to get <span class="token number">525</span> kB of archives.
+After this operation, <span class="token number">1,964</span> kB of additional disk space will be used.
+Get:1 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 rpcbind amd64 <span class="token number">1.2</span>.6-2build1 <span class="token punctuation">[</span><span class="token number">46.6</span> kB<span class="token punctuation">]</span>
+Get:2 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 libnss-nis amd64 <span class="token number">3.1</span>-0ubuntu6 <span class="token punctuation">[</span><span class="token number">27.3</span> kB<span class="token punctuation">]</span>
+Get:3 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 <span class="token function">make</span> amd64 <span class="token number">4.3</span>-4.1build1 <span class="token punctuation">[</span><span class="token number">180</span> kB<span class="token punctuation">]</span>
+Get:4 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 nscd amd64 <span class="token number">2.35</span>-0ubuntu3.8 <span class="token punctuation">[</span><span class="token number">83.3</span> kB<span class="token punctuation">]</span>
+Get:5 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 ypbind-mt amd64 <span class="token number">2.7</span>.2-2 <span class="token punctuation">[</span><span class="token number">33.4</span> kB<span class="token punctuation">]</span>
+Get:6 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 yp-tools amd64 <span class="token number">4.2</span>.3-3 <span class="token punctuation">[</span><span class="token number">50.3</span> kB<span class="token punctuation">]</span>
+Get:7 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 ypserv amd64 <span class="token number">4.1</span>-2 <span class="token punctuation">[</span><span class="token number">104</span> kB<span class="token punctuation">]</span>
+<span class="token comment"># 安装ypserv同时安装了rpcbind、libnss-nis、make、nscd、ypbind-mt、yp-tools、ypserv；这些都不需要额外安装了。</span>
+
+$ <span class="token function">sudo</span> <span class="token function">vim</span> /etc/sysctl.conf 
+kernel.domainname <span class="token operator">=</span> aic.test.ai		<span class="token comment"># 这里给nis域名</span>
+
+$ <span class="token function">sudo</span> <span class="token function">reboot</span>		<span class="token comment"># 重启系统</span>
+$ nisdomainname 	<span class="token comment"># 查看一下nis域名</span>
+aic.test.ai
+
+$ <span class="token function">sudo</span> <span class="token function">vim</span> /etc/defaultdomain
+aic.test.ai
+
+$ <span class="token function">sudo</span> <span class="token function">vim</span> /var/yp/Makefile
+<span class="token comment"># ALL =   passwd group hosts rpc services netid protocols netgrp</span>
+ALL <span class="token operator">=</span>   <span class="token function">passwd</span> group hosts netgrp		<span class="token comment"># 这里根据需求修改nis域管理服务</span>
+
+/usr/lib/yp/ypinit <span class="token parameter variable">-m</span>
+
+At this point, we have to construct a list of the hosts <span class="token function">which</span> will run NIS
+servers.  mlc09 is <span class="token keyword">in</span> the list of NIS server hosts.  Please <span class="token builtin class-name">continue</span> to <span class="token function">add</span>
+the names <span class="token keyword">for</span> the other hosts, one per line.  When you are <span class="token keyword">done</span> with the
+list, <span class="token builtin class-name">type</span> a <span class="token operator">&lt;</span>control D<span class="token operator">&gt;</span>.
+        next <span class="token function">host</span> to add:  mlc09
+        next <span class="token function">host</span> to add:  
+The current list of NIS servers looks like this:
+
+mlc09
+
+Is this correct?  <span class="token punctuation">[</span>y/n: y<span class="token punctuation">]</span>  y
+We need a few minutes to build the databases<span class="token punctuation">..</span>.
+Building /var/yp/aic.test.ai/ypservers<span class="token punctuation">..</span>.
+Running /var/yp/Makefile<span class="token punctuation">..</span>.
+gmake<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Entering directory <span class="token string">'/var/yp/aic.test.ai'</span>
+Updating passwd.byname<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating passwd.byuid<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating group.byname<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating group.bygid<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating hosts.byname<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating hosts.byaddr<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating netgroup<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating netgroup.byhost<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating netgroup.byuser<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredUpdating shadow.byname<span class="token punctuation">..</span>.
+failed to send <span class="token string">'clear'</span> to <span class="token builtin class-name">local</span> ypserv: RPC: Program not registeredgmake<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Leaving directory <span class="token string">'/var/yp/aic.test.ai'</span>
+
+mlc09 has been <span class="token builtin class-name">set</span> up as a NIS master server.
+
+Now you can run ypinit <span class="token parameter variable">-s</span> mlc09 on all slave server.
+</code ></pre> 
+         <p>配置服务启动</p> 
+         <pre><code  style="height: 50vh;" class="prism language-bash"><span class="token function">cat</span> /lib/systemd/system/ypserv.service 
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+<span class="token assign-left variable">Description</span><span class="token operator">=</span>NIS/YP <span class="token punctuation">(</span>Network Information Service<span class="token punctuation">)</span> Server
+<span class="token assign-left variable">Requires</span><span class="token operator">=</span>rpcbind.service
+<span class="token assign-left variable">After</span><span class="token operator">=</span>network.target rpcbind.service 
+<span class="token assign-left variable">Before</span><span class="token operator">=</span>ypbind.service
+
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+<span class="token assign-left variable">Type</span><span class="token operator">=</span>forking
+<span class="token assign-left variable">PIDFile</span><span class="token operator">=</span>/run/ypserv.pid
+<span class="token assign-left variable">Environment</span><span class="token operator">=</span>YPSERVARGS<span class="token operator">=</span>
+<span class="token assign-left variable">EnvironmentFile</span><span class="token operator">=</span>-/etc/default/nis
+<span class="token assign-left variable">ExecStartPre</span><span class="token operator">=</span>/bin/domainname <span class="token parameter variable">-F</span> /etc/defaultdomain
+<span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/usr/sbin/ypserv <span class="token variable">$YPSERVARGS</span>
+
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+<span class="token assign-left variable">WantedBy</span><span class="token operator">=</span>multi-user.target
+</code ></pre> 
+         <p>为了方便管理可以自定义服务端端口：856；也可以使用默认端口</p> 
+         <pre><code class="prism language-bash">$ <span class="token function">sudo</span> <span class="token function">vim</span> /lib/systemd/system/ypserv.service
+<span class="token assign-left variable">Environment</span><span class="token operator">=</span>YPSERVARGS<span class="token operator">=</span><span class="token string">"-p 856"</span>
+</code ></pre> 
+         <p>添加到开机启动并启动服务</p> 
+         <pre><code class="prism language-bash">$ <span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> ypserv <span class="token parameter variable">--now</span>
+$ <span class="token function">sudo</span> <span class="token function">lsof</span> <span class="token parameter variable">-i</span> <span class="token operator">|</span><span class="token function">grep</span> ypserv
+ypserv    <span class="token number">3148</span>            root    5u  IPv4  <span class="token number">93227</span>      0t0  UDP *:856 
+ypserv    <span class="token number">3148</span>            root    6u  IPv4  <span class="token number">93232</span>      0t0  TCP *:856 <span class="token punctuation">(</span>LISTEN<span class="token punctuation">)</span>
+ypserv    <span class="token number">3148</span>            root    7u  IPv6  <span class="token number">93237</span>      0t0  UDP *:857 
+ypserv    <span class="token number">3148</span>            root    8u  IPv6  <span class="token number">93240</span>      0t0  TCP *:857 <span class="token punctuation">(</span>LISTEN<span class="token punctuation">)</span>
+</code ></pre> 
+         <p>同样yppasswd服务，修改端口号：858；也可以使用默认端口</p> 
+         <pre><code  style="height: 50vh;" class="prism language-bash"><span class="token function">cat</span> /lib/systemd/system/yppasswdd.service
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+<span class="token assign-left variable">Description</span><span class="token operator">=</span>NIS Users Passwords Change Server
+<span class="token assign-left variable">Requires</span><span class="token operator">=</span>rpcbind.service
+<span class="token assign-left variable">Wants</span><span class="token operator">=</span>network-online.target
+<span class="token assign-left variable">After</span><span class="token operator">=</span>network-online.target rpcbind.service
+
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+<span class="token assign-left variable">Type</span><span class="token operator">=</span>forking
+<span class="token assign-left variable">PIDFile</span><span class="token operator">=</span>/run/yppasswdd.pid
+<span class="token assign-left variable">Environment</span><span class="token operator">=</span>YPPASSWDDARGS<span class="token operator">=</span> <span class="token assign-left variable">YPCHANGEOK</span><span class="token operator">=</span>chsh <span class="token assign-left variable">YPPWDDIR</span><span class="token operator">=</span>/etc
+<span class="token assign-left variable">EnvironmentFile</span><span class="token operator">=</span>-/etc/default/nis
+<span class="token assign-left variable">ExecStartPre</span><span class="token operator">=</span>/bin/domainname <span class="token parameter variable">-F</span> /etc/defaultdomain
+<span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/usr/sbin/rpc.yppasswdd <span class="token parameter variable">-D</span> <span class="token variable">$YPPWDDIR</span> <span class="token parameter variable">-e</span> <span class="token variable">$YPCHANGEOK</span> <span class="token variable">$YPPASSWDDARGS</span>
+
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+<span class="token assign-left variable">WantedBy</span><span class="token operator">=</span>multi-user.target
+
+$ <span class="token function">sudo</span> <span class="token function">vim</span> /lib/systemd/system/yppasswdd.service
+<span class="token assign-left variable">Environment</span><span class="token operator">=</span>YPPASSWDDARGS<span class="token operator">=</span><span class="token string">"-p 858"</span> <span class="token assign-left variable">YPCHANGEOK</span><span class="token operator">=</span>chsh <span class="token assign-left variable">YPPWDDIR</span><span class="token operator">=</span>/etc
+</code ></pre> 
+         <p>添加到开机启动并启动服务</p> 
+         <pre><code class="prism language-bash">$ <span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> yppasswdd <span class="token parameter variable">--now</span>
+$ <span class="token function">sudo</span> <span class="token function">lsof</span> <span class="token parameter variable">-i</span> <span class="token operator">|</span> <span class="token function">grep</span> yppas
+rpc.yppas <span class="token number">3240</span>            root    5u  IPv4  <span class="token number">16980</span>      0t0  UDP *:858 
+rpc.yppas <span class="token number">3240</span>            root    6u  IPv4  <span class="token number">16983</span>      0t0  TCP *:858 <span class="token punctuation">(</span>LISTEN<span class="token punctuation">)</span>
+rpc.yppas <span class="token number">3240</span>            root    7u  IPv6  <span class="token number">16986</span>      0t0  UDP *:859 
+rpc.yppas <span class="token number">3240</span>            root    8u  IPv6  <span class="token number">16989</span>      0t0  TCP *:859 <span class="token punctuation">(</span>LISTEN<span class="token punctuation">)</span>
+</code ></pre> 
+         <h2><a id="_160"></a>客户端配置</h2> 
+         <pre><code  style="height: 50vh;" class="prism language-bash">$ <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> ypbind-mt 
+Reading package lists<span class="token punctuation">..</span>. Done
+Building dependency tree<span class="token punctuation">..</span>. Done
+Reading state information<span class="token punctuation">..</span>. Done
+The following additional packages will be installed:
+  libnss-nis nscd rpcbind yp-tools
+The following NEW packages will be installed:
+  libnss-nis nscd rpcbind yp-tools ypbind-mt
+<span class="token number">0</span> upgraded, <span class="token number">5</span> newly installed, <span class="token number">0</span> to remove and <span class="token number">80</span> not upgraded.
+Need to get <span class="token number">241</span> kB of archives.
+After this operation, <span class="token number">1,081</span> kB of additional disk space will be used.
+Get:1 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 rpcbind amd64 <span class="token number">1.2</span>.6-2build1 <span class="token punctuation">[</span><span class="token number">46.6</span> kB<span class="token punctuation">]</span>
+Get:2 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 libnss-nis amd64 <span class="token number">3.1</span>-0ubuntu6 <span class="token punctuation">[</span><span class="token number">27.3</span> kB<span class="token punctuation">]</span>
+Get:3 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 nscd amd64 <span class="token number">2.35</span>-0ubuntu3.8 <span class="token punctuation">[</span><span class="token number">83.3</span> kB<span class="token punctuation">]</span>
+Get:4 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 ypbind-mt amd64 <span class="token number">2.7</span>.2-2 <span class="token punctuation">[</span><span class="token number">33.4</span> kB<span class="token punctuation">]</span>
+Get:5 https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 yp-tools amd64 <span class="token number">4.2</span>.3-3 <span class="token punctuation">[</span><span class="token number">50.3</span> kB<span class="token punctuation">]</span>
+
+$ <span class="token function">sudo</span> <span class="token function">vim</span> /etc/defaultdomain
+aic.test.ai
+
+$ <span class="token function">sudo</span> <span class="token function">vim</span> /etc/yp.conf
+domain aic.test.ai server <span class="token number">192.168</span>.13.68
+
+$ <span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> ypbind <span class="token parameter variable">--now</span>
+
+$ <span class="token function">sudo</span> <span class="token function">vim</span> /etc/nsswitch.conf
+passwd:         files systemd nis
+group:          files systemd nis
+shadow:         files nis
+gshadow:        files
+
+hosts:          files nis mdns4_minimal <span class="token punctuation">[</span>NOTFOUND<span class="token operator">=</span>return<span class="token punctuation">]</span> dns
+networks:       files
+
+protocols:      db files
+services:       db files
+ethers:         db files
+rpc:            db files
+
+netgroup:       nis
+</code ></pre> 
+         <p>小结：<br>   配置前需要先安装NFS服务并将home目录挂载到nis client服务器。</p> 
+        </div> 
+        <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-a5d25dd831.css" rel="stylesheet"> 
+        <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/style-e504d6a974.css" rel="stylesheet"> 
+       </div> 
+      </article>  
+     </div> 
+     <div class="directory-boxshadow-dialog" style="display:none;"> 
+      <div class="directory-boxshadow-dialog-box"> 
+      </div> 
+      <div class="vip-limited-time-offer-box-new" id="vip-limited-time-offer-box-new"> 
+       <img class="limited-img limited-img-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/vip-limited-close-newBlack.png"> 
+       <div class="vip-limited-time-top">
+         确定要放弃本次机会？ 
+       </div> 
+       <span class="vip-limited-time-text">福利倒计时</span> 
+       <div class="limited-time-box-new"> 
+        <span class="time-hour"></span> 
+        <i>:</i> 
+        <span class="time-minite"></span> 
+        <i>:</i> 
+        <span class="time-second"></span> 
+       </div> 
+       <div class="limited-time-vip-box"> 
+        <p> <img class="coupon-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/vip-limited-close-roup.png"> <span class="def">立减 ¥</span> <span class="active limited-num"></span> </p> 
+        <span class="">普通VIP年卡可用</span> 
+       </div> 
+       <a class="limited-time-btn-new" href="https://mall.csdn.net/vip" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.9621&quot;}" data-report-query="spm=1001.2101.3001.9621">立即使用</a> 
+      </div> 
+     </div> 
+     <div class="more-toolbox-new more-toolbar" id="toolBarBox"> 
+      <div class="left-toolbox"> 
+       <div class="toolbox-left"> 
+        <div class="profile-box"> 
+         <a class="profile-href" target="_blank" href="https://blog.csdn.net/davei1988"><img class="profile-img" src="https://profile-avatar.csdnimg.cn/default.jpg!1"> <span class="profile-name"> dawei.wang </span> </a> 
+        </div> 
+        <div class="profile-attend"> 
+         <a class="tool-attend tool-bt-button tool-bt-attend" href="javascript:;" data-report-view="{&quot;mod&quot;:&quot;1592215036_002&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4232&quot;,&quot;extend1&quot;:&quot;关注&quot;}">关注</a> 
+         <a class="tool-item-follow active-animation" style="display:none;">关注</a> 
+        </div> 
+       </div> 
+       <div class="toolbox-middle"> 
+        <ul class="toolbox-list"> 
+         <li class="tool-item tool-item-size tool-active is-like" id="is-like" data-type="bottom"> <a class="tool-item-href"> <img style="display:none;" id="is-like-imgactive-animation-like" class="animation-dom active-animation" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarThumbUpactive.png" alt=""> <img class="isactive" style="display:none" id="is-like-imgactive" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/like-active.png" alt=""> <img class="isdefault" style="display:block" id="is-like-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/like-dark.png" alt=""> <span id="spanCount" class="count "> 3 </span> </a> 
+          <div class="tool-hover-tip">
+           <span class="text space">点赞</span>
+          </div> </li> 
+         <li class="tool-item tool-item-size tool-active is-unlike" id="is-unlike"> <a class="tool-item-href"> <img class="isactive" style="margin-right:0px;display:none" id="is-unlike-imgactive" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/unlike-active.png" alt=""> <img class="isdefault" style="margin-right:0px;display:block" id="is-unlike-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/unlike-dark.png" alt=""> <span id="unlikeCount" class="count "></span> </a> 
+          <div class="tool-hover-tip">
+           <span class="text space">踩</span>
+          </div> </li> 
+         <li class="tool-item tool-item-size tool-active is-collection "> <a class="tool-item-href" href="javascript:;" data-report-click="{&quot;mod&quot;:&quot;popu_824&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4130&quot;,&quot;ab&quot;:&quot;new&quot;}"> <img style="display:none" id="is-collection-img-collection" class="animation-dom active-animation" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/collect-active.png" alt=""> <img class="isdefault" id="is-collection-img" style="display:block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/collect-dark.png" alt=""> <img class="isactive" id="is-collection-imgactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCollectActive.png" alt=""> <span class="count get-collection " data-num="2" id="get-collection"> 2 </span> </a> 
+          <div class="tool-hover-tip collect"> 
+           <div class="collect-operate-box"> 
+            <span class="collect-text" id="is-collection"> 收藏 </span> 
+           </div> 
+          </div> 
+          <div class="tool-active-list"> 
+           <div class="text">
+             觉得还不错? 
+            <span class="collect-text" id="tool-active-list-collection"> 一键收藏 </span> 
+            <img id="tool-active-list-close" src="https://csdnimg.cn/release/blogv2/dist/pc/img/collectionCloseBlack.png" alt=""> 
+           </div> 
+          </div> </li> 
+         <li class="tool-item tool-item-size tool-active tool-item-comment"> 
+          <div class="guide-rr-first"> 
+           <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/guideRedReward01.png" alt=""> 
+           <button class="btn-guide-known">知道了</button> 
+          </div> <a class="tool-item-href go-side-comment" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7009&quot;}"> <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/comment-dark.png" alt=""> <span class="count"> 0 </span> </a> 
+          <div class="tool-hover-tip">
+           <span class="text space">评论</span>
+          </div> </li> 
+         <li class="tool-item tool-item-size tool-active tool-QRcode" data-type="article" id="tool-share"> <a class="tool-item-href" href="javascript:;" data-report-view="{&quot;spm&quot;:&quot;3001.4129&quot;,&quot;extra&quot;:{&quot;type&quot;:&quot;blogdetail&quot;}}"> <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/share-dark.png" alt=""> <span class="count">分享</span> </a> 
+          <div class="QRcode active" id="tool-QRcode"> 
+           <div class="share-bg-box"> 
+            <div class="share-content"> 
+             <a id="copyPosterUrl" data-type="link" class="btn-share">复制链接</a> 
+            </div> 
+            <div class="share-content"> 
+             <a class="btn-share" data-type="qq">分享到 QQ</a> 
+            </div> 
+            <div class="share-content"> 
+             <a class="btn-share" data-type="weibo">分享到新浪微博</a> 
+            </div> 
+            <div class="share-code"> 
+             <div class="share-code-box" id="shareCode"></div> 
+             <div class="share-code-text"> 
+              <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/share/icon-wechat.png" alt="">扫一扫 
+             </div> 
+            </div> 
+           </div> 
+          </div> </li> 
+         <li class="tool-item tool-item-size tool-active is-more" id="is-more"> <a class="tool-item-href"> <img class="isdefault" style="margin-right:0px;display:block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/more-dark.png" alt=""> <span class="count"></span> </a> 
+          <div class="more-opt-box"> 
+           <div class="mini-box"> 
+            <a class="tool-item-href" id="toolReportBtnHide"> <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/report-dark.png" alt=""> <span class="count">举报</span> </a> 
+           </div> 
+           <div class="normal-box"> 
+            <a class="tool-item-href" id="toolReportBtnHideNormal"> <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/toolbar/report-dark.png" alt=""> <span class="count">举报</span> </a> 
+           </div> 
+          </div> </li> 
+        </ul> 
+       </div> 
+       <div class="toolbox-right"> 
+        <div class="tool-directory"> 
+         <a class="bt-columnlist-show" data-id="12768199" data-free="true" data-description="Ubuntu" data-subscribe="false" data-title="Ubuntu" data-img="https://i-blog.csdnimg.cn/columns/default/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_224,w_224" data-url="https://blog.csdn.net/davei1988/category_12768199.html" data-sum="6" data-people="1" data-price="0" data-hotrank="0" data-status="true" data-oldprice="0" data-join="false" data-studyvip="true" data-studysubscribe="false" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.6334&quot;,&quot;extend1&quot;:&quot;专栏目录&quot;}" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6334&quot;,&quot;extend1&quot;:&quot;专栏目录&quot;}">专栏目录</a> 
+        </div> 
+       </div> 
+      </div> 
+     </div>   
+     <a id="commentBox" name="commentBox"></a> 
+     <div id="pcCommentBox" class="comment-box comment-box-new2 login-comment-box-new" style="display:none"> 
+      <div class="has-comment" style="display:block"> 
+       <div class="one-line-box"> 
+        <div class="has-comment-tit go-side-comment"> 
+         <span class="count">0</span>&nbsp;条评论 
+        </div> 
+        <div class="has-comment-con comment-operate-item"></div> 
+        <a class="has-comment-bt-right go-side-comment focus">写评论</a> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="first-recommend-box recommend-box recommend-highlight-default"> 
+      <div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/chenluancl/article/details/2302052" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-2302052-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/chenluancl/article/details/2302052&quot;}"> 
+       <div class="content-box"> 
+        <div class="content-blog display-flex"> 
+         <div class="title-box"> 
+          <span class="type"> <img src="https://csdnimg.cn/release/blogv2/dist/components/img/blogType.png" alt=""> <span class="tip">博客</span> </span> 
+          <a href="https://blog.csdn.net/chenluancl/article/details/2302052" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-2302052-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/chenluancl/article/details/2302052&quot;}" data-report-query="spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-2302052-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-2302052-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9"> 
+           <div class="left ellipsis-online ellipsis-online-1">
+            <em>ubuntu</em>下的
+            <em>nis</em>
+           </div> </a> 
+         </div> 
+         <div class="info-box display-flex"> 
+          <div class="info"> 
+           <a href="https://blog.csdn.net/chenluancl" target="_blank"><span class="blog-title">chenluancl的专栏</span></a> 
+          </div> 
+          <div class="info display-flex"> 
+           <span class="info-block time">04-17</span> 
+           <span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> 1503 </span> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="desc-box"> 
+         <a href="https://blog.csdn.net/chenluancl/article/details/2302052" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-2302052-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/chenluancl/article/details/2302052&quot;}" data-report-query="spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-2302052-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-2302052-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9"> 
+          <div class="desc ellipsis-online ellipsis-online-1">
+           文中粗体为文件中添加的内容，斜体为命令。 &lt;!--@page { size: 21cm 29.7cm; margin: 2cm }PRE.western { font-family: "Nimbus Mono L", monospace }PRE.cjk { font-family: "文鼎PL细上海宋Uni", monospace }PRE.ctl { 
+          </div> </a> 
+        </div> 
+       </div> 
+      </div> 
+     </div>  
+     <div class="second-recommend-box recommend-box recommend-highlight-default"> 
+      <div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/TpCode/article/details/133627298" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133627298-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/TpCode/article/details/133627298&quot;}"> 
+       <div class="content-box"> 
+        <div class="content-blog display-flex"> 
+         <div class="title-box"> 
+          <span class="type"> <img src="https://csdnimg.cn/release/blogv2/dist/components/img/blogType.png" alt=""> <span class="tip">博客</span> </span> 
+          <a href="https://blog.csdn.net/TpCode/article/details/133627298" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133627298-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/TpCode/article/details/133627298&quot;}" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-133627298-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-133627298-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9"> 
+           <div class="left ellipsis-online ellipsis-online-1">
+            <em>NIS</em>
+            <em>服务</em>器
+            <em>配置</em>及客户端手动挂载实现
+           </div> 
+           <div class="tag">
+            最新发布
+           </div> </a> 
+         </div> 
+         <div class="info-box display-flex"> 
+          <div class="info"> 
+           <a href="https://blog.csdn.net/TpCode" target="_blank"><span class="blog-title">TpCode的博客</span></a> 
+          </div> 
+          <div class="info display-flex"> 
+           <span class="info-block time">10-07</span> 
+           <span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> 371 </span> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="desc-box"> 
+         <a href="https://blog.csdn.net/TpCode/article/details/133627298" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133627298-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/TpCode/article/details/133627298&quot;}" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-133627298-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-133627298-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9"> 
+          <div class="desc ellipsis-online ellipsis-online-1">
+           通过按照上述步骤
+           <em>配置</em>
+           <em>NIS</em>
+           <em>服务</em>器并在客户端上手动挂载
+           <em>NIS</em>共享目录，您可以实现在网络环境中集中管理用户身份验证和
+           <em>配置</em>信息，并在客户端上访问共享目录中的文件。请注意，这只是
+           <em>NIS</em>的基本
+           <em>配置</em>和手动挂载方法，更复杂的设置和自动挂载方法可能需要进一步的
+           <em>配置</em>和调整。本文将详细介绍如何
+           <em>配置</em>
+           <em>NIS</em>
+           <em>服务</em>器，并展示如何在客户端上手动挂载
+           <em>NIS</em>共享目录。在
+           <em>服务</em>器上使用适合您的操作系统的软件包管理工具安装
+           <em>NIS</em>
+           <em>服务</em>器软件包。在客户端上使用适合您的操作系统的软件包管理工具安装
+           <em>NIS</em>客户端软件包。目录来访问
+           <em>NIS</em>共享目录中的文件。
+          </div> </a> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="recommend-box insert-baidu-box  recommend-highlight-default"> 
+      <div class="recommend-item-box no-index" style="display:none"></div> 
+      <div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/WODECZW/article/details/80137564" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-2-80137564-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/WODECZW/article/details/80137564&quot;}"> 
+       <div class="content-box"> 
+        <div class="content-blog display-flex"> 
+         <div class="title-box"> 
+          <span class="type"> <img src="https://csdnimg.cn/release/blogv2/dist/components/img/blogType.png" alt=""> <span class="tip">博客</span> </span> 
+          <a href="https://blog.csdn.net/WODECZW/article/details/80137564" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-2-80137564-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/WODECZW/article/details/80137564&quot;}" data-report-query="spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-80137564-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-80137564-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9"> 
+           <div class="left ellipsis-online ellipsis-online-1">
+            <em>Ubuntu</em>16.04下寻找
+            <em>nis</em>domainname的
+            <em>配置</em>文件
+           </div> </a> 
+         </div> 
+         <div class="info-box display-flex"> 
+          <div class="info"> 
+           <a href="https://blog.csdn.net/WODECZW" target="_blank"><span class="blog-title">WODECZW的博客</span></a> 
+          </div> 
+          <div class="info display-flex"> 
+           <span class="info-block time">04-28</span> 
+           <span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> 963 </span> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="desc-box"> 
+         <a href="https://blog.csdn.net/WODECZW/article/details/80137564" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-2-80137564-blog-141639252.235^v43^pc_blog_bottom_relevance_base9\&quot;,\&quot;dist_request_id\&quot;:\&quot;1744946793604_96290\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1744946793604_96290&quot;,&quot;ab_strategy&quot;:&quot;vipdefault&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/WODECZW/article/details/80137564&quot;}" data-report-query="spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-80137564-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-80137564-blog-141639252.235%5Ev43%5Epc_blog_bottom_relevance_base9"> 
+          <div class="desc ellipsis-online ellipsis-online-1">
+           <em>nis</em>domainname这个命令可以显示也可以修改
+           <em>nis</em>的域名（搭
+           <em>服务</em>器的集群用的）但是你man还是apt-file这个命令，在这些描述中你是找不到他的
+           <em>配置</em>文件的（对天发誓，找了好几遍了）然后不管是locate它的相关文字还是啥都找不到，因为它的
+           <em>配置</em>文件的名字跟
+           <em>nis</em>一点关系都没有这里先说答案，
+           <em>配置</em>文件是/etc/defaultdomain至于找到的办法，多亏了grep这个命令它可以检索文档里的...
+          </div> </a> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="blog-footer-bottom" style="margin-top:10px;"></div>   
+    </main> 
+    <aside class="blog_container_aside"> 
+     <div id="asideProfile" class="aside-box active"> 
+      <div class="profile-intro d-flex"> 
+       <div class="avatar-box d-flex justify-content-center flex-column"> 
+        <a href="https://blog.csdn.net/davei1988" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_379&quot;,&quot;spm&quot;:&quot;3001.4121&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988&quot;,&quot;ab&quot;:&quot;new&quot;}"> <img src="https://profile-avatar.csdnimg.cn/default.jpg!1" class="avatar_pic"> </a>
+        <a href="https://blog.csdn.net/davei1988" data-report-click="{&quot;spm&quot;:&quot;3001.9180&quot;}" target="_blank"><img class="identity" src="https://csdnimg.cn/release/blogv2/dist/mobile/img/vipIcon.png" alt=""></a>  
+       </div> 
+       <div class="user-info d-flex flex-column profile-intro-name-box"> 
+        <div class="profile-intro-name-boxTop"> 
+         <a href="https://blog.csdn.net/davei1988" target="_blank" class="" id="uid" title="dawei.wang" data-report-click="{&quot;mod&quot;:&quot;popu_379&quot;,&quot;spm&quot;:&quot;3001.4122&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988&quot;,&quot;ab&quot;:&quot;new&quot;}"> <span class="name" username="davei1988">dawei.wang</span> </a> 
+        </div> 
+        <div class="profile-intro-name-boxFooter-new"> 
+         <p class="profile-intro-name-leve"> <span> 博客等级 </span> <img class="level" src="https://csdnimg.cn/identity/blog3.png"> </p> 
+         <span class="profile-intro-name-years" title="已加入 CSDN 7年">码龄7年</span> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="profile-intro-rank-information"> 
+       <dl> 
+        <a href="https://blog.csdn.net/davei1988" data-report-click="{&quot;mod&quot;:&quot;1598321000_001&quot;,&quot;spm&quot;:&quot;3001.4310&quot;}" data-report-query="t=1"> 
+         <dd>
+          <span>35</span>
+         </dd> 
+         <dt>
+          原创
+         </dt> </a> 
+       </dl> 
+       <dl title="160"> 
+        <dd>
+         160
+        </dd> 
+        <dt>
+         点赞
+        </dt> 
+       </dl> 
+       <dl title="110"> 
+        <dd>
+         110
+        </dd> 
+        <dt>
+         收藏
+        </dt> 
+       </dl> 
+       <dl id="fanBox" title="89"> 
+        <dd>
+         <span id="fan">89</span>
+        </dd> 
+        <dt>
+         粉丝
+        </dt> 
+       </dl> 
+      </div> 
+      <div class="profile-intro-name-boxOpration"> 
+       <div class="opt-letter-watch-box"> 
+        <a class="personal-watch bt-button" id="btnAttent">关注</a> 
+       </div> 
+       <div class="opt-letter-watch-box"> 
+        <a rel="noopener" class="bt-button personal-letter" href="https://im.csdn.net/chat/davei1988" target="_blank">私信</a> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="swiper-slide-box-remuneration"> 
+      <a data-report-click="{&quot;spm&quot;:&quot;3001.9728&quot;,&quot;extra&quot;:{&quot;index&quot;:&quot;0&quot;}}" data-report-view="{&quot;spm&quot;:&quot;3001.9728&quot;,&quot;extra&quot;:{&quot;index&quot;:&quot;0&quot;}}" href="https://ai.csdn.net/" target="_blank"> <img src="https://i-operation.csdnimg.cn/images/2dd892a9769b4cce9c086db94eab887f.png" alt=""> </a> 
+     </div> 
+     <div id="asideHotArticle" class="aside-box"> 
+      <h3 class="aside-title">热门文章</h3> 
+      <div class="aside-content"> 
+       <ul class="hotArticle-list"> 
+        <li> <a href="https://blog.csdn.net/davei1988/article/details/137782310" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_541&quot;,&quot;spm&quot;:&quot;3001.4139&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/137782310&quot;,&quot;ab&quot;:&quot;new&quot;}"> Centos/Redhat_7.9系统内核升级 <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> <span class="read">2294</span> </a> </li> 
+        <li> <a href="https://blog.csdn.net/davei1988/article/details/131964055" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_541&quot;,&quot;spm&quot;:&quot;3001.4139&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/131964055&quot;,&quot;ab&quot;:&quot;new&quot;}"> Centos/Redhat_7.9安装tigervnc <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> <span class="read">2091</span> </a> </li> 
+        <li> <a href="https://blog.csdn.net/davei1988/article/details/131249050" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_541&quot;,&quot;spm&quot;:&quot;3001.4139&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/131249050&quot;,&quot;ab&quot;:&quot;new&quot;}"> Centos/Redhat_7.9离线安装zabbix-agent2 <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> <span class="read">1878</span> </a> </li> 
+        <li> <a href="https://blog.csdn.net/davei1988/article/details/137824435" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_541&quot;,&quot;spm&quot;:&quot;3001.4139&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/137824435&quot;,&quot;ab&quot;:&quot;new&quot;}"> Centos/Redhat_7.9升级GCC/GCC-C++ <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> <span class="read">1644</span> </a> </li> 
+        <li> <a href="https://blog.csdn.net/davei1988/article/details/144325134" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_541&quot;,&quot;spm&quot;:&quot;3001.4139&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/144325134&quot;,&quot;ab&quot;:&quot;new&quot;}"> Ubuntu 22.04加Windows AD域 <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> <span class="read">1489</span> </a> </li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div id="asideCategory" class="aside-box flexible-box"> 
+      <h3 class="aside-title">分类专栏</h3> 
+      <div class="aside-content"> 
+       <ul> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12602617.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12602617.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756916.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle "></div> <span class="title oneline"> Python </span> </a> <span class="special-column-num">1篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12557680.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12557680.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle "></div> <span class="title oneline"> 泛微OA </span> </a> <span class="special-column-num">1篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12390297.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12390297.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/blog_column_migrate/50ebd4af1d8ce5bdece6406b1f1ca55c.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle "></div> <span class="title oneline"> Win_Server </span> </a> <span class="special-column-num">1篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12383508.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12383508.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756923.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle "></div> <span class="title oneline"> 虚拟化技术 </span> </a> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12383511.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12383511.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/blog_column_migrate/9a0de8ff0d76bed3074d63417b3ffeae.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle img-mantle-second"></div> <span class="title oneline"> VMware </span> </a> <span class="special-column-num">3篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12383625.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12383625.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/blog_column_migrate/7b859c18e55d84c748d355181a44c249.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle img-mantle-second"></div> <span class="title oneline"> Hyper-V </span> </a> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12803110.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12803110.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756926.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle img-mantle-second"></div> <span class="title oneline"> KVM </span> </a> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12312790.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12312790.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756926.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle "></div> <span class="title oneline"> Linux </span> </a> <span class="special-column-num">18篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12768200.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12768200.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756919.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle img-mantle-second"></div> <span class="title oneline"> Redhat </span> </a> <span class="special-column-num">2篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12768197.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12768197.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756928.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle img-mantle-second"></div> <span class="title oneline"> Centos </span> </a> <span class="special-column-num">2篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12768199.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12768199.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle img-mantle-second"></div> <span class="title oneline"> Ubuntu </span> </a> <span class="special-column-num">6篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12336027.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12336027.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle "></div> <span class="title oneline"> IC </span> </a> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12601627.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12601627.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle img-mantle-second"></div> <span class="title oneline"> CAD_TOOLS </span> </a> <span class="special-column-num">2篇</span> </li> 
+        <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12717253.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12717253.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+          <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756928.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+          <div class="img-mantle "></div> <span class="title oneline"> Scripts </span> </a> </li> 
+       </ul> 
+      </div> 
+      <p class="text-center"> <a class="flexible-btn" data-fbox="aside-archive"><img class="look-more" src="https://csdnimg.cn/release/blogv2/dist/pc/img/arrowDownBlack.png" alt=""></a> </p> 
+     </div> 
+     <div id="asideNewComments" class="aside-box"> 
+      <h3 class="aside-title">最新评论</h3> 
+      <div class="aside-content"> 
+       <ul class="newcomment-list"> 
+        <li> <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/davei1988/article/details/136651490#comments_36709091" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/136651490#comments_36709091&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/136651490#comments_36709091&quot;,&quot;ab&quot;:&quot;new&quot;}">Arteris_FlexNoC安装配置</a> <p class="comment ellipsis"> <a href="https://blog.csdn.net/yjs22" class="user-name" target="_blank">yjs22: </a> <span class="code-comments">怎么才能官方购买？</span> </p> </li> 
+        <li> <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/davei1988/article/details/136651490#comments_36210111" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/136651490#comments_36210111&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/136651490#comments_36210111&quot;,&quot;ab&quot;:&quot;new&quot;}">Arteris_FlexNoC安装配置</a> <p class="comment ellipsis"> <a href="https://blog.csdn.net/davei1988" class="user-name" target="_blank">dawei.wang: </a> <span class="code-comments">官方购买才可以拿到工具。</span> </p> </li> 
+        <li> <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/davei1988/article/details/136651490#comments_35912900" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/136651490#comments_35912900&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/136651490#comments_35912900&quot;,&quot;ab&quot;:&quot;new&quot;}">Arteris_FlexNoC安装配置</a> <p class="comment ellipsis"> <a href="https://blog.csdn.net/weixin_39589455" class="user-name" target="_blank">别出BUG求求了: </a> <span class="code-comments">哪里能下载呀？官网好像没看到</span> </p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div id="asideHotArticle" class="aside-box"> 
+      <h3 class="aside-title">大家在看</h3> 
+      <div class="aside-content"> 
+       <ul class="hotArticle-list"> 
+        <li> <a href="https://blog.csdn.net/baidu_41666295/article/details/147314951" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/baidu_41666295/article/details/147314951&quot;,&quot;strategy&quot;:&quot;202_1052723-2711252_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/baidu_41666295/article/details/147314951&quot;,&quot;strategy&quot;:&quot;202_1052723-2711252_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}"> Android 14.0 framework层实现app默认全屏显示 </a> </li> 
+        <li> <a href="https://blog.csdn.net/gupao049/article/details/147229602" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gupao049/article/details/147229602&quot;,&quot;strategy&quot;:&quot;202_1052723-2711249_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gupao049/article/details/147229602&quot;,&quot;strategy&quot;:&quot;202_1052723-2711249_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}"> 2025年Java后端最新面试高频题（全网最细、最全、最新，附答案） </a> </li> 
+        <li> <a href="https://blog.csdn.net/m0_66986239/article/details/147321438" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/m0_66986239/article/details/147321438&quot;,&quot;strategy&quot;:&quot;202_1052723-2711250_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/m0_66986239/article/details/147321438&quot;,&quot;strategy&quot;:&quot;202_1052723-2711250_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}"> React + Ts后台管理项目路由鉴权 </a> </li> 
+        <li> <a href="https://blog.csdn.net/guolianggsta/article/details/147322509" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/guolianggsta/article/details/147322509&quot;,&quot;strategy&quot;:&quot;202_1052723-2711244_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/guolianggsta/article/details/147322509&quot;,&quot;strategy&quot;:&quot;202_1052723-2711244_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}"> CSP-J备考冲刺必刷题（C++） | AcWing 1082 数字游戏 </a> </li> 
+        <li> <a href="https://blog.csdn.net/weixin_71694051/article/details/147303578" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_71694051/article/details/147303578&quot;,&quot;strategy&quot;:&quot;202_1052723-2711236_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_71694051/article/details/147303578&quot;,&quot;strategy&quot;:&quot;202_1052723-2711236_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}"> 探索关系型数据库 MySQL <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountBlack.png" alt=""> <span class="read">625</span> </a> </li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div id="asideArchive" class="aside-box" style="display:block!important; width:300px;"> 
+      <h3 class="aside-title">最新文章</h3> 
+      <div class="aside-content"> 
+       <ul class="inf_list clearfix"> 
+        <li class="clearfix"> <a href="https://blog.csdn.net/davei1988/article/details/147279225" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;spm&quot;:&quot;3001.4136&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/147279225&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/147279225&quot;,&quot;ab&quot;:&quot;new&quot;}">confluence因标题特殊字符导致页面加载失败</a> </li> 
+        <li class="clearfix"> <a href="https://blog.csdn.net/davei1988/article/details/147276736" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;spm&quot;:&quot;3001.4136&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/147276736&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/147276736&quot;,&quot;ab&quot;:&quot;new&quot;}">SSH登录服务器卡在Last login问题报错</a> </li> 
+        <li class="clearfix"> <a href="https://blog.csdn.net/davei1988/article/details/146323505" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;spm&quot;:&quot;3001.4136&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/146323505&quot;,&quot;ab&quot;:&quot;new&quot;}" data-report-view="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/article/details/146323505&quot;,&quot;ab&quot;:&quot;new&quot;}">vsftpd服务权限配置</a> </li> 
+       </ul> 
+       <div class="archive-bar"></div> 
+       <div class="archive-box"> 
+        <div class="archive-list-item">
+         <a href="https://blog.csdn.net/davei1988?type=blog&amp;year=2025&amp;month=04" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988?type=blog&amp;year=2025&amp;month=04&quot;}"><span class="year">2025年</span><span class="num">4篇</span></a>
+        </div> 
+        <div class="archive-list-item">
+         <a href="https://blog.csdn.net/davei1988?type=blog&amp;year=2024&amp;month=12" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988?type=blog&amp;year=2024&amp;month=12&quot;}"><span class="year">2024年</span><span class="num">24篇</span></a>
+        </div> 
+        <div class="archive-list-item">
+         <a href="https://blog.csdn.net/davei1988?type=blog&amp;year=2023&amp;month=08" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988?type=blog&amp;year=2023&amp;month=08&quot;}"><span class="year">2023年</span><span class="num">7篇</span></a>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <!-- 详情页显示目录 --> 
+     <!--文章目录--> 
+     <div id="asidedirectory" class="aside-box"> 
+      <div class="groupfile" id="directory"> 
+       <h3 class="aside-title">目录</h3> 
+       <div class="align-items-stretch group_item"> 
+        <div class="pos-box"> 
+         <div class="scroll-box"> 
+          <div class="toc-box"></div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </aside>    
+   </div> 
+   <div class="recommend-right align-items-stretch clearfix" id="rightAside" data-type="recommend"> 
+    <aside class="recommend-right_aside"> 
+     <div class="rightside-fixed-hide"> 
+      <div class="recommend-column-box aside-box"> 
+       <h3 class="aside-title">相关专栏 </h3> 
+       <div class="aside-content"> 
+        <div class="recommend-column-itembox exp1"> 
+         <a href="https://blog.csdn.net/qq_33468857/category_12134037.html" title="系统安全漏洞及K8S高可用集群" target="_blank" data-report-view="{&quot;spm&quot;:&quot;3001.10573&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_33468857/category_12134037.html&quot;,&quot;ab&quot;:&quot;exp1&quot;,&quot;extra&quot;:&quot;{\&quot;id\&quot;:\&quot;141639252\&quot;,\&quot;recommendCount\&quot;:\&quot;10\&quot;,\&quot;index\&quot;:\&quot;0\&quot;,\&quot;type\&quot;:\&quot;column\&quot;}&quot;}" data-report-click="{&quot;spm&quot;:&quot;3001.10573&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_33468857/category_12134037.html&quot;,&quot;ab&quot;:&quot;exp1&quot;,&quot;extra&quot;:&quot;{\&quot;id\&quot;:\&quot;141639252\&quot;,\&quot;recommendCount\&quot;:\&quot;10\&quot;,\&quot;index\&quot;:\&quot;0\&quot;,\&quot;type\&quot;:\&quot;column\&quot;}&quot;}"> 
+          <div class="info-box"> 
+           <div class="img-box"> 
+            <div class="column-img" style="background-image: url(https://i-blog.csdnimg.cn/blog_column_migrate/016b60dfc333e66acda9bf64b44564cc.png?x-oss-process=image/resize,m_fixed,h_224,w_224)" alt="系统安全漏洞及K8S高可用集群" srcset=""></div> 
+           </div> 
+           <div class="info"> 
+            <div class="title-box"> 
+             <p class="title">系统安全漏洞及K8S高可用集群</p> 
+             <p class="tag">专栏</p> 
+            </div> 
+            <p class="learn">0 人学习</p> 
+           </div> 
+          </div> <p class="desc" title="实战项目笔记，价值连城，年底考虑出书和实用性专利，发明专利。K8S高可用集群。">实战项目笔记，价值连城，年底考虑出书和实用性专利，发明专利。K8S高可用集群。</p> </a> 
+        </div> 
+        <div class="recommend-column-itembox exp1"> 
+         <a href="https://blog.csdn.net/a1119619789/category_12142313.html" title="网络系统管理国赛centos&amp;UOS模块" target="_blank" data-report-view="{&quot;spm&quot;:&quot;3001.10573&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/a1119619789/category_12142313.html&quot;,&quot;ab&quot;:&quot;exp1&quot;,&quot;extra&quot;:&quot;{\&quot;id\&quot;:\&quot;141639252\&quot;,\&quot;recommendCount\&quot;:\&quot;10\&quot;,\&quot;index\&quot;:\&quot;1\&quot;,\&quot;type\&quot;:\&quot;column\&quot;}&quot;}" data-report-click="{&quot;spm&quot;:&quot;3001.10573&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/a1119619789/category_12142313.html&quot;,&quot;ab&quot;:&quot;exp1&quot;,&quot;extra&quot;:&quot;{\&quot;id\&quot;:\&quot;141639252\&quot;,\&quot;recommendCount\&quot;:\&quot;10\&quot;,\&quot;index\&quot;:\&quot;1\&quot;,\&quot;type\&quot;:\&quot;column\&quot;}&quot;}"> 
+          <div class="info-box"> 
+           <div class="img-box"> 
+            <div class="column-img" style="background-image: url(https://i-blog.csdnimg.cn/blog_column_migrate/3907dbc0a86bbe1d1b6f8a3c7e28fcbf.png?x-oss-process=image/resize,m_fixed,h_224,w_224)" alt="网络系统管理国赛centos&amp;UOS模块" srcset=""></div> 
+           </div> 
+           <div class="info"> 
+            <div class="title-box"> 
+             <p class="title">网络系统管理国赛centos&amp;UOS模块</p> 
+             <p class="tag">专栏</p> 
+            </div> 
+            <p class="learn">8 人学习</p> 
+           </div> 
+          </div> <p class="desc" title="以实操为主，积极协助各省学生备战网络系统管理比赛">以实操为主，积极协助各省学生备战网络系统管理比赛</p> </a> 
+        </div> 
+        <div class="recommend-column-itembox exp1"> 
+         <a href="https://blog.csdn.net/qq_40907977/category_9405017.html" title="Ubuntu" target="_blank" data-report-view="{&quot;spm&quot;:&quot;3001.10573&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_40907977/category_9405017.html&quot;,&quot;ab&quot;:&quot;exp1&quot;,&quot;extra&quot;:&quot;{\&quot;id\&quot;:\&quot;141639252\&quot;,\&quot;recommendCount\&quot;:\&quot;10\&quot;,\&quot;index\&quot;:\&quot;2\&quot;,\&quot;type\&quot;:\&quot;column\&quot;}&quot;}" data-report-click="{&quot;spm&quot;:&quot;3001.10573&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_40907977/category_9405017.html&quot;,&quot;ab&quot;:&quot;exp1&quot;,&quot;extra&quot;:&quot;{\&quot;id\&quot;:\&quot;141639252\&quot;,\&quot;recommendCount\&quot;:\&quot;10\&quot;,\&quot;index\&quot;:\&quot;2\&quot;,\&quot;type\&quot;:\&quot;column\&quot;}&quot;}"> 
+          <div class="info-box"> 
+           <div class="img-box"> 
+            <div class="column-img" style="background-image: url(https://i-blog.csdnimg.cn/blog_column_migrate/13b2b4fad44a5c4b43dcb18fe7fa46b8.png?x-oss-process=image/resize,m_fixed,h_224,w_224)" alt="Ubuntu" srcset=""></div> 
+           </div> 
+           <div class="info"> 
+            <div class="title-box"> 
+             <p class="title">Ubuntu</p> 
+             <p class="tag">专栏</p> 
+            </div> 
+            <p class="learn">9 人学习</p> 
+           </div> 
+          </div> <p class="desc" title="Ubuntu">Ubuntu</p> </a> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div id="recommend-right"> 
+      <div class="flex-column aside-box groupfile" id="groupfile"> 
+       <div class="groupfile-div"> 
+        <h3 class="aside-title">目录</h3> 
+        <div class="align-items-stretch group_item"> 
+         <div class="pos-box"> 
+          <div class="scroll-box"> 
+           <div class="toc-box"></div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="aside-box kind_person d-flex flex-column"> 
+       <h3 class="aside-title">分类专栏</h3> 
+       <div class="align-items-stretch kindof_item" id="kind_person_column"> 
+        <div class="aside-content"> 
+         <ul> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12602617.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12602617.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756916.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle "></div> <span class=""> Python </span> </a> <span class="special-column-num">1篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12557680.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12557680.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle "></div> <span class=""> 泛微OA </span> </a> <span class="special-column-num">1篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12390297.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12390297.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/blog_column_migrate/50ebd4af1d8ce5bdece6406b1f1ca55c.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle "></div> <span class=""> Win_Server </span> </a> <span class="special-column-num">1篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12383508.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12383508.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756923.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle "></div> <span class=""> 虚拟化技术 </span> </a> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12383511.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12383511.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/blog_column_migrate/9a0de8ff0d76bed3074d63417b3ffeae.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle img-mantle-second"></div> <span class=""> VMware </span> </a> <span class="special-column-num">3篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12383625.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12383625.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/blog_column_migrate/7b859c18e55d84c748d355181a44c249.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle img-mantle-second"></div> <span class=""> Hyper-V </span> </a> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12803110.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12803110.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756926.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle img-mantle-second"></div> <span class=""> KVM </span> </a> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12312790.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12312790.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756926.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle "></div> <span class=""> Linux </span> </a> <span class="special-column-num">18篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12768200.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12768200.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756919.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle img-mantle-second"></div> <span class=""> Redhat </span> </a> <span class="special-column-num">2篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12768197.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12768197.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756928.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle img-mantle-second"></div> <span class=""> Centos </span> </a> <span class="special-column-num">2篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12768199.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12768199.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle img-mantle-second"></div> <span class=""> Ubuntu </span> </a> <span class="special-column-num">6篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12336027.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12336027.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle "></div> <span class=""> IC </span> </a> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12601627.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12601627.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar special-column-bar-second"></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle img-mantle-second"></div> <span class=""> CAD_TOOLS </span> </a> <span class="special-column-num">2篇</span> </li> 
+          <li> <a class="clearfix special-column-name" href="https://blog.csdn.net/davei1988/category_12717253.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/davei1988/category_12717253.html&quot;,&quot;ab&quot;:&quot;new&quot;}"> 
+            <div class="special-column-bar "></div> <img src="https://i-blog.csdnimg.cn/columns/default/20201014180756928.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'"> 
+            <div class="img-mantle "></div> <span class=""> Scripts </span> </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </aside> 
+   </div> 
+   <div class="recommend-right1  align-items-stretch clearfix" id="rightAsideConcision" data-type="recommend"> 
+    <aside class="recommend-right_aside"> 
+     <div id="recommend-right-concision"> 
+      <div class="flex-column aside-box groupfile" id="groupfileConcision"> 
+       <div class="groupfile-div1"> 
+        <h3 class="aside-title">目录</h3> 
+        <div class="align-items-stretch group_item"> 
+         <div class="pos-box"> 
+          <div class="scroll-box"> 
+           <div class="toc-box"></div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </aside> 
+   </div> 
+  </div> 
+  <div class="mask-dark"></div> 
+  <div class="skin-boxshadow"></div> 
+  <div class="directory-boxshadow"></div> 
+  <div class="comment-side-box-shadow comment-side-tit-close" id="commentSideBoxshadow"> 
+   <div class="comment-side-content"> 
+    <div class="comment-side-tit"> 
+     <span class="comment-side-tit-count">评论</span> 
+     <img class="comment-side-tit-close" src="https://csdnimg.cn/release/blogv2/dist/pc/img/closeBt.png">
+    </div> 
+    <div id="pcCommentSideBox" class="comment-box comment-box-new2 " style="display:block"> 
+     <div class="comment-edit-box d-flex"> 
+      <div class="user-img"> 
+       <a href="https://blog.csdn.net/2401_84444578" target="_blank"> <img src="https://profile-avatar.csdnimg.cn/default.jpg!1"> </a> 
+      </div> 
+      <form id="commentform"> 
+       <textarea class="comment-content" name="comment_content" id="comment_content" placeholder="欢迎高质量的评论，低质的评论会被折叠" maxlength="1000"></textarea> 
+       <div class="comment-reward-box" style="background-image: url('https://img-home.csdnimg.cn/images/20230131025301.png');"> 
+        <a class="btn-remove-reward"></a> 
+        <div class="form-reward-box"> 
+         <div class="info">
+           成就一亿技术人! 
+         </div> 
+         <div class="price-info">
+           拼手气红包
+          <span class="price">6.0元</span> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="comment-operate-box"> 
+        <div class="comment-operate-l"> 
+         <span id="tip_comment" class="tip">还能输入<em>1000</em>个字符</span> 
+        </div> 
+        <div class="comment-operate-c">
+          &nbsp; 
+        </div> 
+        <div class="comment-operate-r"> 
+         <div class="comment-operate-item comment-reward"> 
+          <img class="comment-operate-img" data-url="https://csdnimg.cn/release/blogv2/dist/pc/img/" src="https://csdnimg.cn/release/blogv2/dist/pc/img/commentReward.png" alt="红包"> 
+          <span class="comment-operate-tip">添加红包</span> 
+         </div> 
+         <div class="comment-operate-item comment-emoticon"> 
+          <img class="comment-operate-img" data-url="https://csdnimg.cn/release/blogv2/dist/pc/img/" src="https://csdnimg.cn/release/blogv2/dist/pc/img/commentEmotionIcon.png" alt="表情包"> 
+          <span class="comment-operate-tip">插入表情</span> 
+          <div class="comment-emoticon-box comment-operate-isshow"> 
+           <div class="comment-emoticon-img-box"></div> 
+          </div> 
+         </div> 
+         <div class="comment-operate-item comment-code"> 
+          <img class="comment-operate-img" data-url="https://csdnimg.cn/release/blogv2/dist/pc/img/" src="https://csdnimg.cn/release/blogv2/dist/pc/img/commentCodeIcon.png" alt="表情包"> 
+          <span class="comment-operate-tip">代码片</span> 
+          <div class="comment-code-box comment-operate-isshow"> 
+           <ul id="commentCode"> 
+            <li><a data-code="html">HTML/XML</a></li> 
+            <li><a data-code="objc">objective-c</a></li> 
+            <li><a data-code="ruby">Ruby</a></li> 
+            <li><a data-code="php">PHP</a></li> 
+            <li><a data-code="csharp">C</a></li> 
+            <li><a data-code="cpp">C++</a></li> 
+            <li><a data-code="javascript">JavaScript</a></li> 
+            <li><a data-code="python">Python</a></li> 
+            <li><a data-code="java">Java</a></li> 
+            <li><a data-code="css">CSS</a></li> 
+            <li><a data-code="sql">SQL</a></li> 
+            <li><a data-code="plain">其它</a></li> 
+           </ul> 
+          </div> 
+         </div> 
+         <div class="comment-operate-item"> 
+          <input type="hidden" id="comment_replyId" name="comment_replyId"> 
+          <input type="hidden" id="article_id" name="article_id" value="141639252"> 
+          <input type="hidden" id="comment_userId" name="comment_userId" value=""> 
+          <input type="hidden" id="commentId" name="commentId" value=""> 
+          <a data-report-click="{&quot;mod&quot;:&quot;1582594662_003&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4227&quot;,&quot;ab&quot;:&quot;new&quot;}"> <input type="submit" class="btn-comment btn-comment-input" value="评论"> </a> 
+         </div> 
+        </div> 
+       </div> 
+      </form> 
+     </div> 
+     <div class="comment-list-container"> 
+      <div class="comment-list-box comment-operate-item"> 
+      </div> 
+      <div id="lookFlodComment" class="look-flod-comment"> 
+       <span class="count"></span>&nbsp;条评论被折叠&nbsp;
+       <a class="look-more-flodcomment">查看</a> 
+      </div> 
+      <div class="opt-box text-center"> 
+       <div class="btn btn-sm btn-link-blue" id="btnMoreComment"></div> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="pcFlodCommentSideBox" class="pc-flodcomment-sidebox"> 
+     <div class="comment-fold-tit">
+      <span id="lookUnFlodComment" class="back"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/commentArrowLeftBlack.png" alt=""></span>被折叠的&nbsp;
+      <span class="count"></span>&nbsp;条评论 
+      <a href="https://blogdev.blog.csdn.net/article/details/122245662" class="tip" target="_blank">为什么被折叠?</a> 
+      <a href="https://bbs.csdn.net/forums/FreeZone" class="park" target="_blank"> <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/iconPark.png">到【灌水乐园】发言</a> 
+     </div> 
+     <div class="comment-fold-content"></div> 
+     <div id="lookBadComment" class="look-bad-comment side-look-comment"> 
+      <a class="look-more-comment">查看更多评论<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/commentArrowDownBlack.png" alt=""></a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="comment-rewarddialog-box"> 
+    <div class="form-box"> 
+     <div class="title-box">
+       添加红包 
+      <a class="btn-form-close"></a> 
+     </div> 
+     <form id="commentRewardForm"> 
+      <div class="ipt-box"> 
+       <label for="txtName">祝福语</label> 
+       <div class="ipt-btn-box"> 
+        <input type="text" name="name" id="txtName" autocomplete="off" maxlength="50"> 
+        <a class="btn-ipt btn-random"></a> 
+       </div> 
+       <p class="notice">请填写红包祝福语或标题</p> 
+      </div> 
+      <div class="ipt-box"> 
+       <label for="txtSendAmount">红包数量</label> 
+       <div class="ipt-txt-box"> 
+        <input type="text" name="sendAmount" maxlength="4" id="txtSendAmount" placeholder="请填写红包数量(最小10个)" autocomplete="off"> 
+        <span class="after-txt">个</span> 
+       </div> 
+       <p class="notice">红包个数最小为10个</p> 
+      </div> 
+      <div class="ipt-box"> 
+       <label for="txtMoney">红包总金额</label> 
+       <div class="ipt-txt-box error"> 
+        <input type="text" name="money" maxlength="5" id="txtMoney" placeholder="请填写总金额(最低5元)" autocomplete="off"> 
+        <span class="after-txt">元</span> 
+       </div> 
+       <p class="notice">红包金额最低5元</p> 
+      </div> 
+      <div class="balance-info-box"> 
+       <label>余额支付</label> 
+       <div class="balance-info">
+         当前余额
+        <span class="balance">3.43</span>元 
+        <a href="https://i.csdn.net/#/wallet/balance/recharge" class="link-charge" target="_blank">前往充值 &gt;</a> 
+       </div> 
+      </div> 
+      <div class="opt-box"> 
+       <div class="pay-info">
+         需支付：
+        <span class="price">10.00</span>元 
+       </div> 
+       <button type="button" class="ml-auto btn-cancel">取消</button> 
+       <button type="button" class="ml8 btn-submit" disabled="true">确定</button> 
+      </div> 
+     </form> 
+    </div> 
+   </div> 
+   <div class="rr-guide-box"> 
+    <div class="rr-first-box"> 
+     <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/guideRedReward02.png" alt=""> 
+     <button class="btn-guide-known next">下一步</button> 
+    </div> 
+    <div class="rr-second-box"> 
+     <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/guideRedReward03.png" alt=""> 
+     <button class="btn-guide-known known">知道了</button> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="redEnvolope" id="redEnvolope"> 
+   <div class="env-box"> 
+    <div class="env-container"> 
+     <div class="pre-open" id="preOpen"> 
+      <div class="top"> 
+       <header> 
+        <img class="clearTpaErr" :src="redpacketAuthor.avatar" alt=""> 
+        <div class="author">
+         成就一亿技术人!
+        </div> 
+       </header> 
+       <div class="bot-icon"></div> 
+      </div> 
+      <footer> 
+       <div class="red-openbtn open-start"></div> 
+       <div class="tip">
+         领取后你会自动成为博主和红包主的粉丝 
+        <a class="rule" target="_blank">规则</a> 
+       </div> 
+      </footer> 
+     </div> 
+     <div class="opened" id="opened"> 
+      <div class="bot-icon"> 
+       <header> 
+        <a class="creatorUrl" href="" target="_blank"> <img class="clearTpaErr" src="https://profile-avatar.csdnimg.cn/default.jpg!2" alt=""> </a> 
+        <div class="author"> 
+         <div class="tt">
+          hope_wisdom
+         </div> 发出的红包 
+        </div> 
+       </header> 
+      </div> 
+      <div class="receive-box"> 
+       <header></header> 
+       <div class="receive-list"> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="close-btn"></div> 
+   </div> 
+  </div> 
+  <div class="pay-code"> 
+   <div class="pay-money">
+    实付
+    <span class="pay-money-span" data-nowprice="" data-oldprice="">元</span>
+   </div> 
+   <div class="content-blance">
+    <a class="blance-bt" href="javascript:;">使用余额支付</a>
+   </div> 
+   <div class="content-code"> 
+    <div id="payCode" data-id=""> 
+     <div class="renovate"> 
+      <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/pay-time-out.png"> 
+      <span>点击重新获取</span> 
+     </div> 
+    </div> 
+    <div class="pay-style">
+     <span><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/weixin.png"></span>
+     <span><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/zhifubao.png"></span>
+     <span><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/jingdong.png"></span>
+     <span class="text">扫码支付</span>
+    </div> 
+   </div> 
+   <div class="bt-close"> 
+    <svg t="1567152543821" class="icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10924" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12"> 
+     <defs> 
+      <style type="text/css"></style> 
+     </defs> 
+     <path d="M512 438.378667L806.506667 143.893333a52.032 52.032 0 1 1 73.6 73.621334L585.621333 512l294.485334 294.485333a52.074667 52.074667 0 0 1-73.6 73.642667L512 585.621333 217.514667 880.128a52.053333 52.053333 0 1 1-73.621334-73.642667L438.378667 512 143.893333 217.514667a52.053333 52.053333 0 1 1 73.621334-73.621334L512 438.378667z" fill="" p-id="10925"></path> 
+    </svg> 
+   </div> 
+   <div class="pay-balance"> 
+    <input type="radio" class="pay-code-radio" data-type="details"> 
+    <span class="span">钱包余额</span> 
+    <span class="balance" style="color:#FC5531;font-size:14px;">0</span> 
+    <div class="pay-code-tile"> 
+     <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/pay-help.png" alt=""> 
+     <div class="pay-code-content"> 
+      <div class="span"> 
+       <p class="title">抵扣说明：</p> 
+       <p> 1.余额是钱包充值的虚拟货币，按照1:1的比例进行支付金额的抵扣。<br> 2.余额无法直接购买下载，可以购买VIP、付费专栏及课程。</p> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <a class="pay-balance-con" href="https://i.csdn.net/#/wallet/balance/recharge" target="_blank"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/recharge.png" alt=""><span>余额充值</span></a> 
+  </div> 
+  <div style="display:none;"> 
+   <img src="" onerror="setTimeout(function(){if(!/(csdn.net|iteye.com|baiducontent.com|googleusercontent.com|360webcache.com|sogoucdn.com|bingj.com|baidu.com)$/.test(window.location.hostname)){var test=&quot;\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74&quot;}},3000);"> 
+  </div> 
+  <div class="keyword-dec-box" id="keywordDecBox"></div>       
+  <link rel="stylesheet" href="https://g.csdnimg.cn/lib/cboxEditor/1.1.6/embed-editor.min.css"> 
+  <link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.6.12/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night.css">                  
+ </body>
+</html>
