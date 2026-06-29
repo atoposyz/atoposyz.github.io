@@ -1,1 +1,248 @@
-// you can custom css here
+/* ============================================
+ * Anime / 二次元 Theme - Global Styles
+ * Sakura Pink × Soft Purple × Sky Blue
+ * ============================================ */
+
+/* ============================================
+ * Scrollbar
+ * ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 157, 0.25);
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 157, 0.5);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 133, 179, 0.2);
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 133, 179, 0.4);
+}
+
+/* ============================================
+ * Selection
+ * ============================================ */
+::selection {
+  background: rgba(255, 107, 157, 0.25);
+  color: var(--va-c-text);
+}
+
+html.dark ::selection {
+  background: rgba(255, 133, 179, 0.3);
+}
+
+/* ============================================
+ * Banner / Hero Section
+ * ============================================ */
+#yun-banner {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 179, 209, 0.15) 0%,
+    rgba(255, 245, 248, 0.05) 50%,
+    transparent 100%
+  );
+}
+
+html.dark #yun-banner {
+  background: linear-gradient(
+    180deg,
+    rgba(192, 132, 252, 0.06) 0%,
+    rgba(26, 21, 32, 0.02) 50%,
+    transparent 100%
+  );
+}
+
+/* ============================================
+ * Post Cards (on /posts/ page)
+ * ============================================ */
+.yun-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(255, 107, 157, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.yun-card:hover {
+  box-shadow: 0 8px 30px rgba(255, 107, 157, 0.15);
+  transform: translateY(-2px);
+}
+
+html.dark .yun-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+html.dark .yun-card:hover {
+  box-shadow: 0 8px 30px rgba(255, 107, 157, 0.1);
+}
+
+/* Post card cover images */
+.yun-card .cover {
+  border-radius: 12px 0 0 12px;
+}
+
+/* Post card title link */
+.post-title-link:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+/* ============================================
+ * Post List spacing
+ * ============================================ */
+.yun-post-list {
+  gap: 1.25rem !important;
+}
+
+/* ============================================
+ * Navigation Bar
+ * ============================================ */
+.yun-nav {
+  background: rgba(255, 245, 248, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 107, 157, 0.06);
+}
+
+html.dark .yun-nav {
+  background: rgba(26, 21, 32, 0.85);
+  border-bottom-color: rgba(255, 107, 157, 0.04);
+}
+
+.yun-nav a:hover {
+  color: var(--va-c-primary) !important;
+  background: rgba(255, 107, 157, 0.06);
+  border-radius: 8px;
+}
+
+/* ============================================
+ * Footer
+ * ============================================ */
+.yun-footer {
+  border-top: 1px solid rgba(255, 107, 157, 0.06);
+}
+
+/* Footer gradient - pink/purple instead of blue */
+.yun-footer-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 107, 157, 0.1) 0%,
+    rgba(192, 132, 252, 0.08) 50%,
+    rgba(103, 232, 249, 0.06) 100%
+  ) !important;
+}
+
+html.dark .yun-footer-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 133, 179, 0.04) 0%,
+    rgba(192, 132, 252, 0.04) 50%,
+    rgba(103, 232, 249, 0.03) 100%
+  ) !important;
+}
+
+/* ============================================
+ * Page Header (archive/categories/tags)
+ * ============================================ */
+.yun-page-header {
+  border-radius: 12px;
+}
+
+.yun-page-header-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 107, 157, 0.1) 0%,
+    rgba(192, 132, 252, 0.06) 100%
+  ) !important;
+}
+
+/* ============================================
+ * Code Blocks
+ * ============================================ */
+div[class*="language-"],
+pre[class*="language-"] {
+  border-radius: 12px !important;
+}
+
+/* Inline code */
+:not(pre) > code {
+  background: rgba(255, 107, 157, 0.08);
+  color: var(--va-c-primary-dark);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+}
+
+html.dark :not(pre) > code {
+  background: rgba(255, 133, 179, 0.1);
+  color: var(--va-c-primary-light);
+}
+
+/* ============================================
+ * Links (global)
+ * ============================================ */
+a {
+  transition: all 0.15s ease;
+}
+
+a:hover {
+  color: var(--va-c-primary);
+}
+
+/* ============================================
+ * Blockquotes
+ * ============================================ */
+.markdown-body blockquote {
+  border-left: 3px solid var(--va-c-primary) !important;
+  background: rgba(255, 107, 157, 0.04);
+  border-radius: 0 8px 8px 0;
+}
+
+html.dark .markdown-body blockquote {
+  background: rgba(255, 133, 179, 0.04);
+}
+
+/* ============================================
+ * Horizontal Rules
+ * ============================================ */
+.markdown-body hr {
+  border-color: rgba(255, 107, 157, 0.15);
+}
+
+/* ============================================
+ * Back to Top Button
+ * ============================================ */
+.yun-back-to-top {
+  background: linear-gradient(135deg, var(--va-c-primary), #C084FC) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 20px rgba(255, 107, 157, 0.3);
+  transition: all 0.3s ease;
+}
+
+.yun-back-to-top:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 107, 157, 0.4);
+}
+
+/* ============================================
+ * Responsive Tweaks
+ * ============================================ */
+@media (max-width: 768px) {
+  .yun-card .cover {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .yun-post-list {
+    gap: 1rem !important;
+  }
+}

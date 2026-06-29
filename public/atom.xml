@@ -1,79 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://atoposyz.github.io/</id>
-    <title>atoposyz的博客</title>
-    <updated>2025-06-19T05:12:17.353Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <author>
-        <name>atoposyz</name>
-        <email>i@valaxy.site</email>
-        <uri>https://valaxy.site</uri>
-    </author>
-    <link rel="alternate" href="https://atoposyz.github.io/"/>
-    <link rel="self" href="https://atoposyz.github.io/atom.xml"/>
-    <logo>https://raw.githubusercontent.com/atoposyz/atoposyz.github.io/Valaxy-dev/public/atoposyz.jpg</logo>
-    <icon>https://atoposyz.github.io/favicon.svg</icon>
-    <rights>CC BY-NC-SA 4.0 2025 © atoposyz</rights>
-    <entry>
-        <title type="html"><![CDATA[容错系统复习]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfFaultTorrence</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfFaultTorrence"/>
-        <updated>2025-06-16T11:07:56.000Z</updated>
-        <content type="html"><![CDATA[<h2>往年题库</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Atoposyz</title><subtitle>Atoposyz 的个人博客 - 记录 OI 竞赛、数学思考、动漫热爱与生活点滴</subtitle><id>https://atoposyz.github.io/</id><updated>2026-05-29T12:50:47.644Z</updated><generator uri="https://github.com/KazariEX/zfeed" version="0.2.3">ZFeed</generator><logo>https://raw.githubusercontent.com/atoposyz/atoposyz.github.io/Valaxy-dev/public/atoposyz.jpg</logo><icon>https://atoposyz.github.io/favicon.svg</icon><rights>CC BY-NC-SA 4.0 2026 © Atoposyz</rights><link rel="alternate" href="https://atoposyz.github.io/" /><link rel="self" href="https://atoposyz.github.io/atom.xml" type="application/atom+xml" /><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author><entry><title>容错系统复习</title><id>https://atoposyz.github.io/posts/CourseOfFaultTorrence</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfFaultTorrence" /><updated>2025-06-16T19:07:56.000Z</updated><published>2025-06-16T19:07:56.000Z</published><content type="html"><![CDATA[<h2>往年题库</h2>
 <h3>一、简答</h3>
 <ol>
 <li><strong>什么是马尔科夫过程？马尔科夫过程满足泊松分布的前提是什么？</strong></li>
 <li>什么是拜占庭错误？什么是拜占庭一致性？</li>
 <li>**z(t), f(t)</li>
 </ol>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfFaultTorrence" target="_blank">https://atoposyz.github.io/posts/CourseOfFaultTorrence</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2025-06-16T11:07:56.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FPGA快速实践]]></title>
-        <id>https://atoposyz.github.io/posts/FPGA_start</id>
-        <link href="https://atoposyz.github.io/posts/FPGA_start"/>
-        <updated>2025-06-16T11:42:16.245Z</updated>
-        <content type="html"><![CDATA[<h2>快速启动一个可用的脉动阵列</h2>
-<p>以导入一个<a href="https://github.com/Buck008/Transformer-Accelerator-Based-on-FPGA">开源的脉动阵列</a></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/FPGA_start" target="_blank">https://atoposyz.github.io/posts/FPGA_start</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-12-19T09:42:03.516Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统备考重点]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_highlight</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_highlight"/>
-        <updated>2024-12-02T04:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2>2024期末真题</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfFaultTorrence" target="_blank">https://atoposyz.github.io/posts/CourseOfFaultTorrence</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统备考重点</title><id>https://atoposyz.github.io/posts/CourseOfDCS_highlight</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_highlight" /><updated>2024-12-02T12:00:00.000Z</updated><published>2024-12-13T15:00:00.000Z</published><content type="html"><![CDATA[<h2>2024期末真题</h2>
 <h3>判断题（2*5）</h3>
 <ol>
 <li>在公开密钥加密方法中，A向B发送保密数据，A应该选择B的保密密钥加密数据</li>
 <li>在使用公开密钥加密方法实现数字签名时，A向B发</li>
 </ol>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_highlight" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_highlight</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-12-13T07:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[信息安全原理复习重点]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfISP</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfISP"/>
-        <updated>2024-12-05T08:28:55.000Z</updated>
-        <content type="html"><![CDATA[<h2>2024年信息安全原理真题</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_highlight" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_highlight</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>信息安全原理复习重点</title><id>https://atoposyz.github.io/posts/CourseOfISP</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfISP" /><updated>2024-12-05T16:28:55.000Z</updated><published>2024-12-10T14:09:20.000Z</published><content type="html"><![CDATA[<h2>2024年信息安全原理真题</h2>
 <h3>ECB</h3>
 <ol>
 <li>什么是ECB？</li>
@@ -85,639 +23,171 @@
 <ol>
 <li></li>
 </ol>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfISP" target="_blank">https://atoposyz.github.io/posts/CourseOfISP</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-12-10T06:09:20.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第十章 分布式共享存储器]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_10</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_10"/>
-        <updated>2024-11-29T14:25:00.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfISP" target="_blank">https://atoposyz.github.io/posts/CourseOfISP</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第十章 分布式共享存储器</title><id>https://atoposyz.github.io/posts/CourseOfDCS_10</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_10" /><updated>2024-11-29T22:25:00.000Z</updated><published>2024-11-29T22:25:00.000Z</published><content type="html"><![CDATA[<blockquote>
 <p>复习真是一种享受啊，很喜欢这种大段文字从视网膜穿过的感觉</p>
 <p>要飞天了，好爽</p>
 </blockquote>
 <h2>基本概念（？）</h2>
 <h3>什么是分布式共享存储器</h3>
 <p>分布式共享存储器系统是分布式操作系</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_10" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_10</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-29T14:25:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第九章 分布式调度]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_9</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_9"/>
-        <updated>2024-11-29T12:30:00.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_10" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_10</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第九章 分布式调度</title><id>https://atoposyz.github.io/posts/CourseOfDCS_9</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_9" /><updated>2024-11-29T20:30:00.000Z</updated><published>2024-11-29T20:30:00.000Z</published><content type="html"><![CDATA[<blockquote>
 <p>什么东西啊，前半段还挺好看，后半段长篇大论根本看不懂</p>
 </blockquote>
 <h2>调度算法概述</h2>
 <h3>分类</h3>
 <p>![](<a href="https://github.com/atoposyz/picx-images">https://github.com/atoposyz/picx-images</a></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_9" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_9</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-29T12:30:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第八章 分布式文件系统]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_8</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_8"/>
-        <updated>2024-11-28T13:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h3>分布式文件系统的特点</h3>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_9" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_9</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第八章 分布式文件系统</title><id>https://atoposyz.github.io/posts/CourseOfDCS_8</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_8" /><updated>2024-11-28T21:00:00.000Z</updated><published>2024-11-28T21:00:00.000Z</published><content type="html"><![CDATA[<h3>分布式文件系统的特点</h3>
 <ol>
 <li>分布式文件系统的顾客、服务员和存储设备分散在各机器上，因此服务活动必须跨越网络完成；</li>
 <li>存储设备不是单一的集中的数据存储器，而是有多个独立的存储设备</li>
 </ol>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_8" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_8</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-28T13:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第七章 分布式数据管理]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_7</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_7"/>
-        <updated>2024-11-28T12:25:00.000Z</updated>
-        <content type="html"><![CDATA[<h2>数据一致性模型</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_8" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_8</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第七章 分布式数据管理</title><id>https://atoposyz.github.io/posts/CourseOfDCS_7</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_7" /><updated>2024-11-28T20:25:00.000Z</updated><published>2024-11-28T20:25:00.000Z</published><content type="html"><![CDATA[<h2>数据一致性模型</h2>
 <h3>严格一致性</h3>
 <p>对一个数据项所进行的任何读操作所返回的值总是对该数据项最近一次进行写操作的结果</p>
 <h3>顺序一致性（可线性化一致性）</h3>
 <p>![](ht</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_7" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_7</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-28T12:25:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第六章 容错技术]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_6</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_6"/>
-        <updated>2024-11-27T12:20:00.000Z</updated>
-        <content type="html"><![CDATA[<p>错误分为暂时性、间歇性、永久性</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_7" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_7</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第六章 容错技术</title><id>https://atoposyz.github.io/posts/CourseOfDCS_6</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_6" /><updated>2024-11-27T20:20:00.000Z</updated><published>2024-11-27T20:20:00.000Z</published><content type="html"><![CDATA[<p>错误分为暂时性、间歇性、永久性</p>
 <h2>容错建立在冗余上</h2>
 <h3>坚固存储器</h3>
 <p>磁盘镜像：一对磁盘</p>
 <p>RAID（廉价磁盘冗余阵列）：位交错技术将数据分布到多个磁盘中</p>
 <h3></h3>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_6" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_6</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-27T12:20:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第五章 死锁]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_5</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_5"/>
-        <updated>2024-11-27T12:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2>死锁</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_6" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_6</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第五章 死锁</title><id>https://atoposyz.github.io/posts/CourseOfDCS_5</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_5" /><updated>2024-11-27T20:00:00.000Z</updated><published>2024-11-27T20:00:00.000Z</published><content type="html"><![CDATA[<h2>死锁</h2>
 <h3>条件</h3>
 <p>互斥、不可剥夺的资源分配、占有并等待、循环等待</p>
 <h3>图模型</h3>
 <p><strong>等待图</strong>：i-&gt;j，i等待j用完资源</p>
 <p><strong>资源分配图</strong>：进程指向资源</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_5" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_5</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-27T12:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[雪夜随想]]></title>
-        <id>https://atoposyz.github.io/posts/MemoryOfSnow</id>
-        <link href="https://atoposyz.github.io/posts/MemoryOfSnow"/>
-        <updated>2024-11-26T16:07:07.000Z</updated>
-        <content type="html"><![CDATA[<p>昨天淅淅沥沥的，今日终于穿上了银装。我上午漫步清湖，晚上绕五月花广场转悠。有人说我喜欢挨冻，但他说的不对，我也喜欢被淋。</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_5" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_5</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>雪夜随想</title><id>https://atoposyz.github.io/posts/MemoryOfSnow</id><link rel="alternate" href="https://atoposyz.github.io/posts/MemoryOfSnow" /><updated>2024-11-27T00:07:07.000Z</updated><published>2024-11-27T00:07:07.000Z</published><content type="html"><![CDATA[<p>昨天淅淅沥沥的，今日终于穿上了银装。我上午漫步清湖，晚上绕五月花广场转悠。有人说我喜欢挨冻，但他说的不对，我也喜欢被淋。</p>
 <p>学期初，老师鼓励大家投稿《我与吉大的100天》，研究生是新的生活，自</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/MemoryOfSnow" target="_blank">https://atoposyz.github.io/posts/MemoryOfSnow</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-26T16:07:07.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第四章 同步和互斥]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_4</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_4"/>
-        <updated>2024-11-26T12:25:00.000Z</updated>
-        <content type="html"><![CDATA[<h2>资源管理</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/MemoryOfSnow" target="_blank">https://atoposyz.github.io/posts/MemoryOfSnow</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第四章 同步和互斥</title><id>https://atoposyz.github.io/posts/CourseOfDCS_4</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_4" /><updated>2024-11-26T20:25:00.000Z</updated><published>2024-11-26T20:25:00.000Z</published><content type="html"><![CDATA[<h2>资源管理</h2>
 <ul>
 <li>全集中管理方式：所有资源都由一个服务员管理；</li>
 <li>集中分布管理方式：一个资源由一个服务员管理；</li>
 <li>全分布管理方式：一个资源是由多个服务员共同管理。</li>
 </ul>
 <h2>同</h2>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_4" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_4</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-26T12:25:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第三章 命名和保护]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_3</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_3"/>
-        <updated>2024-11-26T12:10:30.000Z</updated>
-        <content type="html"><![CDATA[<h2>命名</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_4" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_4</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第三章 命名和保护</title><id>https://atoposyz.github.io/posts/CourseOfDCS_3</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_3" /><updated>2024-11-26T20:10:30.000Z</updated><published>2024-11-26T20:10:30.000Z</published><content type="html"><![CDATA[<h2>命名</h2>
 <h3>名字两种形式：地址、标识符</h3>
 <ul>
 <li>地址：一个特殊类型的名字，它用来指出一个实体的访问点</li>
 <li>标识符：标识符与实体一一对应，对一个对象进行操作或访问时，往往需要将它</li>
 </ul>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_3" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_3</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-26T12:10:30.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第二章 进程通信]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_2</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_2"/>
-        <updated>2024-11-25T12:25:11.000Z</updated>
-        <content type="html"><![CDATA[<h2>同节点进程通信</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_3" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_3</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第二章 进程通信</title><id>https://atoposyz.github.io/posts/CourseOfDCS_2</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_2" /><updated>2024-11-25T20:25:11.000Z</updated><published>2024-11-25T20:25:11.000Z</published><content type="html"><![CDATA[<h2>同节点进程通信</h2>
 <p>信号、管道、命名管道、消息队列、信号灯、共享内存、内存映像</p>
 <h3>管道</h3>
 <h4>无名管道</h4>
 <p>无名管道只能在有亲缘关系的进程之间使用(例如父进程和子进</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_2" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_2</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-25T12:25:11.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布计算系统笔记——第一章 绪论]]></title>
-        <id>https://atoposyz.github.io/posts/CourseOfDCS_1</id>
-        <link href="https://atoposyz.github.io/posts/CourseOfDCS_1"/>
-        <updated>2024-11-25T12:22:26.000Z</updated>
-        <content type="html"><![CDATA[<h3>为什么分布计算系统的异构性不可避免？</h3>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_2" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_2</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>分布计算系统笔记——第一章 绪论</title><id>https://atoposyz.github.io/posts/CourseOfDCS_1</id><link rel="alternate" href="https://atoposyz.github.io/posts/CourseOfDCS_1" /><updated>2024-11-25T20:22:26.000Z</updated><published>2024-11-25T20:22:26.000Z</published><content type="html"><![CDATA[<h3>为什么分布计算系统的异构性不可避免？</h3>
 <ol>
 <li>随着分布计算系统资源的增多，其他用户也希望加入系统，共享其资源。这些新的系统往往同原有系统中现有的硬件和软件不同。</li>
 <li>由于硬件性能</li>
 </ol>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_1" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_1</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-11-25T12:22:26.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[观洛天依无限共鸣演唱会线下观演会有感]]></title>
-        <id>https://atoposyz.github.io/posts/LuoTianyi_Concert2024</id>
-        <link href="https://atoposyz.github.io/posts/LuoTianyi_Concert2024"/>
-        <updated>2024-10-07T15:54:12.000Z</updated>
-        <content type="html"><![CDATA[<p>![Image_1728313043275](<a href="https://github.com/atoposyz/picx-images-hosting/raw/master/Image_1728313043">https://github.com/atoposyz/picx-images-hosting/raw/master/Image_1728313043</a></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/LuoTianyi_Concert2024" target="_blank">https://atoposyz.github.io/posts/LuoTianyi_Concert2024</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-10-07T15:54:12.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[《四月是你的谎言》补番记录与观后感]]></title>
-        <id>https://atoposyz.github.io/posts/YourLifeInApril</id>
-        <link href="https://atoposyz.github.io/posts/YourLifeInApril"/>
-        <updated>2024-09-03T14:26:00.000Z</updated>
-        <content type="html"><![CDATA[<h2>观影记录（与HocRiser）</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/CourseOfDCS_1" target="_blank">https://atoposyz.github.io/posts/CourseOfDCS_1</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>FPGA快速实践</title><id>https://atoposyz.github.io/posts/FPGA_start</id><link rel="alternate" href="https://atoposyz.github.io/posts/FPGA_start" /><updated>2024-10-08T21:54:00.000Z</updated><published>2024-10-08T21:54:00.000Z</published><content type="html"><![CDATA[<h2>快速启动一个可用的脉动阵列</h2>
+<p>以导入一个<a href="https://github.com/Buck008/Transformer-Accelerator-Based-on-FPGA">开源的脉动阵列</a></p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/FPGA_start" target="_blank">https://atoposyz.github.io/posts/FPGA_start</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>观洛天依无限共鸣演唱会线下观演会有感</title><id>https://atoposyz.github.io/posts/LuoTianyi_Concert2024</id><link rel="alternate" href="https://atoposyz.github.io/posts/LuoTianyi_Concert2024" /><updated>2024-10-07T23:54:12.000Z</updated><published>2024-10-07T23:54:12.000Z</published><content type="html"><![CDATA[<p>![Image_1728313043275](<a href="https://github.com/atoposyz/picx-images-hosting/raw/master/Image_1728313043">https://github.com/atoposyz/picx-images-hosting/raw/master/Image_1728313043</a></p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/LuoTianyi_Concert2024" target="_blank">https://atoposyz.github.io/posts/LuoTianyi_Concert2024</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>《四月是你的谎言》补番记录与观后感</title><id>https://atoposyz.github.io/posts/YourLifeInApril</id><link rel="alternate" href="https://atoposyz.github.io/posts/YourLifeInApril" /><updated>2024-09-03T22:26:00.000Z</updated><published>2024-09-03T22:26:00.000Z</published><content type="html"><![CDATA[<h2>观影记录（与HocRiser）</h2>
 <p>以下记录中<code>H</code>为Hocriser，<code>Y</code>为笔者，部分聊天记录有删改与整理。</p>
 <h3>1-5集</h3>
 <blockquote>
 <p>Y:看四谎不敢开弹幕<br>第一集还开弹</p>
 </blockquote>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/YourLifeInApril" target="_blank">https://atoposyz.github.io/posts/YourLifeInApril</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-09-03T14:26:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科研日记 2024.08.27]]></title>
-        <id>https://atoposyz.github.io/posts/DiaryOfKeyan240827</id>
-        <link href="https://atoposyz.github.io/posts/DiaryOfKeyan240827"/>
-        <updated>2024-08-27T15:00:00.000Z</updated>
-        <content type="html"><![CDATA[<p>本来是买了一个本子来写日记的，但上个学期写了那么几天日记，就再也没碰过那个本子了，现在想来，已经好几个月了。倘若再打开那个本子，中间空着的俩月的经历可补不完。</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/YourLifeInApril" target="_blank">https://atoposyz.github.io/posts/YourLifeInApril</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>科研日记 2024.08.27</title><id>https://atoposyz.github.io/posts/DiaryOfKeyan240827</id><link rel="alternate" href="https://atoposyz.github.io/posts/DiaryOfKeyan240827" /><updated>2024-08-27T23:00:00.000Z</updated><published>2024-08-27T23:00:00.000Z</published><content type="html"><![CDATA[<p>本来是买了一个本子来写日记的，但上个学期写了那么几天日记，就再也没碰过那个本子了，现在想来，已经好几个月了。倘若再打开那个本子，中间空着的俩月的经历可补不完。</p>
 <p>暑假里虽然每天都往计算机楼跑，</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/DiaryOfKeyan240827" target="_blank">https://atoposyz.github.io/posts/DiaryOfKeyan240827</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-08-27T15:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2023动画年度盘点]]></title>
-        <id>https://atoposyz.github.io/posts/anime2023</id>
-        <link href="https://atoposyz.github.io/posts/anime2023"/>
-        <updated>2023-12-23T14:33:00.000Z</updated>
-        <summary type="html"><![CDATA[今年的动画盘点！]]></summary>
-        <content type="html"><![CDATA[<h3>动画盘点表</h3>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/DiaryOfKeyan240827" target="_blank">https://atoposyz.github.io/posts/DiaryOfKeyan240827</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>2023动画年度盘点</title><id>https://atoposyz.github.io/posts/anime2023</id><link rel="alternate" href="https://atoposyz.github.io/posts/anime2023" /><updated>2023-12-23T22:33:00.000Z</updated><published>2023-12-23T22:33:00.000Z</published><content type="html"><![CDATA[<h3>动画盘点表</h3>
 <p><img src="https://github.com/atoposyz/picx-images-hosting/raw/master/image.8kzzfjw54t.webp" alt=""></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/anime2023" target="_blank">https://atoposyz.github.io/posts/anime2023</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2023-12-23T14:33:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[参与项目]]></title>
-        <id>https://atoposyz.github.io/posts/github</id>
-        <link href="https://atoposyz.github.io/posts/github"/>
-        <updated>2023-07-10T01:53:33.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="https://github.com/briocheKJ/BombPlane">炸飞机</a></p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/anime2023" target="_blank">https://atoposyz.github.io/posts/anime2023</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>参与项目</title><id>https://atoposyz.github.io/posts/github</id><link rel="alternate" href="https://atoposyz.github.io/posts/github" /><updated>2023-07-10T09:53:33.000Z</updated><published>2023-07-10T09:53:33.000Z</published><content type="html"><![CDATA[<p><a href="https://github.com/briocheKJ/BombPlane">炸飞机</a></p>
 <p><a href="https://github.com/OldCaptainWZJ/MovieApp">微信小程序-电影购票平台</a>(private)</p>
 <p><a href="https://github.com/michro/DSD/wiki">DSD-human motione prediction system</a></p>
 <p><a href="https://github.com/DSD-PIrates/DSD-PIrates.github.io">DSD-嵌入式组</a></p>
 <p><a href="https://github.com/GGN-2015/HocLog">个人博客系统</a>(private)</p>
 <p><a href="https://github.com/atoposyz/BlockDodge">c#横版避障小游戏</a></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/github" target="_blank">https://atoposyz.github.io/posts/github</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2023-07-10T01:53:33.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[本网站的建站故事]]></title>
-        <id>https://atoposyz.github.io/posts/website</id>
-        <link href="https://atoposyz.github.io/posts/website"/>
-        <updated>2023-07-08T14:21:00.000Z</updated>
-        <summary type="html"><![CDATA[本网站的前生今世。]]></summary>
-        <content type="html"><![CDATA[<h2>前身</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/github" target="_blank">https://atoposyz.github.io/posts/github</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>本网站的建站故事</title><id>https://atoposyz.github.io/posts/website</id><link rel="alternate" href="https://atoposyz.github.io/posts/website" /><updated>2023-07-08T22:21:00.000Z</updated><published>2023-07-08T22:21:00.000Z</published><content type="html"><![CDATA[<h2>前身</h2>
 <p>2023年在分布式软件开发（DSD）课中，我负责我组<strong>全部</strong>的小组网站建设，使用<code>Github Pages</code>几乎完全手写了一个静态博客网站，包括主页、文章列表页、文章详情页，</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/website" target="_blank">https://atoposyz.github.io/posts/website</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2023-07-08T14:21:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Huffman-Zip]]></title>
-        <id>https://atoposyz.github.io/posts/Huffman-Zip</id>
-        <link href="https://atoposyz.github.io/posts/Huffman-Zip"/>
-        <updated>2021-07-25T14:37:41.000Z</updated>
-        <content type="html"><![CDATA[<pre><code class="language-cpp">#include &lt;cstdio&gt;
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/website" target="_blank">https://atoposyz.github.io/posts/website</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>Huffman-Zip</title><id>https://atoposyz.github.io/posts/Huffman-Zip</id><link rel="alternate" href="https://atoposyz.github.io/posts/Huffman-Zip" /><updated>2021-07-25T22:37:41.000Z</updated><published>2021-07-25T22:37:41.000Z</published><content type="html"><![CDATA[<pre><code class="language-cpp">#include &lt;cstdio&gt;
 #include &lt;cstring&gt;
 #include &lt;string&gt;
 #include &lt;queue&gt;
 #include &lt;vect</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Huffman-Zip" target="_blank">https://atoposyz.github.io/posts/Huffman-Zip</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2021-07-25T14:37:41.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[上机实验二解题报告]]></title>
-        <id>https://atoposyz.github.io/posts/Lab-Report-2</id>
-        <link href="https://atoposyz.github.io/posts/Lab-Report-2"/>
-        <updated>2021-04-23T05:49:25.000Z</updated>
-        <content type="html"><![CDATA[<h1>上机实验二解题报告</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Huffman-Zip" target="_blank">https://atoposyz.github.io/posts/Huffman-Zip</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>上机实验二解题报告</title><id>https://atoposyz.github.io/posts/Lab-Report-2</id><link rel="alternate" href="https://atoposyz.github.io/posts/Lab-Report-2" /><updated>2021-04-23T13:49:25.000Z</updated><published>2021-04-23T13:49:25.000Z</published><content type="html"><![CDATA[<h1>上机实验二解题报告</h1>
 <h2>T1数列查询</h2>
 <blockquote>
 <p>根据递推公式求 $f(n)$</p>
 </blockquote>
 <p>本题需要多次查询数列项的值，因此不能每次从头开始查询，这会大大浪费时间</p>
 <p>本题我在递归求解的过程</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Lab-Report-2" target="_blank">https://atoposyz.github.io/posts/Lab-Report-2</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2021-04-23T05:49:25.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[第七讲 宋词：婉约之曲与豪放之声]]></title>
-        <id>https://atoposyz.github.io/posts/College-Literature</id>
-        <link href="https://atoposyz.github.io/posts/College-Literature"/>
-        <updated>2020-11-30T10:17:00.000Z</updated>
-        <content type="html"><![CDATA[<h1>刘永</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Lab-Report-2" target="_blank">https://atoposyz.github.io/posts/Lab-Report-2</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>第七讲 宋词：婉约之曲与豪放之声</title><id>https://atoposyz.github.io/posts/College-Literature</id><link rel="alternate" href="https://atoposyz.github.io/posts/College-Literature" /><updated>2020-11-30T18:17:00.000Z</updated><published>2020-11-30T18:17:00.000Z</published><content type="html"><![CDATA[<h1>刘永</h1>
 <h2>望海潮</h2>
 <blockquote>
 <p>东南形胜，三吴都会，钱塘自古繁华。烟柳画桥，风帘翠幕，参差十万人家。云树绕堤沙，怒涛卷霜雪，天堑无涯。市列珠玑，户盈罗绮，竞豪奢。<br>
 重湖叠巘清嘉，有三</p>
 </blockquote>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/College-Literature" target="_blank">https://atoposyz.github.io/posts/College-Literature</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2020-11-30T10:17:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[个人简介 高中版]]></title>
-        <id>https://atoposyz.github.io/posts/Personal-Bio-High-School-Version</id>
-        <link href="https://atoposyz.github.io/posts/Personal-Bio-High-School-Version"/>
-        <updated>2018-10-31T10:00:11.000Z</updated>
-        <content type="html"><![CDATA[<p>$\large\textit{AFO}$ 了</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/College-Literature" target="_blank">https://atoposyz.github.io/posts/College-Literature</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>个人简介 高中版</title><id>https://atoposyz.github.io/posts/Personal-Bio-High-School-Version</id><link rel="alternate" href="https://atoposyz.github.io/posts/Personal-Bio-High-School-Version" /><updated>2018-10-31T18:00:11.000Z</updated><published>2020-10-31T18:00:11.000Z</published><content type="html"><![CDATA[<p>$\large\textit{AFO}$ 了</p>
 <p>弱小，可怜，又无助，还退役了的蒟蒻</p>
 <p>惨 xuanfly 惨</p>
 <p>十年OI一场空，两黑两紫见祖宗</p>
 <p>《西江月·证明》</p>
 <p>即得易见平</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Personal-Bio-High-School-Version" target="_blank">https://atoposyz.github.io/posts/Personal-Bio-High-School-Version</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2020-10-31T10:00:11.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[P2024 食物链]]></title>
-        <id>https://atoposyz.github.io/posts/Solution-P2024</id>
-        <link href="https://atoposyz.github.io/posts/Solution-P2024"/>
-        <updated>2019-11-13T10:27:00.000Z</updated>
-        <content type="html"><![CDATA[<pre><code class="language-cpp">#include &lt;iostream&gt;
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Personal-Bio-High-School-Version" target="_blank">https://atoposyz.github.io/posts/Personal-Bio-High-School-Version</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>P2024 食物链</title><id>https://atoposyz.github.io/posts/Solution-P2024</id><link rel="alternate" href="https://atoposyz.github.io/posts/Solution-P2024" /><updated>2019-11-13T18:27:00.000Z</updated><published>2019-11-13T18:27:00.000Z</published><content type="html"><![CDATA[<pre><code class="language-cpp">#include &lt;iostream&gt;
 #include &lt;cstdio&gt;
 #include &lt;cstring&gt;
 #include &lt;cmath&gt;
 #include &lt;cs</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P2024" target="_blank">https://atoposyz.github.io/posts/Solution-P2024</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-13T10:27:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[11.13模拟赛总结]]></title>
-        <id>https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary</id>
-        <link href="https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary"/>
-        <updated>2019-11-13T02:56:17.000Z</updated>
-        <content type="html"><![CDATA[<h1>论2016NOIP对我的打击</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P2024" target="_blank">https://atoposyz.github.io/posts/Solution-P2024</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>11.13模拟赛总结</title><id>https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary</id><link rel="alternate" href="https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary" /><updated>2019-11-13T10:56:17.000Z</updated><published>2019-11-13T10:56:17.000Z</published><content type="html"><![CDATA[<h1>论2016NOIP对我的打击</h1>
 <h2>时间分配</h2>
 <p>初读试题，第一题曾经做过，是一个小模拟，第二题的子任务十分有做头，第三题的问题描述很好看，部分分给得眼花缭乱，给人一种“云深不知处”的</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-13T02:56:17.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[11.12模拟赛总结]]></title>
-        <id>https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary</id>
-        <link href="https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary"/>
-        <updated>2019-11-12T09:20:03.000Z</updated>
-        <content type="html"><![CDATA[<h2>时间分配</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.13-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>11.12模拟赛总结</title><id>https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary</id><link rel="alternate" href="https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary" /><updated>2019-11-12T17:20:03.000Z</updated><published>2019-11-12T17:20:03.000Z</published><content type="html"><![CDATA[<h2>时间分配</h2>
 <p>略读三道题目，T1是之前做过的题目，也基本忘得差不多了，T2是关于字符串的问题，大概好几个月没碰到这种题了，T3是树上的问题，难度较大</p>
 <p>因此决定前一个小时做T1和对拍，</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-12T09:20:03.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[题解 P2661 【信息传递】]]></title>
-        <id>https://atoposyz.github.io/posts/Solution-P2661</id>
-        <link href="https://atoposyz.github.io/posts/Solution-P2661"/>
-        <updated>2019-11-11T23:09:11.000Z</updated>
-        <content type="html"><![CDATA[<p>这里给大家介绍一种奇怪的做法，为什么奇怪呢，因为这玩意儿又不像并查集，又不像拓扑序</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.12-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>题解 P2661 【信息传递】</title><id>https://atoposyz.github.io/posts/Solution-P2661</id><link rel="alternate" href="https://atoposyz.github.io/posts/Solution-P2661" /><updated>2019-11-12T07:09:11.000Z</updated><published>2019-11-12T07:09:11.000Z</published><content type="html"><![CDATA[<p>这里给大家介绍一种奇怪的做法，为什么奇怪呢，因为这玩意儿又不像并查集，又不像拓扑序</p>
 <p>（<s>其实是我模拟赛的时候先想的拓扑序，又想的并查集，然后一步步改成了现在这个样子</s>）</p>
 <h2>思路</h2>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P2661" target="_blank">https://atoposyz.github.io/posts/Solution-P2661</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-11T23:09:11.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[11.11模拟赛总结]]></title>
-        <id>https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary</id>
-        <link href="https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary"/>
-        <updated>2019-11-11T09:17:19.000Z</updated>
-        <content type="html"><![CDATA[<h1>这篇文章又名斗地主战记</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P2661" target="_blank">https://atoposyz.github.io/posts/Solution-P2661</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>11.11模拟赛总结</title><id>https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary</id><link rel="alternate" href="https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary" /><updated>2019-11-11T17:17:19.000Z</updated><published>2019-11-11T17:17:19.000Z</published><content type="html"><![CDATA[<h1>这篇文章又名斗地主战记</h1>
 <p><a href="https://www.cnblogs.com/xuanfly/p/11836858.html">博客园</a></p>
 <h2>时间分配</h2>
 <p>初步读题，T1做过，T2一看</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-11T09:17:19.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[11.9模拟赛总结]]></title>
-        <id>https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary</id>
-        <link href="https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary"/>
-        <updated>2019-11-09T06:40:45.000Z</updated>
-        <content type="html"><![CDATA[<h1>11.9模拟赛总结</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.11-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>11.9模拟赛总结</title><id>https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary</id><link rel="alternate" href="https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary" /><updated>2019-11-09T14:40:45.000Z</updated><published>2019-11-09T14:40:45.000Z</published><content type="html"><![CDATA[<h1>11.9模拟赛总结</h1>
 <h3><a href="https://www.cnblogs.com/xuanfly/p/11825767.html">博客园</a></h3>
 <h2>做题思路</h2>
 <p>首先略读了三道题，发</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-09T06:40:45.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[扩展欧几里得（exgcd模板）]]></title>
-        <id>https://atoposyz.github.io/posts/exgcd</id>
-        <link href="https://atoposyz.github.io/posts/exgcd"/>
-        <updated>2019-11-08T13:54:00.000Z</updated>
-        <content type="html"><![CDATA[<h2><a href="https://www.luogu.org/problem/P1082">洛谷P1082</a></h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/11.9-Simulation-Contest-Summary</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>扩展欧几里得（exgcd模板）</title><id>https://atoposyz.github.io/posts/exgcd</id><link rel="alternate" href="https://atoposyz.github.io/posts/exgcd" /><updated>2019-11-08T21:54:00.000Z</updated><published>2019-11-08T21:54:00.000Z</published><content type="html"><![CDATA[<h2><a href="https://www.luogu.org/problem/P1082">洛谷P1082</a></h2>
 <h1>Code</h1>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 #include &lt;</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/exgcd" target="_blank">https://atoposyz.github.io/posts/exgcd</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-08T13:54:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[发糖果（拓扑排序模板）]]></title>
-        <id>https://atoposyz.github.io/posts/Distributing-Candies</id>
-        <link href="https://atoposyz.github.io/posts/Distributing-Candies"/>
-        <updated>2019-11-08T13:51:00.000Z</updated>
-        <content type="html"><![CDATA[<p>#<a href="http://oj.ipoweru.cn/problem/23300">发糖果</a></p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/exgcd" target="_blank">https://atoposyz.github.io/posts/exgcd</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>发糖果（拓扑排序模板）</title><id>https://atoposyz.github.io/posts/Distributing-Candies</id><link rel="alternate" href="https://atoposyz.github.io/posts/Distributing-Candies" /><updated>2019-11-08T21:51:00.000Z</updated><published>2019-11-08T21:51:00.000Z</published><content type="html"><![CDATA[<p>#<a href="http://oj.ipoweru.cn/problem/23300">发糖果</a></p>
 <h2>Code</h2>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 #include &lt;cs</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Distributing-Candies" target="_blank">https://atoposyz.github.io/posts/Distributing-Candies</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-08T13:51:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[高斯消元]]></title>
-        <id>https://atoposyz.github.io/posts/Gaussian-Elimination</id>
-        <link href="https://atoposyz.github.io/posts/Gaussian-Elimination"/>
-        <updated>2019-11-08T01:09:48.000Z</updated>
-        <content type="html"><![CDATA[<h1>消元法及高斯消元法思想</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Distributing-Candies" target="_blank">https://atoposyz.github.io/posts/Distributing-Candies</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>高斯消元</title><id>https://atoposyz.github.io/posts/Gaussian-Elimination</id><link rel="alternate" href="https://atoposyz.github.io/posts/Gaussian-Elimination" /><updated>2019-11-08T09:09:48.000Z</updated><published>2019-11-08T09:09:48.000Z</published><content type="html"><![CDATA[<h1>消元法及高斯消元法思想</h1>
 <h2>消元法说明</h2>
 <p>消元法是将方程组中的一方程的未知数用含有另一未知数的代数式表示，并将其带入到另一方程中，这就消去了一未知数，得到一解；或将方程组中的一方程</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Gaussian-Elimination" target="_blank">https://atoposyz.github.io/posts/Gaussian-Elimination</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-08T01:09:48.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[又一次求助]]></title>
-        <id>https://atoposyz.github.io/posts/Another-Request</id>
-        <link href="https://atoposyz.github.io/posts/Another-Request"/>
-        <updated>2019-11-08T00:35:32.000Z</updated>
-        <content type="html"><![CDATA[<h2>被两位大佬帮忙的感觉</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Gaussian-Elimination" target="_blank">https://atoposyz.github.io/posts/Gaussian-Elimination</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>又一次求助</title><id>https://atoposyz.github.io/posts/Another-Request</id><link rel="alternate" href="https://atoposyz.github.io/posts/Another-Request" /><updated>2019-11-08T08:35:32.000Z</updated><published>2019-11-08T08:35:32.000Z</published><content type="html"><![CDATA[<h2>被两位大佬帮忙的感觉</h2>
 <p><img src="https://cdn.luogu.com.cn/upload/image_hosting/8h72b5cc.png" alt=""></p>
 <p>&amp;</p>
 <p>![](https</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Another-Request" target="_blank">https://atoposyz.github.io/posts/Another-Request</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-08T00:35:32.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于我]]></title>
-        <id>https://atoposyz.github.io/posts/aboutme</id>
-        <link href="https://atoposyz.github.io/posts/aboutme"/>
-        <updated>2019-11-07T22:16:00.000Z</updated>
-        <content type="html"><![CDATA[<p>一枚濒临退役的身坚志残的高三自闭选手。</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Another-Request" target="_blank">https://atoposyz.github.io/posts/Another-Request</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>关于我</title><id>https://atoposyz.github.io/posts/aboutme</id><link rel="alternate" href="https://atoposyz.github.io/posts/aboutme" /><updated>2019-11-08T06:16:00.000Z</updated><published>2019-11-08T06:16:00.000Z</published><content type="html"><![CDATA[<p>一枚濒临退役的身坚志残的高三自闭选手。</p>
 <p>喜欢二次元，喜欢中文VOCALOID.</p>
 <blockquote>
 <p>平常给他人带来的印象是傻（某班长评）和总是在笑</p>
 </blockquote>
 <p>千万不要问18级的学长学姐关于我的</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/aboutme" target="_blank">https://atoposyz.github.io/posts/aboutme</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-07T22:16:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[全概率公式]]></title>
-        <id>https://atoposyz.github.io/posts/Total-Probability-Theorem</id>
-        <link href="https://atoposyz.github.io/posts/Total-Probability-Theorem"/>
-        <updated>2019-11-07T09:24:01.000Z</updated>
-        <content type="html"><![CDATA[<h2>引例</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/aboutme" target="_blank">https://atoposyz.github.io/posts/aboutme</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>全概率公式</title><id>https://atoposyz.github.io/posts/Total-Probability-Theorem</id><link rel="alternate" href="https://atoposyz.github.io/posts/Total-Probability-Theorem" /><updated>2019-11-07T17:24:01.000Z</updated><published>2019-11-07T17:24:01.000Z</published><content type="html"><![CDATA[<h2>引例</h2>
 <p>先举个例子，小张从家到公司上班总共有三条路可以直达（如下图），但是每条路每天拥堵的可能性不太一样，由于路的远近不同，选择每条路的概率如下：</p>
 <p>$P(L_1)=0.5,P(L_2)=0.3,P(L_3)=0.2$</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Total-Probability-Theorem" target="_blank">https://atoposyz.github.io/posts/Total-Probability-Theorem</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-07T09:24:01.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Xuan_Fly Loves Math]]></title>
-        <id>https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math</id>
-        <link href="https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math"/>
-        <updated>2019-11-05T10:47:11.000Z</updated>
-        <content type="html"><![CDATA[<p>标程如下：</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Total-Probability-Theorem" target="_blank">https://atoposyz.github.io/posts/Total-Probability-Theorem</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>Xuan_Fly Loves Math</title><id>https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math</id><link rel="alternate" href="https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math" /><updated>2019-11-05T18:47:11.000Z</updated><published>2019-11-05T18:47:11.000Z</published><content type="html"><![CDATA[<p>标程如下：</p>
 <pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
 #define ll long long
 using namespace std;
 ll a,b;
 doubl</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math" target="_blank">https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-05T10:47:11.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pollar Rho算法]]></title>
-        <id>https://atoposyz.github.io/posts/Pollard-Rho-Algorithm</id>
-        <link href="https://atoposyz.github.io/posts/Pollard-Rho-Algorithm"/>
-        <updated>2019-11-03T10:41:10.000Z</updated>
-        <content type="html"><![CDATA[<h1>Pollar Rho算法</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math" target="_blank">https://atoposyz.github.io/posts/Xuan-Fly-Loves-Math</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>Pollar Rho算法</title><id>https://atoposyz.github.io/posts/Pollard-Rho-Algorithm</id><link rel="alternate" href="https://atoposyz.github.io/posts/Pollard-Rho-Algorithm" /><updated>2019-11-03T18:41:10.000Z</updated><published>2019-11-03T18:41:10.000Z</published><content type="html"><![CDATA[<h1>Pollar Rho算法</h1>
 <ul>
 <li>
 <h2>算法简介</h2>
 </li>
 </ul>
 <p>![QQ截图20191103183659.png](<a href="https://i.loli.net/2019/11/03/d7QX3ihSUON">https://i.loli.net/2019/11/03/d7QX3ihSUON</a></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Pollard-Rho-Algorithm" target="_blank">https://atoposyz.github.io/posts/Pollard-Rho-Algorithm</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-03T10:41:10.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[解方程]]></title>
-        <id>https://atoposyz.github.io/posts/Solving-Equations</id>
-        <link href="https://atoposyz.github.io/posts/Solving-Equations"/>
-        <updated>2019-11-02T22:25:45.000Z</updated>
-        <content type="html"><![CDATA[<h1><a href="https://www.luogu.org/problem/P2312">P2312 解方程</a></h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Pollard-Rho-Algorithm" target="_blank">https://atoposyz.github.io/posts/Pollard-Rho-Algorithm</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>解方程</title><id>https://atoposyz.github.io/posts/Solving-Equations</id><link rel="alternate" href="https://atoposyz.github.io/posts/Solving-Equations" /><updated>2019-11-03T06:25:45.000Z</updated><published>2019-11-03T06:25:45.000Z</published><content type="html"><![CDATA[<h1><a href="https://www.luogu.org/problem/P2312">P2312 解方程</a></h1>
 <ul>
 <li>
 <h2>前置知识</h2>
@@ -726,310 +196,67 @@ doubl</code></pre>
 <ol>
 <li>对于一个 $x$ 和模数 $p$，我们设 $x=k</li>
 </ol>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solving-Equations" target="_blank">https://atoposyz.github.io/posts/Solving-Equations</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-02T22:25:45.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[秦九韶算法]]></title>
-        <id>https://atoposyz.github.io/posts/Horner-Algorithm</id>
-        <link href="https://atoposyz.github.io/posts/Horner-Algorithm"/>
-        <updated>2019-11-01T13:54:15.000Z</updated>
-        <content type="html"><![CDATA[<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solving-Equations" target="_blank">https://atoposyz.github.io/posts/Solving-Equations</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>秦九韶算法</title><id>https://atoposyz.github.io/posts/Horner-Algorithm</id><link rel="alternate" href="https://atoposyz.github.io/posts/Horner-Algorithm" /><updated>2019-11-01T21:54:15.000Z</updated><published>2019-11-01T21:54:15.000Z</published><content type="html"><![CDATA[<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
 #define N 1001
 using namespace std;
 int n,x,a[N],mod;
 int main</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Horner-Algorithm" target="_blank">https://atoposyz.github.io/posts/Horner-Algorithm</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-11-01T13:54:15.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LaTeX 字体语法总结]]></title>
-        <id>https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary</id>
-        <link href="https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary"/>
-        <updated>2019-10-30T22:27:53.000Z</updated>
-        <content type="html"><![CDATA[<p>$\mathcal{Using}$ $\color{purple}\LaTeX$</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Horner-Algorithm" target="_blank">https://atoposyz.github.io/posts/Horner-Algorithm</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>LaTeX 字体语法总结</title><id>https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary</id><link rel="alternate" href="https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary" /><updated>2019-10-31T06:27:53.000Z</updated><published>2019-10-31T06:27:53.000Z</published><content type="html"><![CDATA[<p>$\mathcal{Using}$ $\color{purple}\LaTeX$</p>
 <p>\mathfrak{}</p>
 <p>$\mathfrak{mathfrak1234}$</p>
 <p>\mathrm{}</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary" target="_blank">https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-10-30T22:27:53.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[模板练习]]></title>
-        <id>https://atoposyz.github.io/posts/Template-Practice</id>
-        <link href="https://atoposyz.github.io/posts/Template-Practice"/>
-        <updated>2019-10-30T11:38:34.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/v8msk1oq.png" alt=""></p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary" target="_blank">https://atoposyz.github.io/posts/LaTeX-Font-Syntax-Summary</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>模板练习</title><id>https://atoposyz.github.io/posts/Template-Practice</id><link rel="alternate" href="https://atoposyz.github.io/posts/Template-Practice" /><updated>2019-10-30T19:38:34.000Z</updated><published>2019-10-30T19:38:34.000Z</published><content type="html"><![CDATA[<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/v8msk1oq.png" alt=""></p>
 <h2>拓扑排序</h2>
 <h3>[发糖果](<a href="http://oj">http://oj</a>.</h3>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Template-Practice" target="_blank">https://atoposyz.github.io/posts/Template-Practice</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-10-30T11:38:34.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[模拟赛总结]]></title>
-        <id>https://atoposyz.github.io/posts/Simulation-Contest-Summary</id>
-        <link href="https://atoposyz.github.io/posts/Simulation-Contest-Summary"/>
-        <updated>2019-10-30T09:34:52.000Z</updated>
-        <content type="html"><![CDATA[<h2>$\mathcal{XuanFly's}$ 模拟赛总结</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Template-Practice" target="_blank">https://atoposyz.github.io/posts/Template-Practice</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>模拟赛总结</title><id>https://atoposyz.github.io/posts/Simulation-Contest-Summary</id><link rel="alternate" href="https://atoposyz.github.io/posts/Simulation-Contest-Summary" /><updated>2019-10-30T17:34:52.000Z</updated><published>2019-10-30T17:34:52.000Z</published><content type="html"><![CDATA[<h2>$\mathcal{XuanFly's}$ 模拟赛总结</h2>
 <p>$\color{navy}{written}$ $\color{navy}{with}$ $\LaTeX $ $&amp;$ $ \m</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/Simulation-Contest-Summary</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-10-30T09:34:52.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple Tree 2]]></title>
-        <id>https://atoposyz.github.io/posts/apple-tree-2</id>
-        <link href="https://atoposyz.github.io/posts/apple-tree-2"/>
-        <updated>2019-10-07T12:21:57.000Z</updated>
-        <content type="html"><![CDATA[<h2>题目描述</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Simulation-Contest-Summary" target="_blank">https://atoposyz.github.io/posts/Simulation-Contest-Summary</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>Apple Tree 2</title><id>https://atoposyz.github.io/posts/apple-tree-2</id><link rel="alternate" href="https://atoposyz.github.io/posts/apple-tree-2" /><updated>2019-10-07T20:21:57.000Z</updated><published>2019-10-07T20:21:57.000Z</published><content type="html"><![CDATA[<h2>题目描述</h2>
 <p>有一颗 $n$ 个节点的苹果树，最初每个节点上都有 $1$ 个苹果，并且每个节点在操作的过程中只会处在有 $1$ 个苹果和没有苹果两种状态之一。</p>
 <p>有 $m$ 个操作，操作分</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/apple-tree-2" target="_blank">https://atoposyz.github.io/posts/apple-tree-2</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-10-07T12:21:57.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[线段树与树状数组]]></title>
-        <id>https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree</id>
-        <link href="https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree"/>
-        <updated>2019-10-06T14:08:50.000Z</updated>
-        <content type="html"><![CDATA[<h1><a href="https://www.luogu.org/problem/P3372">【模板】线段树 1</a></h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/apple-tree-2" target="_blank">https://atoposyz.github.io/posts/apple-tree-2</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>线段树与树状数组</title><id>https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree</id><link rel="alternate" href="https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree" /><updated>2019-10-06T22:08:50.000Z</updated><published>2019-10-06T22:08:50.000Z</published><content type="html"><![CDATA[<h1><a href="https://www.luogu.org/problem/P3372">【模板】线段树 1</a></h1>
 <h2>区间加法+求和</h2>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 #incl</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree" target="_blank">https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-10-06T14:08:50.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ST表]]></title>
-        <id>https://atoposyz.github.io/posts/ST-Table</id>
-        <link href="https://atoposyz.github.io/posts/ST-Table"/>
-        <updated>2019-10-03T02:14:22.000Z</updated>
-        <content type="html"><![CDATA[<h1>对数组操作</h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree" target="_blank">https://atoposyz.github.io/posts/Segment-Tree-and-Fenwick-Tree</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>ST表</title><id>https://atoposyz.github.io/posts/ST-Table</id><link rel="alternate" href="https://atoposyz.github.io/posts/ST-Table" /><updated>2019-10-03T10:14:22.000Z</updated><published>2019-10-03T10:14:22.000Z</published><content type="html"><![CDATA[<h1>对数组操作</h1>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 #include &lt;cstdio&gt;
 #include &lt;cstring&gt;
 #include &lt;cmath&gt;
 #</code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/ST-Table" target="_blank">https://atoposyz.github.io/posts/ST-Table</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-10-03T02:14:22.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[疾病管理]]></title>
-        <id>https://atoposyz.github.io/posts/Disease-Manangement</id>
-        <link href="https://atoposyz.github.io/posts/Disease-Manangement"/>
-        <updated>2019-10-02T08:52:42.000Z</updated>
-        <content type="html"><![CDATA[<h1><a href="http://oj.ipoweru.cn/problem/24112">Disease Manangement 疾病管理</a></h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/ST-Table" target="_blank">https://atoposyz.github.io/posts/ST-Table</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>疾病管理</title><id>https://atoposyz.github.io/posts/Disease-Manangement</id><link rel="alternate" href="https://atoposyz.github.io/posts/Disease-Manangement" /><updated>2019-10-02T16:52:42.000Z</updated><published>2019-10-02T16:52:42.000Z</published><content type="html"><![CDATA[<h1><a href="http://oj.ipoweru.cn/problem/24112">Disease Manangement 疾病管理</a></h1>
 <h2>题面如下</h2>
 <p>有 $N$ 头牛，它们可能患有 $D$</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Disease-Manangement" target="_blank">https://atoposyz.github.io/posts/Disease-Manangement</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-10-02T08:52:42.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[错误集锦]]></title>
-        <id>https://atoposyz.github.io/posts/Common-Mistakes</id>
-        <link href="https://atoposyz.github.io/posts/Common-Mistakes"/>
-        <updated>2019-09-12T13:24:26.000Z</updated>
-        <content type="html"><![CDATA[<h1><a href="http://oj.ipoweru.cn/problem/23300">发糖果</a></h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Disease-Manangement" target="_blank">https://atoposyz.github.io/posts/Disease-Manangement</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>错误集锦</title><id>https://atoposyz.github.io/posts/Common-Mistakes</id><link rel="alternate" href="https://atoposyz.github.io/posts/Common-Mistakes" /><updated>2019-09-12T21:24:26.000Z</updated><published>2019-09-12T21:24:26.000Z</published><content type="html"><![CDATA[<h1><a href="http://oj.ipoweru.cn/problem/23300">发糖果</a></h1>
 <pre><code class="language-cpp">	while(hd &lt; tail) {
 		int u = q[hd++];
 </code></pre>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Common-Mistakes" target="_blank">https://atoposyz.github.io/posts/Common-Mistakes</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-09-12T13:24:26.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[题解链接 使用 Ctrl + F 查找]]></title>
-        <id>https://atoposyz.github.io/posts/Solution-Link</id>
-        <link href="https://atoposyz.github.io/posts/Solution-Link"/>
-        <updated>2019-08-31T03:52:58.000Z</updated>
-        <content type="html"><![CDATA[<h1><a href="https://www.luogu.org/blog/XTZORZ/solution-p2024">P2024 [NOI2001]食物链</a></h1>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Common-Mistakes" target="_blank">https://atoposyz.github.io/posts/Common-Mistakes</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>题解链接 使用 Ctrl + F 查找</title><id>https://atoposyz.github.io/posts/Solution-Link</id><link rel="alternate" href="https://atoposyz.github.io/posts/Solution-Link" /><updated>2019-08-31T11:52:58.000Z</updated><published>2019-08-31T11:52:58.000Z</published><content type="html"><![CDATA[<h1><a href="https://www.luogu.org/blog/XTZORZ/solution-p2024">P2024 [NOI2001]食物链</a></h1>
 <ul>
 <li>加权并查集</li>
 </ul>
 <h1>[P4198 楼房</h1>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-Link" target="_blank">https://atoposyz.github.io/posts/Solution-Link</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-31T03:52:58.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[题解 P4155 【[SCOI2015]国旗计划】]]></title>
-        <id>https://atoposyz.github.io/posts/Solution-P4155</id>
-        <link href="https://atoposyz.github.io/posts/Solution-P4155"/>
-        <updated>2019-08-30T03:38:08.000Z</updated>
-        <content type="html"><![CDATA[<p>被老师布置作业的我（蒟蒻）无助地翻开题解，只见大佬们又是<code>template</code>又是<code>namespace</code>的，看得我一脸懵，被迫学习了一篇<code>CSDN</code>的题解，现说一说些微的体会来加深<s>自己的</s>印象</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P4155" target="_blank">https://atoposyz.github.io/posts/Solution-P4155</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-30T03:38:08.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[树的遍历——DFS与BFS]]></title>
-        <id>https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS</id>
-        <link href="https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS"/>
-        <updated>2019-08-28T08:45:21.000Z</updated>
-        <content type="html"><![CDATA[<h2>A.树的遍历</h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-Link" target="_blank">https://atoposyz.github.io/posts/Solution-Link</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>题解 P4155 【[SCOI2015]国旗计划】</title><id>https://atoposyz.github.io/posts/Solution-P4155</id><link rel="alternate" href="https://atoposyz.github.io/posts/Solution-P4155" /><updated>2019-08-30T11:38:08.000Z</updated><published>2019-08-30T11:38:08.000Z</published><content type="html"><![CDATA[<p>被老师布置作业的我（蒟蒻）无助地翻开题解，只见大佬们又是<code>template</code>又是<code>namespace</code>的，看得我一脸懵，被迫学习了一篇<code>CSDN</code>的题解，现说一说些微的体会来加深<s>自己的</s>印象</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P4155" target="_blank">https://atoposyz.github.io/posts/Solution-P4155</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>树的遍历——DFS与BFS</title><id>https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS</id><link rel="alternate" href="https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS" /><updated>2019-08-28T16:45:21.000Z</updated><published>2019-08-28T16:45:21.000Z</published><content type="html"><![CDATA[<h2>A.树的遍历</h2>
 <h3>题目描述</h3>
 <p>给定一棵 $n$ 个节点的无根树（节点编号 $0$ 至 $n-1$）和一个节点$x$，请以 $x$ 号节点为根，做一次 <strong>DFS</strong> 与一次 *</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS" target="_blank">https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-28T08:45:21.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[背包问题]]></title>
-        <id>https://atoposyz.github.io/posts/Knapsack-Problem</id>
-        <link href="https://atoposyz.github.io/posts/Knapsack-Problem"/>
-        <updated>2019-08-27T11:16:24.000Z</updated>
-        <content type="html"><![CDATA[<h2><a href="http://codevs.cn/problem/5429/">多重背包</a></h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS" target="_blank">https://atoposyz.github.io/posts/Tree-Traversal-DFS-and-BFS</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>背包问题</title><id>https://atoposyz.github.io/posts/Knapsack-Problem</id><link rel="alternate" href="https://atoposyz.github.io/posts/Knapsack-Problem" /><updated>2019-08-27T19:16:24.000Z</updated><published>2019-08-27T19:16:24.000Z</published><content type="html"><![CDATA[<h2><a href="http://codevs.cn/problem/5429/">多重背包</a></h2>
 <p><strong>题目描述 Description</strong></p>
 <p>你有一个容量为 $M$ 的背包，和 $N$ 种物品。</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Knapsack-Problem" target="_blank">https://atoposyz.github.io/posts/Knapsack-Problem</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-27T11:16:24.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我继续吃柠檬]]></title>
-        <id>https://atoposyz.github.io/posts/Keep-Eating-Lemons</id>
-        <link href="https://atoposyz.github.io/posts/Keep-Eating-Lemons"/>
-        <updated>2019-08-27T09:42:41.000Z</updated>
-        <content type="html"><![CDATA[<h2><a href="http://oj.ipoweru.cn/problem/22606">#22606. 我继续吃柠檬</a></h2>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Keep-Eating-Lemons" target="_blank">https://atoposyz.github.io/posts/Keep-Eating-Lemons</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-27T09:42:41.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[_rqy's Code Style for OI]]></title>
-        <id>https://atoposyz.github.io/posts/RQYsCodeStyle4OI</id>
-        <link href="https://atoposyz.github.io/posts/RQYsCodeStyle4OI"/>
-        <updated>2019-08-26T13:09:05.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="https://rqy.moe/uncategorized/rqy-s-Code-Style-for-OI/">原文 _rqy's Code Style for OI</a></p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Knapsack-Problem" target="_blank">https://atoposyz.github.io/posts/Knapsack-Problem</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>我继续吃柠檬</title><id>https://atoposyz.github.io/posts/Keep-Eating-Lemons</id><link rel="alternate" href="https://atoposyz.github.io/posts/Keep-Eating-Lemons" /><updated>2019-08-27T17:42:41.000Z</updated><published>2019-08-27T17:42:41.000Z</published><content type="html"><![CDATA[<h2><a href="http://oj.ipoweru.cn/problem/22606">#22606. 我继续吃柠檬</a></h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Keep-Eating-Lemons" target="_blank">https://atoposyz.github.io/posts/Keep-Eating-Lemons</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>_rqy&#39;s Code Style for OI</title><id>https://atoposyz.github.io/posts/RQYsCodeStyle4OI</id><link rel="alternate" href="https://atoposyz.github.io/posts/RQYsCodeStyle4OI" /><updated>2019-08-26T21:09:05.000Z</updated><published>2019-08-26T21:09:05.000Z</published><content type="html"><![CDATA[<p><a href="https://rqy.moe/uncategorized/rqy-s-Code-Style-for-OI/">原文 _rqy's Code Style for OI</a></p>
 <p>本文介绍<code>_rqy</code>的OI中的代码规范。其来源主要为<code>_rqy</code>的长期积累及参考<code>Google</code>代码规范、<code>Menci</code>的规范。</p>
 <p>Inspired by <a href="https://oi.men.ci/code-style-oi/">Menci’s Code Sytle for OI</a></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/RQYsCodeStyle4OI" target="_blank">https://atoposyz.github.io/posts/RQYsCodeStyle4OI</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-26T13:09:05.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最大矩形面积]]></title>
-        <id>https://atoposyz.github.io/posts/Maximal-Rectangle-Area</id>
-        <link href="https://atoposyz.github.io/posts/Maximal-Rectangle-Area"/>
-        <updated>2019-08-26T06:44:50.000Z</updated>
-        <content type="html"><![CDATA[<h2><a href="http://oj.ipoweru.cn/problem/22510">最大矩形面积</a></h2>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/RQYsCodeStyle4OI" target="_blank">https://atoposyz.github.io/posts/RQYsCodeStyle4OI</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>最大矩形面积</title><id>https://atoposyz.github.io/posts/Maximal-Rectangle-Area</id><link rel="alternate" href="https://atoposyz.github.io/posts/Maximal-Rectangle-Area" /><updated>2019-08-26T14:44:50.000Z</updated><published>2019-08-26T14:44:50.000Z</published><content type="html"><![CDATA[<h2><a href="http://oj.ipoweru.cn/problem/22510">最大矩形面积</a></h2>
 <p>题目描述<br>
 给出一个柱形统计图，图中有n个项目，它的每个项目的宽度是1， 高度为$h_i$。</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Maximal-Rectangle-Area" target="_blank">https://atoposyz.github.io/posts/Maximal-Rectangle-Area</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-26T06:44:50.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OI旅程]]></title>
-        <id>https://atoposyz.github.io/posts/OItravel</id>
-        <link href="https://atoposyz.github.io/posts/OItravel"/>
-        <updated>2019-08-22T13:32:22.000Z</updated>
-        <summary type="html"><![CDATA[我的OI之旅。]]></summary>
-        <content type="html"><![CDATA[<p>2019.7.29 21:05</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Maximal-Rectangle-Area" target="_blank">https://atoposyz.github.io/posts/Maximal-Rectangle-Area</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>OI旅程</title><id>https://atoposyz.github.io/posts/OItravel</id><link rel="alternate" href="https://atoposyz.github.io/posts/OItravel" /><updated>2019-08-22T21:32:22.000Z</updated><published>2019-08-22T21:32:22.000Z</published><content type="html"><![CDATA[<p>2019.7.29 21:05</p>
 <h2>AC100祭</h2>
 <hr>
 <p>2019.8.19 21:09</p>
 <p>![艰难的一步](<a href="https://cdn.luogu.com.cn">https://cdn.luogu.com.cn</a></p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/OItravel" target="_blank">https://atoposyz.github.io/posts/OItravel</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-22T13:32:22.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[题解 P1011 【车站】]]></title>
-        <id>https://atoposyz.github.io/posts/Solution-P1011</id>
-        <link href="https://atoposyz.github.io/posts/Solution-P1011"/>
-        <updated>2019-08-20T14:07:29.000Z</updated>
-        <content type="html"><![CDATA[<p>蒟蒻的第一篇题解</p>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/OItravel" target="_blank">https://atoposyz.github.io/posts/OItravel</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry><entry><title>题解 P1011 【车站】</title><id>https://atoposyz.github.io/posts/Solution-P1011</id><link rel="alternate" href="https://atoposyz.github.io/posts/Solution-P1011" /><updated>2019-08-20T22:07:29.000Z</updated><published>2019-08-20T22:07:29.000Z</published><content type="html"><![CDATA[<p>蒟蒻的第一篇题解</p>
 <p><strong><s>教你怎样打表</s></strong></p>
 <p>这一道题目其实是个数学题，也不是很难，我们可以先在草稿纸上写一下</p>
 <p>用（x,y）代表a和b的系数</p>
 <p>|  | 1 | 2 |</p>
-<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P1011" target="_blank">https://atoposyz.github.io/posts/Solution-P1011</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>atoposyz</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2019-08-20T14:07:29.000Z</published>
-    </entry>
-</feed>
+<br/><p>访问 <a href="https://atoposyz.github.io/posts/Solution-P1011" target="_blank">https://atoposyz.github.io/posts/Solution-P1011</a> 阅读全文。</p>]]></content><author><name>Atoposyz</name><email>i@valaxy.site</email><uri>https://valaxy.site</uri></author></entry></feed>

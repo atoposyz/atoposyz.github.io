@@ -1,1 +1,57 @@
-// you can custom css vars here
+/* ============================================
+ * Anime / 二次元 Theme - CSS Custom Properties
+ * Sakura Pink × Soft Purple × Sky Blue
+ * ============================================ */
+
+:root {
+  /* === Primary Palette (Sakura Pink) === */
+  --va-c-primary: #FF6B9D;
+  --va-c-primary-light: #FF85B3;
+  --va-c-primary-lighter: #FFB3D1;
+  --va-c-primary-dark: #E05585;
+  --va-c-primary-darker: #C04070;
+
+  /* === Yun Theme Overrides === */
+  --yun-c-cloud: #FFD1E0;
+  --yun-home-hero-name-background: linear-gradient(120deg, #FF6B9D 30%, #C084FC);
+  --yun-home-hero-image-background-image: linear-gradient(-45deg, #FF6B9D 40%, #C084FC 60%, #67E8F9 100%);
+
+  /* === Banner Overrides === */
+  --banner-line-color: #FF85B3;
+  --banner-char-color: #FF6B9D;
+  --banner-char-bg-color: rgba(255, 255, 255, 0.7);
+  --banner-char-hover-color: #C084FC;
+
+  /* === Typography === */
+  --va-font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --va-font-serif: "Noto Serif SC", "Source Han Serif SC", STZhongsong, STKaiti, KaiTi, Georgia, serif;
+
+  /* === Decorative Variables (custom, for use in index.scss) === */
+  --deco-pink: #FF6B9D;
+  --deco-purple: #C084FC;
+  --deco-sky: #67E8F9;
+  --deco-glow-pink: 0 0 20px rgba(255, 107, 157, 0.3);
+  --deco-glow-purple: 0 0 20px rgba(192, 132, 252, 0.3);
+}
+
+/* ============================================
+ * Dark Mode
+ * ============================================ */
+html.dark {
+  --va-c-primary: #FF85B3;
+  --va-c-primary-light: #FF9EC4;
+  --va-c-primary-lighter: #FFB3D1;
+  --va-c-primary-dark: #E05585;
+  --va-c-primary-darker: #C04070;
+
+  --yun-c-cloud: #2a1535;
+  --yun-home-hero-name-background: linear-gradient(120deg, #FF85B3 30%, #C084FC);
+
+  --banner-line-color: #FF85B3;
+  --banner-char-color: #FF9EC4;
+  --banner-char-bg-color: rgba(26, 21, 32, 0.7);
+  --banner-char-hover-color: #E9D5FF;
+
+  --deco-glow-pink: 0 0 24px rgba(255, 133, 179, 0.25);
+  --deco-glow-purple: 0 0 24px rgba(192, 132, 252, 0.25);
+}

@@ -6,6 +6,16 @@ import { addonComponents } from 'valaxy-addon-components'
 // add icons what you will need
 const safelist = [
   'i-ri-home-line',
+  'i-ri-article-line',
+  'i-ri-user-line',
+  'i-ri-links-line',
+  'i-ri-archive-line',
+  'i-ri-price-tag-3-line',
+  'i-ri-folder-line',
+  'i-ri-search-line',
+  'i-ri-heart-line',
+  'i-ri-cloud-line',
+  'i-ri-sakura-line',
 ]
 
 /**
@@ -17,6 +27,10 @@ export default defineValaxyConfig<UserThemeConfig>({
   theme: 'yun',
 
   themeConfig: {
+    colors: {
+      primary: '#FF6B9D',
+    },
+
     banner: {
       enable: true,
       title: 'Atoposyz',
@@ -24,7 +38,48 @@ export default defineValaxyConfig<UserThemeConfig>({
         enable: true,
       },
     },
-    
+
+    nav: [
+      {
+        text: '归档',
+        link: '/archives',
+        icon: 'i-ri-archive-line',
+      },
+      {
+        text: '分类',
+        link: '/categories',
+        icon: 'i-ri-folder-line',
+      },
+      {
+        text: '标签',
+        link: '/tags',
+        icon: 'i-ri-price-tag-3-line',
+      },
+      {
+        text: '关于',
+        link: '/about',
+        icon: 'i-ri-user-line',
+      },
+      {
+        text: '友链',
+        link: '/links',
+        icon: 'i-ri-links-line',
+      },
+    ],
+
+    // say: {
+    //   enable: true,
+    //   hitokoto: {
+    //     enable: true,
+    //     api: 'https://v1.hitokoto.cn',
+    //   },
+    // },
+
+    // fireworks: {
+    //   enable: true,
+    //   colors: ['#FF6B9D', '#C084FC', '#67E8F9', '#FFB347', '#FF85B3'],
+    // },
+
     pages: [
       {
         name: '我的小伙伴们',
@@ -59,6 +114,10 @@ export default defineValaxyConfig<UserThemeConfig>({
         icp: '萌ICP备20240313号',
       },
       icon: {
+        enable: true,
+        name: 'i-ri-heart-line',
+        animated: true,
+        color: '#FF6B9D',
         url: 'https://github.com/atoposyz',
         title: 'Github',
       },
