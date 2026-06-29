@@ -40,6 +40,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/anime2023': RouteRecordInfo<'/posts/anime2023', '/posts/anime2023', Record<never, never>, Record<never, never>>,
     '/posts/Another-Request': RouteRecordInfo<'/posts/Another-Request', '/posts/Another-Request', Record<never, never>, Record<never, never>>,
     '/posts/apple-tree-2': RouteRecordInfo<'/posts/apple-tree-2', '/posts/apple-tree-2', Record<never, never>, Record<never, never>>,
+    '/posts/CCF-Arch-Fault-Injection-Survey-2021-2025': RouteRecordInfo<'/posts/CCF-Arch-Fault-Injection-Survey-2021-2025', '/posts/CCF-Arch-Fault-Injection-Survey-2021-2025', Record<never, never>, Record<never, never>>,
     '/posts/College-Literature': RouteRecordInfo<'/posts/College-Literature', '/posts/College-Literature', Record<never, never>, Record<never, never>>,
     '/posts/Common-Mistakes': RouteRecordInfo<'/posts/Common-Mistakes', '/posts/Common-Mistakes', Record<never, never>, Record<never, never>>,
     '/posts/CourseOfDCS_1': RouteRecordInfo<'/posts/CourseOfDCS_1', '/posts/CourseOfDCS_1', Record<never, never>, Record<never, never>>,

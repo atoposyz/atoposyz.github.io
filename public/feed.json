@@ -14,6 +14,20 @@
   ],
   "items": [
     {
+      "id": "https://atoposyz.github.io/posts/CCF-Arch-Fault-Injection-Survey-2021-2025",
+      "url": "https://atoposyz.github.io/posts/CCF-Arch-Fault-Injection-Survey-2021-2025",
+      "title": "体系结构A会错误注入分析论文全集 (2021-2025)",
+      "content_html": "<blockquote>\n<p><strong>数据源</strong>: <a href=\"https://ccf.atom.im/\">CCF 2026 第七版推荐目录</a> → 体系结构/并行与分布计算/存储系统 A 类 10 个会议<br>\n<strong>检索方式</strong>:</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://atoposyz.github.io/posts/CCF-Arch-Fault-Injection-Survey-2021-2025\" target=\"_blank\">https://atoposyz.github.io/posts/CCF-Arch-Fault-Injection-Survey-2021-2025</a> 阅读全文。</p>",
+      "date_published": "2026-06-29T20:48:22.000Z",
+      "date_modified": "2026-06-29T20:48:22.000Z",
+      "authors": [
+        {
+          "name": "Atoposyz",
+          "url": "https://valaxy.site"
+        }
+      ]
+    },
+    {
       "id": "https://atoposyz.github.io/posts/CourseOfFaultTorrence",
       "url": "https://atoposyz.github.io/posts/CourseOfFaultTorrence",
       "title": "容错系统复习",
