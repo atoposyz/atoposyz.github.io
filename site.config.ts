@@ -12,9 +12,9 @@ export default defineSiteConfig({
       emoji: '🌸',
       message: '平凡地走下去吧',
     },
-    intro: '一枚喜欢二次元与中文VOCALOID的程序员。平凡地走完了小学、初中与高中，即将从吉林大学毕业。',
+    intro: '二次元、中文VOCALOID.',
   },
-  description: 'Atoposyz 的个人博客 - 记录 OI 竞赛、数学思考、动漫热爱与生活点滴',
+  description: 'Atoposyz 的个人博客',
   social: [
     {
       name: 'RSS',
