@@ -65,6 +65,11 @@ export default defineValaxyConfig<UserThemeConfig>({
         link: '/links',
         icon: 'i-ri-links-line',
       },
+      {
+        text: '故障模拟',
+        link: '/systolic-fault-sim/',
+        icon: 'i-ri-cpu-line',
+      },
     ],
 
     // say: {
