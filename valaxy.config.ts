@@ -67,7 +67,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       },
       {
         text: '故障模拟',
-        link: '/systolic-fault-sim/',
+        link: 'https://atoposyz.github.io/systolic-fault-sim/',
         icon: 'i-ri-cpu-line',
       },
     ],
