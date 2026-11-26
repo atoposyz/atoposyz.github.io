@@ -3,9 +3,9 @@
     "target": "ESNext",
     "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
-    "baseUrl": ".",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "types": ["node", "valaxy/client", "vite/client"],
     "paths": {
       "~/*": ["./*"]
     },

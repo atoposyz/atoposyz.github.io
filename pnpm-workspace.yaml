@@ -1,0 +1,17 @@
+overrides:
+  # Valaxy 1.6.0 uses DevFrames 1.2.5. Vite DevTools must share that
+  # version because DevFrames packages require matching peer versions.
+  '@vitejs/devtools@0.8.0>@devframes/agentic': 1.2.5
+  '@vitejs/devtools@0.8.0>@devframes/hub': 1.2.5
+  '@vitejs/devtools@0.8.0>@devframes/hub-ui': 1.2.5
+  '@vitejs/devtools@0.8.0>@devframes/json-render': 1.2.5
+  '@vitejs/devtools@0.8.0>@devframes/json-render-ui': 1.2.5
+  '@vitejs/devtools@0.8.0>@devframes/plugin-inspect': 1.2.5
+  '@vitejs/devtools@0.8.0>@devframes/plugin-messages': 1.2.5
+  '@vitejs/devtools@0.8.0>@devframes/plugin-terminals': 1.2.5
+  '@vitejs/devtools@0.8.0>devframe': 1.2.5
+  '@vitejs/devtools-kit@0.8.0>@devframes/hub': 1.2.5
+  '@vitejs/devtools-kit@0.8.0>devframe': 1.2.5
+  # Newer UnoCSS Inspector releases require DevFrames 1.2.6 or later.
+  'valaxy@1.6.0>unocss': 66.11.0
+  '@unocss/inspector@66.11.0>devframe': 1.2.5

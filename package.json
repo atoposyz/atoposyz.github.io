@@ -3,6 +3,10 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": "^22.22.0 || >=24.11.0"
+  },
   "scripts": {
     "build": "npm run build:ssg",
     "build:spa": "valaxy build",
@@ -12,12 +16,14 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "valaxy": "0.28.11",
+    "valaxy": "1.6.0",
     "valaxy-addon-components": "^0.1.0",
-    "valaxy-theme-yun": "0.28.11",
-    "vue-router": "^5.1.0"
+    "valaxy-theme-yun": "1.6.0",
+    "vue": "^3.5.46",
+    "vue-router": "^5.5.1"
   },
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "@types/node": "^22.20.7",
+    "typescript": "~6.0.3"
   }
 }
