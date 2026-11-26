@@ -3,7 +3,7 @@ import { defineSiteConfig } from 'valaxy'
 export default defineSiteConfig({
   url: 'https://atoposyz.github.io/',
   lang: 'zh-CN',
-  title: 'Atoposyz',
+  title: '拓扑星序',
   subtitle: '生活本就是奇迹与日常的结合体',
   author: {
     name: 'Atoposyz',

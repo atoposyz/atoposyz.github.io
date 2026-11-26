@@ -5,6 +5,8 @@
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "types": ["node", "valaxy/client", "vite/client"],
     "paths": {
       "~/*": ["./*"]

@@ -129,422 +129,422 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/11.11-Simulation-Contest-Summary': RouteRecordInfo<
-      '/posts/11.11-Simulation-Contest-Summary',
-      '/posts/11/11-Simulation-Contest-Summary',
+    '/posts/anime/anime2023': RouteRecordInfo<
+      '/posts/anime/anime2023',
+      '/posts/anime/anime2023',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/11.12-Simulation-Contest-Summary': RouteRecordInfo<
-      '/posts/11.12-Simulation-Contest-Summary',
-      '/posts/11/12-Simulation-Contest-Summary',
+    '/posts/courses/CourseOfDCS_1': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_1',
+      '/posts/courses/CourseOfDCS_1',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/11.13-Simulation-Contest-Summary': RouteRecordInfo<
-      '/posts/11.13-Simulation-Contest-Summary',
-      '/posts/11/13-Simulation-Contest-Summary',
+    '/posts/courses/CourseOfDCS_10': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_10',
+      '/posts/courses/CourseOfDCS_10',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/11.9-Simulation-Contest-Summary': RouteRecordInfo<
-      '/posts/11.9-Simulation-Contest-Summary',
-      '/posts/11/9-Simulation-Contest-Summary',
+    '/posts/courses/CourseOfDCS_2': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_2',
+      '/posts/courses/CourseOfDCS_2',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/aboutme': RouteRecordInfo<
-      '/posts/aboutme',
-      '/posts/aboutme',
+    '/posts/courses/CourseOfDCS_3': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_3',
+      '/posts/courses/CourseOfDCS_3',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/anime2023': RouteRecordInfo<
-      '/posts/anime2023',
-      '/posts/anime2023',
+    '/posts/courses/CourseOfDCS_4': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_4',
+      '/posts/courses/CourseOfDCS_4',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Another-Request': RouteRecordInfo<
-      '/posts/Another-Request',
-      '/posts/Another-Request',
+    '/posts/courses/CourseOfDCS_5': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_5',
+      '/posts/courses/CourseOfDCS_5',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/apple-tree-2': RouteRecordInfo<
-      '/posts/apple-tree-2',
-      '/posts/apple-tree-2',
+    '/posts/courses/CourseOfDCS_6': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_6',
+      '/posts/courses/CourseOfDCS_6',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CCF-Arch-Fault-Injection-Survey-2021-2025': RouteRecordInfo<
-      '/posts/CCF-Arch-Fault-Injection-Survey-2021-2025',
-      '/posts/CCF-Arch-Fault-Injection-Survey-2021-2025',
+    '/posts/courses/CourseOfDCS_7': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_7',
+      '/posts/courses/CourseOfDCS_7',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/College-Literature': RouteRecordInfo<
-      '/posts/College-Literature',
-      '/posts/College-Literature',
+    '/posts/courses/CourseOfDCS_8': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_8',
+      '/posts/courses/CourseOfDCS_8',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Common-Mistakes': RouteRecordInfo<
-      '/posts/Common-Mistakes',
-      '/posts/Common-Mistakes',
+    '/posts/courses/CourseOfDCS_9': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_9',
+      '/posts/courses/CourseOfDCS_9',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_1': RouteRecordInfo<
-      '/posts/CourseOfDCS_1',
-      '/posts/CourseOfDCS_1',
+    '/posts/courses/CourseOfDCS_highlight': RouteRecordInfo<
+      '/posts/courses/CourseOfDCS_highlight',
+      '/posts/courses/CourseOfDCS_highlight',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_10': RouteRecordInfo<
-      '/posts/CourseOfDCS_10',
-      '/posts/CourseOfDCS_10',
+    '/posts/courses/CourseOfFaultTorrence': RouteRecordInfo<
+      '/posts/courses/CourseOfFaultTorrence',
+      '/posts/courses/CourseOfFaultTorrence',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_2': RouteRecordInfo<
-      '/posts/CourseOfDCS_2',
-      '/posts/CourseOfDCS_2',
+    '/posts/courses/CourseOfISP': RouteRecordInfo<
+      '/posts/courses/CourseOfISP',
+      '/posts/courses/CourseOfISP',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_3': RouteRecordInfo<
-      '/posts/CourseOfDCS_3',
-      '/posts/CourseOfDCS_3',
+    '/posts/high-school/11-11-Simulation-Contest-Summary': RouteRecordInfo<
+      '/posts/high-school/11-11-Simulation-Contest-Summary',
+      '/posts/high-school/11-11-Simulation-Contest-Summary',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_4': RouteRecordInfo<
-      '/posts/CourseOfDCS_4',
-      '/posts/CourseOfDCS_4',
+    '/posts/high-school/11-12-Simulation-Contest-Summary': RouteRecordInfo<
+      '/posts/high-school/11-12-Simulation-Contest-Summary',
+      '/posts/high-school/11-12-Simulation-Contest-Summary',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_5': RouteRecordInfo<
-      '/posts/CourseOfDCS_5',
-      '/posts/CourseOfDCS_5',
+    '/posts/high-school/11-13-Simulation-Contest-Summary': RouteRecordInfo<
+      '/posts/high-school/11-13-Simulation-Contest-Summary',
+      '/posts/high-school/11-13-Simulation-Contest-Summary',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_6': RouteRecordInfo<
-      '/posts/CourseOfDCS_6',
-      '/posts/CourseOfDCS_6',
+    '/posts/high-school/11-9-Simulation-Contest-Summary': RouteRecordInfo<
+      '/posts/high-school/11-9-Simulation-Contest-Summary',
+      '/posts/high-school/11-9-Simulation-Contest-Summary',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_7': RouteRecordInfo<
-      '/posts/CourseOfDCS_7',
-      '/posts/CourseOfDCS_7',
+    '/posts/high-school/aboutme': RouteRecordInfo<
+      '/posts/high-school/aboutme',
+      '/posts/high-school/aboutme',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_8': RouteRecordInfo<
-      '/posts/CourseOfDCS_8',
-      '/posts/CourseOfDCS_8',
+    '/posts/high-school/Another-Request': RouteRecordInfo<
+      '/posts/high-school/Another-Request',
+      '/posts/high-school/Another-Request',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_9': RouteRecordInfo<
-      '/posts/CourseOfDCS_9',
-      '/posts/CourseOfDCS_9',
+    '/posts/high-school/apple-tree-2': RouteRecordInfo<
+      '/posts/high-school/apple-tree-2',
+      '/posts/high-school/apple-tree-2',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfDCS_highlight': RouteRecordInfo<
-      '/posts/CourseOfDCS_highlight',
-      '/posts/CourseOfDCS_highlight',
+    '/posts/high-school/Common-Mistakes': RouteRecordInfo<
+      '/posts/high-school/Common-Mistakes',
+      '/posts/high-school/Common-Mistakes',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfFaultTorrence': RouteRecordInfo<
-      '/posts/CourseOfFaultTorrence',
-      '/posts/CourseOfFaultTorrence',
+    '/posts/high-school/Disease-Manangement': RouteRecordInfo<
+      '/posts/high-school/Disease-Manangement',
+      '/posts/high-school/Disease-Manangement',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/CourseOfISP': RouteRecordInfo<
-      '/posts/CourseOfISP',
-      '/posts/CourseOfISP',
+    '/posts/high-school/Distributing-Candies': RouteRecordInfo<
+      '/posts/high-school/Distributing-Candies',
+      '/posts/high-school/Distributing-Candies',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/DiaryOfKeyan240827': RouteRecordInfo<
-      '/posts/DiaryOfKeyan240827',
-      '/posts/DiaryOfKeyan240827',
+    '/posts/high-school/exgcd': RouteRecordInfo<
+      '/posts/high-school/exgcd',
+      '/posts/high-school/exgcd',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Disease-Manangement': RouteRecordInfo<
-      '/posts/Disease-Manangement',
-      '/posts/Disease-Manangement',
+    '/posts/high-school/Gaussian-Elimination': RouteRecordInfo<
+      '/posts/high-school/Gaussian-Elimination',
+      '/posts/high-school/Gaussian-Elimination',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Distributing-Candies': RouteRecordInfo<
-      '/posts/Distributing-Candies',
-      '/posts/Distributing-Candies',
+    '/posts/high-school/Horner-Algorithm': RouteRecordInfo<
+      '/posts/high-school/Horner-Algorithm',
+      '/posts/high-school/Horner-Algorithm',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/example': RouteRecordInfo<
-      '/posts/example',
-      '/posts/example',
+    '/posts/high-school/Keep-Eating-Lemons': RouteRecordInfo<
+      '/posts/high-school/Keep-Eating-Lemons',
+      '/posts/high-school/Keep-Eating-Lemons',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/exgcd': RouteRecordInfo<
-      '/posts/exgcd',
-      '/posts/exgcd',
+    '/posts/high-school/Knapsack-Problem': RouteRecordInfo<
+      '/posts/high-school/Knapsack-Problem',
+      '/posts/high-school/Knapsack-Problem',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/FPGA_start': RouteRecordInfo<
-      '/posts/FPGA_start',
-      '/posts/FPGA_start',
+    '/posts/high-school/LaTeX-Font-Syntax-Summary': RouteRecordInfo<
+      '/posts/high-school/LaTeX-Font-Syntax-Summary',
+      '/posts/high-school/LaTeX-Font-Syntax-Summary',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Gaussian-Elimination': RouteRecordInfo<
-      '/posts/Gaussian-Elimination',
-      '/posts/Gaussian-Elimination',
+    '/posts/high-school/Maximal-Rectangle-Area': RouteRecordInfo<
+      '/posts/high-school/Maximal-Rectangle-Area',
+      '/posts/high-school/Maximal-Rectangle-Area',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/github': RouteRecordInfo<
-      '/posts/github',
-      '/posts/github',
+    '/posts/high-school/OItravel': RouteRecordInfo<
+      '/posts/high-school/OItravel',
+      '/posts/high-school/OItravel',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Horner-Algorithm': RouteRecordInfo<
-      '/posts/Horner-Algorithm',
-      '/posts/Horner-Algorithm',
+    '/posts/high-school/Personal-Bio-High-School-Version': RouteRecordInfo<
+      '/posts/high-school/Personal-Bio-High-School-Version',
+      '/posts/high-school/Personal-Bio-High-School-Version',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Huffman-Zip': RouteRecordInfo<
-      '/posts/Huffman-Zip',
-      '/posts/Huffman-Zip',
+    '/posts/high-school/Pollard-Rho-Algorithm': RouteRecordInfo<
+      '/posts/high-school/Pollard-Rho-Algorithm',
+      '/posts/high-school/Pollard-Rho-Algorithm',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Keep-Eating-Lemons': RouteRecordInfo<
-      '/posts/Keep-Eating-Lemons',
-      '/posts/Keep-Eating-Lemons',
+    '/posts/high-school/RQYsCodeStyle4OI': RouteRecordInfo<
+      '/posts/high-school/RQYsCodeStyle4OI',
+      '/posts/high-school/RQYsCodeStyle4OI',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Knapsack-Problem': RouteRecordInfo<
-      '/posts/Knapsack-Problem',
-      '/posts/Knapsack-Problem',
+    '/posts/high-school/Segment-Tree-and-Fenwick-Tree': RouteRecordInfo<
+      '/posts/high-school/Segment-Tree-and-Fenwick-Tree',
+      '/posts/high-school/Segment-Tree-and-Fenwick-Tree',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Lab-Report-2': RouteRecordInfo<
-      '/posts/Lab-Report-2',
-      '/posts/Lab-Report-2',
+    '/posts/high-school/Simulation-Contest-Summary': RouteRecordInfo<
+      '/posts/high-school/Simulation-Contest-Summary',
+      '/posts/high-school/Simulation-Contest-Summary',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/LaTeX-Font-Syntax-Summary': RouteRecordInfo<
-      '/posts/LaTeX-Font-Syntax-Summary',
-      '/posts/LaTeX-Font-Syntax-Summary',
+    '/posts/high-school/Solution-Link': RouteRecordInfo<
+      '/posts/high-school/Solution-Link',
+      '/posts/high-school/Solution-Link',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/LuoTianyi_Concert2024': RouteRecordInfo<
-      '/posts/LuoTianyi_Concert2024',
-      '/posts/LuoTianyi_Concert2024',
+    '/posts/high-school/Solution-P1011': RouteRecordInfo<
+      '/posts/high-school/Solution-P1011',
+      '/posts/high-school/Solution-P1011',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Maximal-Rectangle-Area': RouteRecordInfo<
-      '/posts/Maximal-Rectangle-Area',
-      '/posts/Maximal-Rectangle-Area',
+    '/posts/high-school/Solution-P2024': RouteRecordInfo<
+      '/posts/high-school/Solution-P2024',
+      '/posts/high-school/Solution-P2024',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/MemoryOfSnow': RouteRecordInfo<
-      '/posts/MemoryOfSnow',
-      '/posts/MemoryOfSnow',
+    '/posts/high-school/Solution-P2661': RouteRecordInfo<
+      '/posts/high-school/Solution-P2661',
+      '/posts/high-school/Solution-P2661',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/OItravel': RouteRecordInfo<
-      '/posts/OItravel',
-      '/posts/OItravel',
+    '/posts/high-school/Solution-P4155': RouteRecordInfo<
+      '/posts/high-school/Solution-P4155',
+      '/posts/high-school/Solution-P4155',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Personal-Bio-High-School-Version': RouteRecordInfo<
-      '/posts/Personal-Bio-High-School-Version',
-      '/posts/Personal-Bio-High-School-Version',
+    '/posts/high-school/Solving-Equations': RouteRecordInfo<
+      '/posts/high-school/Solving-Equations',
+      '/posts/high-school/Solving-Equations',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Pollard-Rho-Algorithm': RouteRecordInfo<
-      '/posts/Pollard-Rho-Algorithm',
-      '/posts/Pollard-Rho-Algorithm',
+    '/posts/high-school/ST-Table': RouteRecordInfo<
+      '/posts/high-school/ST-Table',
+      '/posts/high-school/ST-Table',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/RQYsCodeStyle4OI': RouteRecordInfo<
-      '/posts/RQYsCodeStyle4OI',
-      '/posts/RQYsCodeStyle4OI',
+    '/posts/high-school/Template-Practice': RouteRecordInfo<
+      '/posts/high-school/Template-Practice',
+      '/posts/high-school/Template-Practice',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Segment-Tree-and-Fenwick-Tree': RouteRecordInfo<
-      '/posts/Segment-Tree-and-Fenwick-Tree',
-      '/posts/Segment-Tree-and-Fenwick-Tree',
+    '/posts/high-school/Total-Probability-Theorem': RouteRecordInfo<
+      '/posts/high-school/Total-Probability-Theorem',
+      '/posts/high-school/Total-Probability-Theorem',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Simulation-Contest-Summary': RouteRecordInfo<
-      '/posts/Simulation-Contest-Summary',
-      '/posts/Simulation-Contest-Summary',
+    '/posts/high-school/Tree-Traversal-DFS-and-BFS': RouteRecordInfo<
+      '/posts/high-school/Tree-Traversal-DFS-and-BFS',
+      '/posts/high-school/Tree-Traversal-DFS-and-BFS',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Solution-Link': RouteRecordInfo<
-      '/posts/Solution-Link',
-      '/posts/Solution-Link',
+    '/posts/high-school/Xuan-Fly-Loves-Math': RouteRecordInfo<
+      '/posts/high-school/Xuan-Fly-Loves-Math',
+      '/posts/high-school/Xuan-Fly-Loves-Math',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Solution-P1011': RouteRecordInfo<
-      '/posts/Solution-P1011',
-      '/posts/Solution-P1011',
+    '/posts/notes/College-Literature': RouteRecordInfo<
+      '/posts/notes/College-Literature',
+      '/posts/notes/College-Literature',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Solution-P2024': RouteRecordInfo<
-      '/posts/Solution-P2024',
-      '/posts/Solution-P2024',
+    '/posts/notes/FPGA_start': RouteRecordInfo<
+      '/posts/notes/FPGA_start',
+      '/posts/notes/FPGA_start',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Solution-P2661': RouteRecordInfo<
-      '/posts/Solution-P2661',
-      '/posts/Solution-P2661',
+    '/posts/notes/Huffman-Zip': RouteRecordInfo<
+      '/posts/notes/Huffman-Zip',
+      '/posts/notes/Huffman-Zip',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Solution-P4155': RouteRecordInfo<
-      '/posts/Solution-P4155',
-      '/posts/Solution-P4155',
+    '/posts/records/DiaryOfKeyan240827': RouteRecordInfo<
+      '/posts/records/DiaryOfKeyan240827',
+      '/posts/records/DiaryOfKeyan240827',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Solving-Equations': RouteRecordInfo<
-      '/posts/Solving-Equations',
-      '/posts/Solving-Equations',
+    '/posts/records/LuoTianyi_Concert2024': RouteRecordInfo<
+      '/posts/records/LuoTianyi_Concert2024',
+      '/posts/records/LuoTianyi_Concert2024',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/ST-Table': RouteRecordInfo<
-      '/posts/ST-Table',
-      '/posts/ST-Table',
+    '/posts/records/MemoryOfSnow': RouteRecordInfo<
+      '/posts/records/MemoryOfSnow',
+      '/posts/records/MemoryOfSnow',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Template-Practice': RouteRecordInfo<
-      '/posts/Template-Practice',
-      '/posts/Template-Practice',
+    '/posts/records/YourLifeInApril': RouteRecordInfo<
+      '/posts/records/YourLifeInApril',
+      '/posts/records/YourLifeInApril',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Total-Probability-Theorem': RouteRecordInfo<
-      '/posts/Total-Probability-Theorem',
-      '/posts/Total-Probability-Theorem',
+    '/posts/research/CCF-Arch-Fault-Injection-Survey-2021-2025': RouteRecordInfo<
+      '/posts/research/CCF-Arch-Fault-Injection-Survey-2021-2025',
+      '/posts/research/CCF-Arch-Fault-Injection-Survey-2021-2025',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Tree-Traversal-DFS-and-BFS': RouteRecordInfo<
-      '/posts/Tree-Traversal-DFS-and-BFS',
-      '/posts/Tree-Traversal-DFS-and-BFS',
+    '/posts/solutions/Lab-Report-2': RouteRecordInfo<
+      '/posts/solutions/Lab-Report-2',
+      '/posts/solutions/Lab-Report-2',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/website': RouteRecordInfo<
-      '/posts/website',
-      '/posts/website',
+    '/posts/website/example': RouteRecordInfo<
+      '/posts/website/example',
+      '/posts/website/example',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/Xuan-Fly-Loves-Math': RouteRecordInfo<
-      '/posts/Xuan-Fly-Loves-Math',
-      '/posts/Xuan-Fly-Loves-Math',
+    '/posts/website/github': RouteRecordInfo<
+      '/posts/website/github',
+      '/posts/website/github',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/posts/YourLifeInApril': RouteRecordInfo<
-      '/posts/YourLifeInApril',
-      '/posts/YourLifeInApril',
+    '/posts/website/website': RouteRecordInfo<
+      '/posts/website/website',
+      '/posts/website/website',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -681,481 +681,481 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
-    'pages/posts/11.11-Simulation-Contest-Summary.md': {
+    'pages/posts/anime/anime2023.md': {
       routes:
-        | '/posts/11.11-Simulation-Contest-Summary'
+        | '/posts/anime/anime2023'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/11.12-Simulation-Contest-Summary.md': {
+    'pages/posts/courses/CourseOfDCS_1.md': {
       routes:
-        | '/posts/11.12-Simulation-Contest-Summary'
+        | '/posts/courses/CourseOfDCS_1'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/11.13-Simulation-Contest-Summary.md': {
+    'pages/posts/courses/CourseOfDCS_10.md': {
       routes:
-        | '/posts/11.13-Simulation-Contest-Summary'
+        | '/posts/courses/CourseOfDCS_10'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/11.9-Simulation-Contest-Summary.md': {
+    'pages/posts/courses/CourseOfDCS_2.md': {
       routes:
-        | '/posts/11.9-Simulation-Contest-Summary'
+        | '/posts/courses/CourseOfDCS_2'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/aboutme.md': {
+    'pages/posts/courses/CourseOfDCS_3.md': {
       routes:
-        | '/posts/aboutme'
+        | '/posts/courses/CourseOfDCS_3'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/anime2023.md': {
+    'pages/posts/courses/CourseOfDCS_4.md': {
       routes:
-        | '/posts/anime2023'
+        | '/posts/courses/CourseOfDCS_4'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Another-Request.md': {
+    'pages/posts/courses/CourseOfDCS_5.md': {
       routes:
-        | '/posts/Another-Request'
+        | '/posts/courses/CourseOfDCS_5'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/apple-tree-2.md': {
+    'pages/posts/courses/CourseOfDCS_6.md': {
       routes:
-        | '/posts/apple-tree-2'
+        | '/posts/courses/CourseOfDCS_6'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CCF-Arch-Fault-Injection-Survey-2021-2025.md': {
+    'pages/posts/courses/CourseOfDCS_7.md': {
       routes:
-        | '/posts/CCF-Arch-Fault-Injection-Survey-2021-2025'
+        | '/posts/courses/CourseOfDCS_7'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/College-Literature.md': {
+    'pages/posts/courses/CourseOfDCS_8.md': {
       routes:
-        | '/posts/College-Literature'
+        | '/posts/courses/CourseOfDCS_8'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Common-Mistakes.md': {
+    'pages/posts/courses/CourseOfDCS_9.md': {
       routes:
-        | '/posts/Common-Mistakes'
+        | '/posts/courses/CourseOfDCS_9'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_1.md': {
+    'pages/posts/courses/CourseOfDCS_highlight.md': {
       routes:
-        | '/posts/CourseOfDCS_1'
+        | '/posts/courses/CourseOfDCS_highlight'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_10.md': {
+    'pages/posts/courses/CourseOfFaultTorrence.md': {
       routes:
-        | '/posts/CourseOfDCS_10'
+        | '/posts/courses/CourseOfFaultTorrence'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_2.md': {
+    'pages/posts/courses/CourseOfISP.md': {
       routes:
-        | '/posts/CourseOfDCS_2'
+        | '/posts/courses/CourseOfISP'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_3.md': {
+    'pages/posts/high-school/11-11-Simulation-Contest-Summary.md': {
       routes:
-        | '/posts/CourseOfDCS_3'
+        | '/posts/high-school/11-11-Simulation-Contest-Summary'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_4.md': {
+    'pages/posts/high-school/11-12-Simulation-Contest-Summary.md': {
       routes:
-        | '/posts/CourseOfDCS_4'
+        | '/posts/high-school/11-12-Simulation-Contest-Summary'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_5.md': {
+    'pages/posts/high-school/11-13-Simulation-Contest-Summary.md': {
       routes:
-        | '/posts/CourseOfDCS_5'
+        | '/posts/high-school/11-13-Simulation-Contest-Summary'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_6.md': {
+    'pages/posts/high-school/11-9-Simulation-Contest-Summary.md': {
       routes:
-        | '/posts/CourseOfDCS_6'
+        | '/posts/high-school/11-9-Simulation-Contest-Summary'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_7.md': {
+    'pages/posts/high-school/aboutme.md': {
       routes:
-        | '/posts/CourseOfDCS_7'
+        | '/posts/high-school/aboutme'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_8.md': {
+    'pages/posts/high-school/Another-Request.md': {
       routes:
-        | '/posts/CourseOfDCS_8'
+        | '/posts/high-school/Another-Request'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_9.md': {
+    'pages/posts/high-school/apple-tree-2.md': {
       routes:
-        | '/posts/CourseOfDCS_9'
+        | '/posts/high-school/apple-tree-2'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfDCS_highlight.md': {
+    'pages/posts/high-school/Common-Mistakes.md': {
       routes:
-        | '/posts/CourseOfDCS_highlight'
+        | '/posts/high-school/Common-Mistakes'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfFaultTorrence.md': {
+    'pages/posts/high-school/Disease-Manangement.md': {
       routes:
-        | '/posts/CourseOfFaultTorrence'
+        | '/posts/high-school/Disease-Manangement'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/CourseOfISP.md': {
+    'pages/posts/high-school/Distributing-Candies.md': {
       routes:
-        | '/posts/CourseOfISP'
+        | '/posts/high-school/Distributing-Candies'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/DiaryOfKeyan240827.md': {
+    'pages/posts/high-school/exgcd.md': {
       routes:
-        | '/posts/DiaryOfKeyan240827'
+        | '/posts/high-school/exgcd'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Disease-Manangement.md': {
+    'pages/posts/high-school/Gaussian-Elimination.md': {
       routes:
-        | '/posts/Disease-Manangement'
+        | '/posts/high-school/Gaussian-Elimination'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Distributing-Candies.md': {
+    'pages/posts/high-school/Horner-Algorithm.md': {
       routes:
-        | '/posts/Distributing-Candies'
+        | '/posts/high-school/Horner-Algorithm'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/example.md': {
+    'pages/posts/high-school/Keep-Eating-Lemons.md': {
       routes:
-        | '/posts/example'
+        | '/posts/high-school/Keep-Eating-Lemons'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/exgcd.md': {
+    'pages/posts/high-school/Knapsack-Problem.md': {
       routes:
-        | '/posts/exgcd'
+        | '/posts/high-school/Knapsack-Problem'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/FPGA_start.md': {
+    'pages/posts/high-school/LaTeX-Font-Syntax-Summary.md': {
       routes:
-        | '/posts/FPGA_start'
+        | '/posts/high-school/LaTeX-Font-Syntax-Summary'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Gaussian-Elimination.md': {
+    'pages/posts/high-school/Maximal-Rectangle-Area.md': {
       routes:
-        | '/posts/Gaussian-Elimination'
+        | '/posts/high-school/Maximal-Rectangle-Area'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/github.md': {
+    'pages/posts/high-school/OItravel.md': {
       routes:
-        | '/posts/github'
+        | '/posts/high-school/OItravel'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Horner-Algorithm.md': {
+    'pages/posts/high-school/Personal-Bio-High-School-Version.md': {
       routes:
-        | '/posts/Horner-Algorithm'
+        | '/posts/high-school/Personal-Bio-High-School-Version'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Huffman-Zip.md': {
+    'pages/posts/high-school/Pollard-Rho-Algorithm.md': {
       routes:
-        | '/posts/Huffman-Zip'
+        | '/posts/high-school/Pollard-Rho-Algorithm'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Keep-Eating-Lemons.md': {
+    'pages/posts/high-school/RQYsCodeStyle4OI.md': {
       routes:
-        | '/posts/Keep-Eating-Lemons'
+        | '/posts/high-school/RQYsCodeStyle4OI'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Knapsack-Problem.md': {
+    'pages/posts/high-school/Segment-Tree-and-Fenwick-Tree.md': {
       routes:
-        | '/posts/Knapsack-Problem'
+        | '/posts/high-school/Segment-Tree-and-Fenwick-Tree'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Lab-Report-2.md': {
+    'pages/posts/high-school/Simulation-Contest-Summary.md': {
       routes:
-        | '/posts/Lab-Report-2'
+        | '/posts/high-school/Simulation-Contest-Summary'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/LaTeX-Font-Syntax-Summary.md': {
+    'pages/posts/high-school/Solution-Link.md': {
       routes:
-        | '/posts/LaTeX-Font-Syntax-Summary'
+        | '/posts/high-school/Solution-Link'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/LuoTianyi_Concert2024.md': {
+    'pages/posts/high-school/Solution-P1011.md': {
       routes:
-        | '/posts/LuoTianyi_Concert2024'
+        | '/posts/high-school/Solution-P1011'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Maximal-Rectangle-Area.md': {
+    'pages/posts/high-school/Solution-P2024.md': {
       routes:
-        | '/posts/Maximal-Rectangle-Area'
+        | '/posts/high-school/Solution-P2024'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/MemoryOfSnow.md': {
+    'pages/posts/high-school/Solution-P2661.md': {
       routes:
-        | '/posts/MemoryOfSnow'
+        | '/posts/high-school/Solution-P2661'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/OItravel.md': {
+    'pages/posts/high-school/Solution-P4155.md': {
       routes:
-        | '/posts/OItravel'
+        | '/posts/high-school/Solution-P4155'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Personal-Bio-High-School-Version.md': {
+    'pages/posts/high-school/Solving-Equations.md': {
       routes:
-        | '/posts/Personal-Bio-High-School-Version'
+        | '/posts/high-school/Solving-Equations'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Pollard-Rho-Algorithm.md': {
+    'pages/posts/high-school/ST-Table.md': {
       routes:
-        | '/posts/Pollard-Rho-Algorithm'
+        | '/posts/high-school/ST-Table'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/RQYsCodeStyle4OI.md': {
+    'pages/posts/high-school/Template-Practice.md': {
       routes:
-        | '/posts/RQYsCodeStyle4OI'
+        | '/posts/high-school/Template-Practice'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Segment-Tree-and-Fenwick-Tree.md': {
+    'pages/posts/high-school/Total-Probability-Theorem.md': {
       routes:
-        | '/posts/Segment-Tree-and-Fenwick-Tree'
+        | '/posts/high-school/Total-Probability-Theorem'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Simulation-Contest-Summary.md': {
+    'pages/posts/high-school/Tree-Traversal-DFS-and-BFS.md': {
       routes:
-        | '/posts/Simulation-Contest-Summary'
+        | '/posts/high-school/Tree-Traversal-DFS-and-BFS'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Solution-Link.md': {
+    'pages/posts/high-school/Xuan-Fly-Loves-Math.md': {
       routes:
-        | '/posts/Solution-Link'
+        | '/posts/high-school/Xuan-Fly-Loves-Math'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Solution-P1011.md': {
+    'pages/posts/notes/College-Literature.md': {
       routes:
-        | '/posts/Solution-P1011'
+        | '/posts/notes/College-Literature'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Solution-P2024.md': {
+    'pages/posts/notes/FPGA_start.md': {
       routes:
-        | '/posts/Solution-P2024'
+        | '/posts/notes/FPGA_start'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Solution-P2661.md': {
+    'pages/posts/notes/Huffman-Zip.md': {
       routes:
-        | '/posts/Solution-P2661'
+        | '/posts/notes/Huffman-Zip'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Solution-P4155.md': {
+    'pages/posts/records/DiaryOfKeyan240827.md': {
       routes:
-        | '/posts/Solution-P4155'
+        | '/posts/records/DiaryOfKeyan240827'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Solving-Equations.md': {
+    'pages/posts/records/LuoTianyi_Concert2024.md': {
       routes:
-        | '/posts/Solving-Equations'
+        | '/posts/records/LuoTianyi_Concert2024'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/ST-Table.md': {
+    'pages/posts/records/MemoryOfSnow.md': {
       routes:
-        | '/posts/ST-Table'
+        | '/posts/records/MemoryOfSnow'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Template-Practice.md': {
+    'pages/posts/records/YourLifeInApril.md': {
       routes:
-        | '/posts/Template-Practice'
+        | '/posts/records/YourLifeInApril'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Total-Probability-Theorem.md': {
+    'pages/posts/research/CCF-Arch-Fault-Injection-Survey-2021-2025.md': {
       routes:
-        | '/posts/Total-Probability-Theorem'
+        | '/posts/research/CCF-Arch-Fault-Injection-Survey-2021-2025'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Tree-Traversal-DFS-and-BFS.md': {
+    'pages/posts/solutions/Lab-Report-2.md': {
       routes:
-        | '/posts/Tree-Traversal-DFS-and-BFS'
+        | '/posts/solutions/Lab-Report-2'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/website.md': {
+    'pages/posts/website/example.md': {
       routes:
-        | '/posts/website'
+        | '/posts/website/example'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/Xuan-Fly-Loves-Math.md': {
+    'pages/posts/website/github.md': {
       routes:
-        | '/posts/Xuan-Fly-Loves-Math'
+        | '/posts/website/github'
       views:
         | never
       pathParamNames:
         | never
     }
-    'pages/posts/YourLifeInApril.md': {
+    'pages/posts/website/website.md': {
       routes:
-        | '/posts/YourLifeInApril'
+        | '/posts/website/website'
       views:
         | never
       pathParamNames:
